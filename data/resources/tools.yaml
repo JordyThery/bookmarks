@@ -77,6 +77,13 @@
   platforms: [macOS]
   cost: free
 
+- name: Apple Policy Explorer
+  url: https://appledevicepolicy.tools/policy-explorer
+  subcategory: Profiles & compliance
+  description: Searchable reference of Apple MDM and DDM policies with keys, supported platforms, deprecations and links to Apple's docs.
+  keywords: [ddm, mdm, payloads, declarative device management, configuration profile]
+  platforms: [macOS, iOS, iPadOS, tvOS, visionOS, watchOS]
+
 - name: Aurora Screen Shot
   url: https://leo2008k.github.io/AuroraScreenShot
   subcategory: Utilities
@@ -155,6 +162,14 @@
   keywords: [blueprints, jamf platform api, custom settings, plist, ddm]
   platforms: [macOS]
   works_with: [jamf]
+  cost: open-source
+
+- name: BOFA Browser Overview
+  url: https://bofa.cocolabs.dev
+  subcategory: App management
+  description: Feed of current Chrome, Firefox, Edge and Safari versions for Mac admins tracking browser patching.
+  keywords: [browser versions, patching, chrome, edge, firefox, sofa]
+  platforms: [macOS]
   cost: open-source
 
 - name: Bootstrap Buddy
@@ -567,14 +582,6 @@
   description: MacDNA Menulet, a menu bar utility kept in a folder of Joseph Bush's Arek repository on GitHub.
   keywords: [menu bar, menulet, system info, arek]
 
-- name: MacDown
-  url: https://macdown.uranusjr.com/
-  subcategory: Productivity
-  description: Markdown editor for macOS with customisable rendering, syntax highlighting in fenced code blocks and auto-completion.
-  keywords: [markdown, editor, documentation, notes, homebrew]
-  platforms: [macOS]
-  cost: open-source
-
 - name: macOS Icons
   url: https://macosicons.com
   subcategory: Utilities
@@ -647,6 +654,14 @@
   description: Mac app that lists and downloads macOS installers and IPSW firmware, and builds .app, .dmg, .iso or .pkg installers.
   keywords: [ipsw, macos installer, firmware, dfu, restore, mist-cli]
   platforms: [macOS]
+  cost: open-source
+
+- name: MOFA Microsoft Overview Feed
+  url: https://mofa.cocolabs.dev
+  subcategory: App management
+  description: Lists current versions and release dates of Microsoft apps for Apple devices, standalone and App Store, including Office and Teams.
+  keywords: [microsoft office, teams, outlook, version tracking, patching]
+  platforms: [macOS, iOS]
   cost: open-source
 
 - name: moss
@@ -877,13 +892,6 @@
   keywords: [shell scripting, string manipulation, reference, snippets]
   archived: true
 
-- name: Recategorizer
-  url: https://github.com/sheagcraig/Recategorizer
-  subcategory: Utilities
-  description: Script that walks through reassigning categories to every policy and package on a Jamf Pro server, then removes unused categories.
-  keywords: [jss, categories, python-jss, jssimporter, cleanup, policies]
-  works_with: [jamf]
-
 - name: Rectangle
   url: https://rectangleapp.com/
   subcategory: Productivity
@@ -1015,14 +1023,6 @@
   platforms: [macOS, iOS, iPadOS, tvOS, visionOS, watchOS]
   cost: open-source
 
-- name: Stronghold
-  url: https://github.com/alichtman/stronghold
-  subcategory: Security & identity
-  description: 'Command-line script that hardens macOS security settings: firewall, stealth mode, Gatekeeper, metadata and sharing.'
-  keywords: [hardening, firewall, gatekeeper, lockdown, cli]
-  platforms: [macOS]
-  cost: open-source
-
 - name: Sublime Text
   url: https://www.sublimetext.com/
   subcategory: Editors
@@ -1123,15 +1123,6 @@
   keywords: [smart card, winclone, mds, xcreds, certificates, authentication]
   platforms: [macOS, iOS, iPadOS]
   cost: paid
-
-- name: umad
-  url: https://github.com/macadmins/umad
-  subcategory: Utilities
-  description: Prompts users of existing Macs to enroll in MDM via DEP or manual enrollment, with reminder timers and cutoff dates.
-  keywords: [ade, dep, enrollment, user approved mdm, uamdm]
-  platforms: [macOS]
-  works_with: [any-mdm]
-  cost: open-source
 
 - name: Uninstaller
   url: https://github.com/erikstam/uninstaller

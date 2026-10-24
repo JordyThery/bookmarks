@@ -16,18 +16,6 @@
   description: 9to5Mac podcast where Bradley Chambers and guests discuss Apple in the enterprise and in K-12 education.
   keywords: [9to5mac, bradley chambers, enterprise, k-12, mdm]
 
-- name: Apple @ Work
-  url: https://podcasts.apple.com/nl/podcast/apple-work/id1500332802
-  subcategory: Podcasts
-  description: 9to5Mac podcast where Bradley Chambers and guests discuss Apple in the enterprise and in K-12 education.
-  keywords: [9to5mac, bradley chambers, enterprise, k-12, mdm]
-
-- name: The Apple Community Bookmarks
-  url: https://github.com/cbookmarks/bookmarks/tree/main
-  subcategory: Video
-  description: GitHub repository behind Community Bookmarks, the curated directory of resources for people who manage Apple devices.
-  keywords: [github, directory, links, resources, community bookmarks]
-
 - name: Command Control Power
   url: https://podcasts.apple.com/nl/podcast/command-control-power-apple-tech-support-business-talk/id668387622
   subcategory: Podcasts
@@ -40,17 +28,11 @@
   description: YouTube channel of Greater Philadelphia Mac Admins, a regional Mac admin user group.
   keywords: [philadelphia, philly, user group, meetup, recordings]
 
-- name: The History of Computing on Apple Podcasts
-  url: https://podcasts.apple.com/us/podcast/history-of-personal-computing/id1459717802
+- name: The History of Computing
+  url: https://podcasts.apple.com/us/podcast/the-history-of-computing/id1472463802
   subcategory: Podcasts
-  description: Retrocomputing podcast by David and Jeff on the history of personal computers, PDAs and smartphones, told through eBay auctions.
-  keywords: [retrocomputing, computer history, vintage, pda, ebay]
-
-- name: iJustine
-  url: https://www.youtube.com/ijustine
-  subcategory: Video
-  description: Justine Ezarik's YouTube channel of consumer tech unboxings and reviews, with frequent coverage of new Apple products.
-  keywords: [unboxing, reviews, iphone, consumer tech, youtuber]
+  description: Charles Edge's podcast on the people, companies and ideas behind computing, from early machines to the internet and Apple.
+  keywords: [computer history, charles edge, krypted, tech history]
 
 - name: India Apple Admins
   url: https://www.youtube.com/@indiamacadmins
@@ -58,6 +40,13 @@
   description: Tutorials, expert advice and meetup recaps on administering Apple devices with Jamf and Intune, from India's Apple admin community.
   keywords: [india, jamf, intune, mdm, tutorials]
   platforms: [macOS, iOS]
+
+- name: Intune for Education Customer Acceleration Team
+  url: https://www.youtube.com/@intuneforeducationcustomer4969
+  subcategory: Video
+  description: YouTube channel of Microsoft's Intune for Education Customer Acceleration Team.
+  keywords: [intune for education, schools, endpoint manager, microsoft, education]
+  works_with: [intune]
 
 - name: Iru
   url: https://www.youtube.com/@KandjiOfficial
@@ -78,19 +67,6 @@
   keywords: [jamf pro, jamf threat labs, platform sso, jnuc, security]
   works_with: [jamf]
 
-- name: Jamf After Dark
-  url: https://jamfafterdark.libsyn.com/
-  subcategory: Podcasts
-  description: Libsyn episode archive of Jamf After Dark, the Jamf podcast on Apple device management, identity and industry news.
-  keywords: [jamf pro, platform sso, jnuc, libsyn, episodes]
-  works_with: [jamf]
-
-- name: Jigsaw24 - Keep IT Talking
-  url: https://podcasts.apple.com/gb/podcast/the-jigsaw24-edtech-podcast/id1687318316
-  subcategory: Podcasts
-  description: Jigsaw24's education technology podcast with advice for educators on iPad, coding and robotics, AI and Apple Distinguished Schools.
-  keywords: [jigsaw24, edtech, education, ipad, showbie]
-
 - name: JNUC 2025
   url: https://www.youtube.com/playlist?list=PLlxHm_Px-Ie0DkjJe6xzYhFhwIn2SUhHJ
   subcategory: Video
@@ -98,10 +74,10 @@
   keywords: [jamf nation user conference, jnuc, keynote, jamf pro, sessions]
   works_with: [jamf]
 
-- name: Keeping IT Talking
-  url: https://podcasts.apple.com/gb/podcast/keeping-it-talking/id1843864440
+- name: Keeping IT Talking (Jigsaw24)
+  url: https://www.jigsaw24.com/keeping-it-talking
   subcategory: Podcasts
-  description: Jigsaw24 podcast interviewing IT leaders and trainers about their careers, Apple in the enterprise, AI, cloud and security.
+  description: Jigsaw24 podcast interviewing IT leaders and experts about their careers, Apple in the enterprise, AI, cloud and security.
   keywords: [jigsaw24, it careers, leadership, enterprise, uk]
 
 - name: London Apple Admins
@@ -123,12 +99,6 @@
   keywords: [india, macadmins.in, connect, meetup, conference]
 
 - name: Mac Admins Podcast
-  url: https://podcasts.apple.com/nl/podcast/mac-admins-podcast/id1097430326
-  subcategory: Podcasts
-  description: Weekly podcast where a rotating panel of Mac admins and guests discuss the news and challenges of managing Apple devices.
-  keywords: [tom bridge, macadmins.org, mdm, ddm, platform sso]
-
-- name: Mac Admins Podcast
   url: https://podcast.macadmins.org/
   subcategory: Podcasts
   description: Home of the Mac Admins Podcast, a weekly show by Mac admins for Mac admins, with episode pages and summaries.
@@ -146,30 +116,17 @@
   description: Session recordings from the MacAdmins Conference on deploying, managing and securing Macs and iOS devices.
   keywords: [penn state, psu, conference, sessions, mdm]
 
-- name: MacAdmins India Connect 2026
-  url: https://www.youtube.com/watch?v=2JFU6l_Hvh4&list=PLelcCocSewHs
+- name: MacAdmins India Connect 2026 kick-off
+  url: https://www.youtube.com/watch?v=2JFU6l_Hvh4
   subcategory: Video
   description: Opening session of Mac Admins India Connect, a Bengaluru conference for India's Apple IT community.
   keywords: [india, bengaluru, conference, keynote]
-
-- name: MacAdmins Podcast
-  url: https://podcasts.apple.com/us/podcast/macadmins-podcast/id1238495116
-  subcategory: Podcasts
-  description: Weekly show on Apple device management from the MacAdmins community.
-  keywords: [mdm, macadmins.org, news, interviews]
 
 - name: MacDevOpsYVR
   url: https://www.youtube.com/c/MDOYVR
   subcategory: Video
   description: YouTube channel of MacDevOpsYVR, the yearly conference for Mac admins bringing DevOps practices into their IT work.
   keywords: [devops, gitops, vancouver, conference, infosec]
-
-- name: Microsoft Intune
-  url: https://www.youtube.com/@intuneforeducationcustomer4969
-  subcategory: Video
-  description: YouTube channel of Microsoft's Intune for Education Customer Acceleration Team.
-  keywords: [intune for education, schools, endpoint manager, microsoft, education]
-  works_with: [intune]
 
 - name: Mr. Macintosh
   url: https://www.youtube.com/channel/UC7FRPWLwRlhORhFHHywfqAg
@@ -184,12 +141,6 @@
   description: YouTube channel of Rocketman Tech, a Jamf consultancy, with content on Jamf Pro, scripting, enrollment and security.
   keywords: [jamf pro, jamf connect, jamf protect, scripting, consulting]
   works_with: [jamf]
-
-- name: Romina Gafur
-  url: https://www.youtube.com/@romina
-  subcategory: Video
-  description: Tech creator channel with gadget unboxings, tech hacks and productivity tips.
-  keywords: [unboxing, productivity, gadgets, tech hacks, consumer tech]
 
 - name: Toronto MacAdmins
   url: https://www.youtube.com/@TorontoMacadmins

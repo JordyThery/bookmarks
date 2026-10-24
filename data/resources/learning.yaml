@@ -1,9 +1,3 @@
-- name: Apple Shell Scripting Guide
-  url: https://developer.apple.com/library/archive/documentation/OpenSource/Conceptual/ShellScripting/shell_scripts/shell_scripts.html
-  description: 'Apple''s Shell Scripting Primer chapter on Bourne-shell basics: interpreter lines, variables, arguments, quoting and exporting.'
-  keywords: [sh, shell scripting, terminal]
-  platforms: [macOS]
-
 - name: Armin Briegel - Books & Resources (Scripting OS X)
   url: https://scriptingosx.com/books/
   description: Armin Briegel's books for Apple admins on macOS installation, packaging, property lists and profiles, and the Terminal and shell.
@@ -48,12 +42,6 @@
   keywords: [jamf 100, certification, jamf pro, jamf school, jamf protect, courses]
   works_with: [jamf]
   cost: paid
-
-- name: MacAdmins Documentation
-  url: https://macadminsdoc.readthedocs.io/en/master/
-  description: Community-written Mac admin documentation on packaging, macOS installation and configuration, Jamf Pro, AirWatch, Puppet and security.
-  keywords: [readthedocs, packaging, jamf pro, airwatch, active directory]
-  platforms: [macOS]
 
 - name: Scripting JAMF Best Practices
   url: https://scriptingosx.com/jnuc2020/

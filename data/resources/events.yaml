@@ -9,18 +9,6 @@
   keywords: [jnuc, jamf pro, jamf nation, sessions]
   works_with: [jamf]
 
-- name: JNUC 2025
-  url: https://reg.jnuc.jamf.com/flow/jamf/jnuc2025/home25/page/jnuc2025home
-  description: Registration site for the 2025 edition of the Jamf Nation User Conference.
-  keywords: [jnuc, jamf nation, registration, jamf pro]
-  works_with: [jamf]
-
-- name: JNUC 2026
-  url: https://www.jamf.com/events/jamf-nation-user-conference/2026/overview
-  description: Overview page for the 2026 edition of the Jamf Nation User Conference, Jamf's annual Apple admin event.
-  keywords: [jnuc, jamf nation, jamf pro, sessions]
-  works_with: [jamf]
-
 - name: MacAD.UK
   url: https://macad.uk/
   description: UK conference for Mac admins with talks, hands-on sessions, exhibitors and networking, held in Brighton.

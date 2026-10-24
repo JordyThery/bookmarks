@@ -18,13 +18,6 @@
   description: Bob Gendler's Medium posts on macOS security, unified logging, compliance, configuration profiles and Apple Intelligence controls.
   keywords: [mscp, compliance, unified logging, auditd, configuration profiles, jamf]
 
-- name: BOFA Browser Overview
-  url: https://bofa.cocolabs.dev
-  description: Feed of current Chrome, Firefox, Edge and Safari versions for Mac admins tracking browser patching.
-  keywords: [browser versions, patching, chrome, edge, firefox, sofa]
-  platforms: [macOS]
-  cost: open-source
-
 - name: Cannonball - Tom Bridge
   url: https://tombridge.com/
   description: Tom Bridge's personal blog mixing IT deployment strategy and Mac admin topics with civic writing and personal essays.
@@ -181,13 +174,6 @@
   - software updates
   - emily kausalik
 
-- name: MOFA Microsoft Overview Feed
-  url: https://mofa.cocolabs.dev
-  description: Lists current versions and release dates of Microsoft apps for Apple devices, standalone and App Store, including Office and Teams.
-  keywords: [microsoft office, teams, outlook, version tracking, patching]
-  platforms: [macOS, iOS]
-  cost: open-source
-
 - name: Mr. Macintosh
   url: https://mrmacintosh.com/
   description: Tracks every macOS release, beta and security update, with installer and IPSW download lists and DFU restore guides.
@@ -210,11 +196,6 @@
   description: Objective-See's blog of macOS malware analysis, vulnerability research and write-ups on its security tools.
   keywords: [patrick wardle, malware analysis, vulnerability research, security]
   platforms: [macOS]
-
-- name: Open Source Malware
-  url: https://opensourcemalware.com
-  description: Community threat-intelligence database of human-verified supply chain threats in open source package ecosystems such as npm.
-  keywords: [supply chain, npm, malicious packages, threat intelligence]
 
 - name: OSX Daily
   url: https://osxdaily.com

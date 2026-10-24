@@ -22,13 +22,6 @@
   description: Apple's homepage, with product pages, the online store and links to support, business and education sections.
   keywords: [store, products, iphone, ipad, macbook]
 
-- name: Apple - Regulation 617/2013
-  url: https://www.apple.com/euro/compliance/617_2013/
-  subcategory: RFP Materials
-  description: Apple product information required by EU Regulation 617/2013, the ecodesign rules on energy use for computers and servers.
-  keywords: [ecodesign, energy consumption, eu compliance, rfp, regulatory]
-  platforms: [macOS]
-
 - name: Apple - Supported iPad models with latest iPadOS version
   url: https://support.apple.com/guide/ipad/supported-models-ipad213a25b2/
   subcategory: Hardware Support
@@ -81,18 +74,18 @@
   description: 'Members-only AppleSeed for IT resources: test plans, prerelease documentation and tools for evaluating beta software.'
   keywords: [appleseed, test plans, prerelease, feedback assistant, managed apple account]
 
-- name: Apple Business - Get apps and books
-  url: https://support.apple.com/guide/business/get-apps-and-books-axmc21817890/web
-  subcategory: Business
-  description: Apple Business guide to buying apps and books in volume and assigning them to users or devices.
-  keywords: [vpp, apps and books, volume purchase, licences, abm]
-
-- name: Apple Business Manager
+- name: Apple Business
   url: https://business.apple.com/
   subcategory: Business
   description: Apple Business web portal for managing devices, apps, Managed Apple Accounts and the company's Apple Maps presence.
   keywords: [abm, ade, vpp, managed apple account, apps and books]
   platforms: [macOS, iOS, iPadOS, tvOS, visionOS]
+
+- name: Apple Business - Get apps and books
+  url: https://support.apple.com/guide/business/get-apps-and-books-axmc21817890/web
+  subcategory: Business
+  description: Apple Business guide to buying apps and books in volume and assigning them to users or devices.
+  keywords: [vpp, apps and books, volume purchase, licences, abm]
 
 - name: Apple Business User Guide
   url: https://support.apple.com/guide/business/welcome/web
@@ -213,13 +206,6 @@
   subcategory: Security
   description: Apple’s official reference on hardware and software security.
   keywords: [secure enclave, filevault, data protection, secure boot, encryption]
-  platforms: [macOS, iOS, iPadOS, tvOS, visionOS, watchOS]
-
-- name: Apple Policy Explorer
-  url: https://appledevicepolicy.tools/policy-explorer
-  subcategory: Device Management
-  description: Searchable reference of Apple MDM and DDM policies with keys, supported platforms, deprecations and links to Apple's docs.
-  keywords: [ddm, mdm, payloads, declarative device management, configuration profile]
   platforms: [macOS, iOS, iPadOS, tvOS, visionOS, watchOS]
 
 - name: Apple Privacy
@@ -365,7 +351,7 @@
   keywords: [dma, eu, sideloading, core technology commission, browser engine]
   platforms: [iOS, iPadOS]
 
-- name: Contact Deployment Programs Support (APNs certificates)
+- name: Contact Apple about APNs certificates
   url: https://support.apple.com/118629
   subcategory: Deployment
   description: Phone numbers by country and an email address for Apple Deployment Programs Support, for help with APNs certificates.
@@ -413,12 +399,6 @@
   subcategory: Device Management
   description: Apple developer article on setting up and maintaining MDM connectivity with devices and adopting declarative device management.
   keywords: [mdm protocol, ddm, check-in, apns, enrollment]
-
-- name: 'File radars early and often: The importance of feedback (iMore)'
-  url: https://www.imore.com/radar-or-gtfo
-  subcategory: Beta & feedback
-  description: Rene Ritchie argues for filing bug reports through Feedback Assistant often, since duplicate reports help Apple prioritise fixes.
-  keywords: [radar, bug reporting, beta, duplicates, feedback]
 
 - name: Get started with your Mac
   url: https://support.apple.com/guide/mac-help/get-started-with-your-mac-mchl3a2c2cb0/mac
@@ -569,14 +549,7 @@
   keywords: [duns, d-u-n-s, abm enrollment, apple developer program, organization verification]
 
 - name: Use Apple products on enterprise networks
-  url: https://support.apple.com/en-gb/101555
-  subcategory: Networking
-  description: Apple's list of hosts, ports and protocols devices need for setup, MDM, updates and iCloud, for firewall and proxy rules.
-  keywords: [firewall, proxy, apns, ssl inspection, allowlist, ports]
-  platforms: [macOS, iOS, iPadOS, tvOS, watchOS, visionOS]
-
-- name: Use Apple products on enterprise networks
-  url: https://support.apple.com/HT210060
+  url: https://support.apple.com/en-us/101555
   subcategory: Networking
   description: Apple's list of hosts, ports and protocols devices need for setup, MDM, updates and iCloud, for firewall and proxy rules.
   keywords: [firewall, proxy, apns, ssl inspection, allowlist, ports]

@@ -3,11 +3,12 @@
   description: News site covering Apple products, software releases and rumours throughout the day.
   keywords: [apple news, rumors, ios, breaking news]
 
-- name: Apple Community Bookmarks
-  url: https://github.com/cbookmarks/bookmarks/blob/main/Apple_Community_Bookmarks.html
+- name: A list of Apple-related RSS feeds (Jeff Johnson)
+  url: https://lapcatsoftware.com/articles/RSS.html
   subcategory: Feeds
-  description: Importable browser bookmarks file of Apple deployment, management, security, community and admin tool links, organised in folders.
-  keywords: [bookmarks, netscape bookmark file, import, link collection, resources]
+  description: 'Jeff Johnson''s list of Apple-related RSS feeds: Apple newsroom and developer feeds, WebKit, Xcode releases and Apple news sites.'
+  keywords: [rss, feed list, lapcat, webkit, apple developer]
+  tags: [rss]
 
 - name: Apple News
   url: https://developer.apple.com/news/releases/rss/releases.rss
@@ -22,13 +23,6 @@
   subcategory: Feeds
   description: AWS Health Dashboard showing the current status and incident history of AWS services by region, with per-service RSS feeds.
   keywords: [aws, status page, outage, service health, rss]
-
-- name: General Tech RSS List
-  url: https://lapcatsoftware.com/articles/RSS.html
-  subcategory: Feeds
-  description: 'Jeff Johnson''s list of Apple-related RSS feeds: Apple newsroom and developer feeds, WebKit, Xcode releases and Apple news sites.'
-  keywords: [rss, feed list, lapcat, webkit, apple developer]
-  tags: [rss]
 
 - name: HCS White Papers
   url: https://hcsonline.com/support/resources/white-papers?format=feed&catid=43
@@ -52,15 +46,3 @@
   url: https://www.macrumors.com/
   description: Apple news and rumours site with forums, a buyer's guide, how-to guides, deals and a podcast.
   keywords: [apple news, rumors, forums, buyers guide]
-
-- name: MacSurfer
-  url: https://www.macsurfer.com/
-  description: Headline aggregator of Apple and Mac news from many outside sites, grouped by category, with RSS feeds.
-  keywords: [aggregator, headlines, apple news, rss]
-
-- name: NHS Digital Cyber Alerts Feed
-  url: https://digital.nhs.uk/feed/cyber-alerts-feed.xml
-  subcategory: Feeds
-  description: NHS England Digital's RSS feed of cyber security alerts on vulnerabilities in widely used software, with severity ratings.
-  keywords: [nhs, cyber alerts, cve, vulnerabilities, rss, threat intelligence]
-  tags: [rss]

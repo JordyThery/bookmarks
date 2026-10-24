@@ -40,12 +40,6 @@
   description: Jamf's community forum for Apple admins, with discussions, user groups, Product Office Hours, a job board and the Tech Thoughts blog.
   keywords: [forum, jamf pro, jamf school, user groups, jnuc, support]
 
-- name: Jamf Tech Thoughts
-  url: https://community.jamf.com/tech-thoughts-180
-  subcategory: User groups & organisations
-  description: Community blog on Jamf Nation where Apple admins and Jamf staff share hands-on experience with Jamf and macOS management.
-  keywords: [jamf nation, blog, jamf pro, community posts]
-
 - name: Jamf User Groups
   url: https://community.jamf.com/p/user-groups
   subcategory: User groups & organisations
@@ -91,12 +85,6 @@
   cost: open-source
 
 - name: Mac Admins Slack
-  url: https://macadmins.slack.com/
-  subcategory: Slack & social
-  description: Mac Admins Slack workspace, where Apple device admins discuss management, tools and vendors in topic and regional channels.
-  keywords: [slack, chat, community, channels]
-
-- name: Mac Admins Slack - Join/Invite
   url: https://macadmins.org/community/slack/
   subcategory: Slack & social
   description: Mac Admins Foundation page on how to join the Mac Admins Slack, the community's chat workspace for Apple device admins.
@@ -120,12 +108,6 @@
   description: Jamf Nation group for Apple admins and techs who gather in Scotland to share knowledge and troubleshoot together.
   keywords: [user group, jamf nation, scotland, uk, meetup]
 
-- name: MacAdmins Slack
-  url: https://join.slack.com/t/macadmins/shared_invite/zt-3ok3rukoj-ziZeIXzbqP~_65HM3R53Yw
-  subcategory: Slack & social
-  description: Shared invite link for joining the Mac Admins Slack workspace.
-  keywords: [slack, invite, join, community]
-
 - name: Microsoft Mac Admins
   url: https://www.linkedin.com/groups/13007354/
   subcategory: Slack & social
@@ -137,12 +119,6 @@
   subcategory: User groups & organisations
   description: Microsoft Tech Community space where Mac admins discuss deploying and managing Microsoft 365 apps, Defender and Intune on macOS.
   keywords: [intune, microsoft 365, defender, tech community, office]
-
-- name: Mosyle Blog
-  url: https://business.mosyle.com/blog
-  subcategory: User groups & organisations
-  description: Mosyle's blog with articles on managing and securing Apple devices at work, from SSO and app management to BYOD and stolen Macs.
-  keywords: [mosyle business, byod, sso, google workspace, endpoint security]
 
 - name: Mr. Macintosh on X
   url: https://x.com/ClassicII_MrMac
