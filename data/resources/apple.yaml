@@ -81,6 +81,12 @@
   description: 'Members-only AppleSeed for IT resources: test plans, prerelease documentation and tools for evaluating beta software.'
   keywords: [appleseed, test plans, prerelease, feedback assistant, managed apple account]
 
+- name: Apple Business - Get apps and books
+  url: https://support.apple.com/guide/business/get-apps-and-books-axmc21817890/web
+  subcategory: Business
+  description: Apple Business guide to buying apps and books in volume and assigning them to users or devices.
+  keywords: [vpp, apps and books, volume purchase, licences, abm]
+
 - name: Apple Business Manager
   url: https://business.apple.com/
   subcategory: Business
@@ -88,16 +94,10 @@
   keywords: [abm, ade, vpp, managed apple account, apps and books]
   platforms: [macOS, iOS, iPadOS, tvOS, visionOS]
 
-- name: Apple Business Manager - Buying Content
-  url: https://support.apple.com/en-gb/guide/apple-business-manager/axme19b23f7f/1/web/1
+- name: Apple Business User Guide
+  url: https://support.apple.com/guide/business/welcome/web
   subcategory: Business
-  description: Apple Business Manager guide section on buying apps and books in volume and assigning them to users or devices.
-  keywords: [vpp, apps and books, volume purchase, licences, abm]
-
-- name: Apple Business Manager User Guide
-  url: https://support.apple.com/guide/apple-business-manager/welcome/web
-  subcategory: Business
-  description: Apple's user guide for Apple Business Manager, covering device enrollment, Managed Apple Accounts, roles and apps.
+  description: 'Apple''s user guide for Apple Business (formerly Apple Business Manager): device enrollment, Managed Apple Accounts, roles and apps.'
   keywords: [abm, ade, managed apple account, federation, vpp]
 
 - name: Apple Configurator Support
@@ -108,7 +108,7 @@
   platforms: [macOS, iOS, iPadOS, tvOS]
 
 - name: Apple Declarations of Conformity
-  url: https://www.apple.com/euro/compliance/
+  url: https://regulatoryinfo.apple.com/eurocompliance
   subcategory: RFP Materials
   description: Apple's EU regulatory information site with declarations of conformity and environmental data for its devices.
   keywords: [ce marking, doc, eu compliance, rfp, regulatory]
@@ -247,13 +247,6 @@
   description: Apple portal for creating and renewing the APNs certificate an on-premises or third-party MDM server needs to reach devices.
   keywords: [apns, mdm, push certificate, renewal, jamf pro]
 
-- name: Apple RSS Information
-  url: https://www.apple.com/rss/
-  subcategory: The basics
-  description: Apple's index of RSS feeds; the URL now serves the apple.com homepage with no feed links.
-  keywords: [rss, feeds, newsroom, subscribe, news]
-  tags: [rss]
-
 - name: Apple School Manager
   url: https://school.apple.com/
   subcategory: Education
@@ -292,7 +285,7 @@
   keywords: [cve, advisories, patching, notifications, vulnerabilities]
 
 - name: Apple Supply Chain
-  url: https://www.apple.com/supplier-responsibility/
+  url: https://www.apple.com/supply-chain/
   subcategory: RFP Materials
   description: 'Apple''s supply chain overview: Supplier Code of Conduct, audits, worker rights, health and safety and environmental programs.'
   keywords: [rfp, supplier responsibility, csr, human rights, esg]
@@ -416,7 +409,7 @@
   platforms: [iOS, iPadOS, macOS, tvOS, watchOS, visionOS]
 
 - name: Device management essentials (Apple Developer Documentation)
-  url: https://developer.apple.com/documentation/devicemanagement/implementing_device_management
+  url: https://developer.apple.com/documentation/devicemanagement/device-management-essentials
   subcategory: Device Management
   description: Apple developer article on setting up and maintaining MDM connectivity with devices and adopting declarative device management.
   keywords: [mdm protocol, ddm, check-in, apns, enrollment]
@@ -557,16 +550,16 @@
   cost: paid
 
 - name: TCP and UDP ports used by Apple software products
-  url: https://support.apple.com/HT202944
+  url: https://support.apple.com/en-us/103229
   subcategory: Networking
   description: Apple's table of the network ports and protocols that macOS, iOS and iCloud services use, for firewall and proxy rules.
   keywords: [firewall allowlist, network ports, apns, network requirements, proxy]
   platforms: [macOS, iOS]
 
-- name: Transfer Apple services when federating
-  url: https://support.apple.com/guide/apple-business-manager/transfer-apple-services-when-federating-axm6603d9206/web
+- name: Transfer Apple services (Apple Business)
+  url: https://support.apple.com/guide/business/transfer-apple-services-axm6603d9206/web
   subcategory: Deployment
-  description: Apple Business Manager article on handling existing accounts and Apple services when federating a domain with Entra ID or Google Workspace.
+  description: Apple Business guide to moving existing accounts and Apple services to Managed Apple Accounts when claiming or federating a domain.
   keywords: [abm, federation, managed apple account, domain conflict, sso, azure ad]
 
 - name: UPIK® platform - Dun & Bradstreet

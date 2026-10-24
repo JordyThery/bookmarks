@@ -71,7 +71,7 @@
   keywords: [user group, meetup, map, local groups]
 
 - name: Mac Admins Foundation
-  url: https://www.macadmins.org/about-the-mac-admins-foundation
+  url: https://macadmins.org/about/
   subcategory: User groups & organisations
   description: 501(c)(3) non-profit that runs the Mac Admins Slack and funds conference, travel and speaker grants and a mentorship programme.
   keywords: [nonprofit, 501c3, slack, grants, board]
@@ -97,7 +97,7 @@
   keywords: [slack, chat, community, channels]
 
 - name: Mac Admins Slack - Join/Invite
-  url: https://macadmins.org/slack
+  url: https://macadmins.org/community/slack/
   subcategory: Slack & social
   description: Mac Admins Foundation page on how to join the Mac Admins Slack, the community's chat workspace for Apple device admins.
   keywords: [slack, invite, join, community]

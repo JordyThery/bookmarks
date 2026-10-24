@@ -206,7 +206,7 @@
   platforms: [macOS]
 
 - name: Objective-See Blog
-  url: https://objective-see.com/blog.html
+  url: https://objective-see.org/blog.html
   description: Objective-See's blog of macOS malware analysis, vulnerability research and write-ups on its security tools.
   keywords: [patrick wardle, malware analysis, vulnerability research, security]
   platforms: [macOS]
@@ -252,11 +252,6 @@
   url: https://scriptingosx.com/
   description: Armin Briegel’s blog on shell scripting and macOS management.
   keywords: [armin briegel, macadmins.news, packaging]
-
-- name: Sound Mac Guy - Neil Martin
-  url: https://soundmacguy.wordpress.com/
-  description: Neil Martin's old WordPress.com blog on managing Apple devices; it now points to soundmacguy.org.uk.
-  keywords: [terraform, abm api, jamf pro, sofa]
 
 - name: Travelling Tech Guy
   url: https://travellingtechguy.blog/

@@ -23,9 +23,9 @@
   platforms: [macOS, iOS, iPadOS, visionOS]
   cost: open-source
 
-- name: NIST macOS Security Compliance Project
-  url: https://csrc.nist.gov/publications/detail/sp/800-219/final
-  description: NIST Special Publication 800-219 describing the mSCP and how to use its automated macOS secure configuration baselines.
+- name: NIST SP 800-219 Rev. 1 (macOS Security Compliance Project)
+  url: https://csrc.nist.gov/pubs/sp/800/219/r1/final
+  description: NIST Special Publication 800-219 Rev. 1 describing the mSCP and how to use its automated macOS secure configuration baselines.
   keywords: [sp 800-219, mscp, nist, hardening, baseline]
   platforms: [macOS]
 

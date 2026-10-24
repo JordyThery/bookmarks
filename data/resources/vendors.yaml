@@ -71,12 +71,6 @@
   description: Jamf's feature request portal where customers submit and vote on product ideas for Jamf Pro, Jamf School and other products.
   keywords: [feature request, ideas, roadmap, jamf pro, voting]
 
-- name: Jamf GitHub
-  url: https://jamf.github.io
-  subcategory: Jamf
-  description: Jamf's engineering hub, with the Jamf engineering blog and links to Jamf's open-source projects.
-  keywords: [open source, github, jamf pro, engineering]
-
 - name: Jamf Harbor
   url: https://jamf-view.highspot.com/viewer/653923584f6a00c37fcc37ca
   subcategory: Jamf
@@ -85,7 +79,7 @@
   platforms: [macOS]
 
 - name: Jamf Heroes
-  url: https://community.jamf.com/t5/jamf-heroes-customers/gh-p/JamfHeroesCustomers
+  url: https://community.jamf.com/p/jamf-heroes
   subcategory: Jamf
   description: Jamf's recognition programme for Jamf Nation members who contribute answers, content and feedback to the community.
   keywords: [jamf nation, advocacy, community, recognition]

@@ -46,7 +46,7 @@
   cost: open-source
 
 - name: Amphetamine
-  url: https://itunes.apple.com/app/amphetamine/id937984704?mt=12
+  url: https://apps.apple.com/us/app/amphetamine/id937984704?mt=12
   subcategory: Productivity
   description: Menu bar keep-awake app that stops a Mac or its displays sleeping, manually or via triggers such as apps, displays or Wi-Fi.
   keywords: [caffeinate, keep awake, prevent sleep, menu bar, mac app store]
@@ -142,14 +142,6 @@
 
 - name: Bezel
   url: https://nonstrict.eu/bezel/
-  subcategory: Productivity
-  description: Mac app that mirrors and records an iPhone, iPad or Apple TV screen over AirPlay or USB, with device frames for demos.
-  keywords: [screen mirroring, airplay, screen recording, demo, presentation]
-  platforms: [macOS]
-  cost: freemium
-
-- name: Bezel
-  url: https://getbezel.app
   subcategory: Productivity
   description: Mac app that mirrors and records an iPhone, iPad or Apple TV screen over AirPlay or USB, with device frames for demos.
   keywords: [screen mirroring, airplay, screen recording, demo, presentation]
@@ -252,7 +244,7 @@
   cost: open-source
 
 - name: The Eclectic Light Company - Freeware Menu
-  url: https://eclecticlightdotcom.files.wordpress.com/2021/06/appselectionchart0621.pdf
+  url: https://eclecticlight.co/wp-content/uploads/2021/06/appselectionchart0621.pdf
   subcategory: Utilities
   description: PDF chart of Howard Oakley's free macOS utilities by task, from security and logs to keychains and command tools.
   keywords: [howard oakley, silentknight, ulbow, freeware, logs]
@@ -298,7 +290,7 @@
   platforms: [macOS]
 
 - name: Giphy Capture
-  url: https://itunes.apple.com/us/app/giphy-capture-the-gif-maker/id668208984?mt=12
+  url: https://apps.apple.com/us/app/giphy-capture-the-gif-maker/id668208984?mt=12
   subcategory: Productivity
   description: Records part of the screen and turns it into a looping GIF, with trimming, frame-rate control and captions.
   keywords: [gif, screen recording, screencast, documentation, mac app store]
@@ -306,7 +298,7 @@
   cost: free
 
 - name: Google Keep
-  url: https://www.google.com/keep/
+  url: https://workspace.google.com/products/keep/
   subcategory: Productivity
   description: Google's note-taking app for notes, checklists, photos, drawings and audio, with reminders, labels and sync across devices.
   keywords: [notes, checklists, reminders, google workspace, note taking]
@@ -386,18 +378,9 @@
   cost: open-source
 
 - name: Jamf Compliance Editor
-  url: https://trusted.jamf.com/docs/en/establishing-compliance-baselines?highlight=undefined
+  url: https://concepts.jamf.com/concepts/jamf-compliance-editor/
   subcategory: Jamf
-  description: Guide to Jamf Compliance Editor, a free mSCP-based app that builds CIS, NIST and STIG baselines with profiles, scripts and EAs.
-  keywords: [mscp, cis, nist, stig, compliance, baselines]
-  platforms: [macOS, iOS, iPadOS, visionOS]
-  works_with: [jamf]
-  cost: free
-
-- name: Jamf Compliance Editor
-  url: https://trusted.jamf.com/docs/establishing-compliance-baselines
-  subcategory: Jamf
-  description: Guide to Jamf Compliance Editor, a free mSCP-based app that builds CIS, NIST and STIG baselines with profiles, scripts and EAs.
+  description: Free mSCP-based Jamf app that builds CIS, NIST and STIG baselines as profiles, scripts and extension attributes.
   keywords: [mscp, cis, nist, stig, compliance, baselines]
   platforms: [macOS, iOS, iPadOS, visionOS]
   works_with: [jamf]
@@ -459,15 +442,6 @@
   platforms: [macOS]
   works_with: [jamf]
 
-- name: Jamf Migrator
-  url: https://github.com/jamf/JamfMigrator
-  subcategory: Jamf
-  description: Jamf's macOS app that exports, uploads, updates or deletes objects to copy configuration between Jamf Pro servers.
-  keywords: [migration, replicator, tenant, export, jamf pro api]
-  platforms: [macOS]
-  works_with: [jamf]
-  cost: open-source
-
 - name: Jamf Open Source
   url: https://github.com/jamf
   subcategory: Jamf
@@ -475,8 +449,8 @@
   keywords: [pppc utility, aftermath, setup manager, depnotify, open source]
   works_with: [jamf]
 
-- name: Jamf Platform Terraform Provider
-  url: https://github.com/Jamf-Concepts/terraform-jamf-platform
+- name: Jamf Platform Terraform Reference
+  url: https://github.com/Jamf-Concepts/terraform-jamf-reference
   subcategory: Jamf
   description: Terraform configurations that build Jamf Pro and Jamf Security Cloud setups from optional modules, including CIS and STIG baselines.
   keywords: [terraform, infrastructure as code, jamf security cloud, cis, opentofu]
@@ -532,7 +506,7 @@
   works_with: [jamf]
 
 - name: Jamf Setup Manager
-  url: https://github.com/Jamf-Concepts/Setup-Manager
+  url: https://github.com/jamf/Setup-Manager
   subcategory: Onboarding
   description: Enrollment-time onboarding app for Jamf Pro and Jamf School.
   keywords: [ade, setup assistant, enrollment, depnotify, provisioning]
@@ -785,7 +759,7 @@
   tags: [http-only]
 
 - name: Pareto Security
-  url: https://paretosecurity.app/
+  url: https://paretosecurity.com/
   subcategory: Security & identity
   description: Read-only app that checks laptop security settings like disk encryption, firewall and updates, with an optional cloud dashboard.
   keywords: [compliance, filevault, firewall, soc 2, iso 27001, byod]
@@ -901,14 +875,6 @@
   subcategory: Scripts & references
   description: Reference of pure bash techniques for common tasks, replacing external tools like sed, awk, head and tail in scripts.
   keywords: [shell scripting, string manipulation, reference, snippets]
-  archived: true
-
-- name: Push Diagnostics
-  url: https://twocanoes.com/products/mac/push-diagnostics/
-  subcategory: Inspection
-  description: Discontinued Twocanoes app for testing Apple push notification connectivity; the vendor points to its Mac Evaluation Tool instead.
-  keywords: [apns, push notifications, mdm, connectivity, twocanoes, troubleshooting]
-  platforms: [macOS]
   archived: true
 
 - name: Recategorizer
@@ -1046,14 +1012,6 @@
   subcategory: Utilities
   description: Machine-readable feed of Apple OS releases, CVEs and supported devices.
   keywords: [software updates, json feed, rss, security releases, patching, macadmins open source]
-  platforms: [macOS, iOS, iPadOS, tvOS, visionOS, watchOS]
-  cost: open-source
-
-- name: SOFA - Simple Organized Feed for Apple Software Updates
-  url: https://macadmins.github.io/sofa/
-  subcategory: Software updates
-  description: Machine-readable feed of Apple OS releases, CVEs and supported devices.
-  keywords: [software updates, json feed, rss, security releases, patching]
   platforms: [macOS, iOS, iPadOS, tvOS, visionOS, watchOS]
   cost: open-source
 
@@ -1230,7 +1188,7 @@
   cost: paid
 
 - name: Xcode
-  url: https://itunes.apple.com/us/app/xcode/id497799835?mt=12
+  url: https://apps.apple.com/us/app/xcode/id497799835?mt=12
   subcategory: Editors
   description: Apple's IDE for building apps for all Apple platforms, with Swift, SwiftUI, simulators, Instruments and command-line tools.
   keywords: [ide, swiftui, developer tools, mac app store]

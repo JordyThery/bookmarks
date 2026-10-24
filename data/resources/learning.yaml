@@ -49,11 +49,6 @@
   works_with: [jamf]
   cost: paid
 
-- name: MacAdmin.info (Start Here)
-  url: https://www.macadmin.info/
-  description: Former Mac admin starting-point site; the domain now redirects to an expired-domain listing.
-  keywords: [getting started, beginner, resources]
-
 - name: MacAdmins Documentation
   url: https://macadminsdoc.readthedocs.io/en/master/
   description: Community-written Mac admin documentation on packaging, macOS installation and configuration, Jamf Pro, AirWatch, Puppet and security.
