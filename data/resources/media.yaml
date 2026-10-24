@@ -1,136 +1,210 @@
 - name: Academia Group
   url: https://www.youtube.com/@AcademiaGroup
   subcategory: Video
+  description: YouTube channel of Academia Group, an IT solutions provider for education, charities and business, with Apple and iPad content.
+  keywords: [appleeduchat, ipad, education, edtech, academia]
 
 - name: Addigy
   url: https://www.youtube.com/@addigy
   subcategory: Video
+  description: 'Addigy''s YouTube channel for its cloud Apple device management platform: asset management, monitoring, remediation and deployment.'
+  keywords: [mdm, msp, webinars, software deployment, monitoring]
 
 - name: Apple @ Work
   url: https://podcasts.apple.com/us/podcast/apple-work/id1500332802
   subcategory: Podcasts
+  description: 9to5Mac podcast where Bradley Chambers and guests discuss Apple in the enterprise and in K-12 education.
+  keywords: [9to5mac, bradley chambers, enterprise, k-12, mdm]
 
-- name: Apple @ Work on Apple Podcasts
+- name: Apple @ Work
   url: https://podcasts.apple.com/nl/podcast/apple-work/id1500332802
   subcategory: Podcasts
+  description: 9to5Mac podcast where Bradley Chambers and guests discuss Apple in the enterprise and in K-12 education.
+  keywords: [9to5mac, bradley chambers, enterprise, k-12, mdm]
 
 - name: The Apple Community Bookmarks
   url: https://github.com/cbookmarks/bookmarks/tree/main
   subcategory: Video
+  description: GitHub repository behind Community Bookmarks, the curated directory of resources for people who manage Apple devices.
+  keywords: [github, directory, links, resources, community bookmarks]
 
 - name: Command Control Power
   url: https://podcasts.apple.com/nl/podcast/command-control-power-apple-tech-support-business-talk/id668387622
   subcategory: Podcasts
+  description: Weekly podcast where three Apple Consultants Network veterans talk Apple tech support, MDM, security and running an IT business.
+  keywords: [acn, apple consultants network, msp, jamf, tech support]
 
 - name: Greater Philadelphia MacAdmins
   url: https://www.youtube.com/@phillymacadmins
   subcategory: Video
+  description: YouTube channel of Greater Philadelphia Mac Admins, a regional Mac admin user group.
+  keywords: [philadelphia, philly, user group, meetup, recordings]
 
 - name: The History of Computing on Apple Podcasts
   url: https://podcasts.apple.com/us/podcast/history-of-personal-computing/id1459717802
   subcategory: Podcasts
+  description: Retrocomputing podcast by David and Jeff on the history of personal computers, PDAs and smartphones, told through eBay auctions.
+  keywords: [retrocomputing, computer history, vintage, pda, ebay]
 
 - name: iJustine
   url: https://www.youtube.com/ijustine
   subcategory: Video
+  description: Justine Ezarik's YouTube channel of consumer tech unboxings and reviews, with frequent coverage of new Apple products.
+  keywords: [unboxing, reviews, iphone, consumer tech, youtuber]
 
 - name: India Apple Admins
   url: https://www.youtube.com/@indiamacadmins
   subcategory: Video
+  description: Tutorials, expert advice and meetup recaps on administering Apple devices with Jamf and Intune, from India's Apple admin community.
+  keywords: [india, jamf, intune, mdm, tutorials]
+  platforms: [macOS, iOS]
 
 - name: Iru
   url: https://www.youtube.com/@KandjiOfficial
   subcategory: Video
+  description: YouTube channel of Iru, formerly Kandji, the Apple device management and endpoint security platform.
+  keywords: [kandji, mdm, endpoint security, webinars, demos]
 
 - name: Jamf
   url: https://www.youtube.com/@JAMFMedia
   subcategory: Video
+  description: Jamf's official YouTube channel covering Apple device management, endpoint security, zero trust access and education.
+  keywords: [jamf pro, jamf protect, jamf connect, jnuc, ztna]
 
 - name: Jamf After Dark
   url: https://podcasts.apple.com/us/podcast/jamf-after-dark/id1434572611?mt=2
   subcategory: Podcasts
+  description: Jamf podcast where IT leaders, security pros and Apple experts discuss device management, endpoint security and identity.
+  keywords: [jamf pro, jamf threat labs, platform sso, jnuc, security]
+  works_with: [jamf]
 
 - name: Jamf After Dark
   url: https://jamfafterdark.libsyn.com/
   subcategory: Podcasts
+  description: Libsyn episode archive of Jamf After Dark, the Jamf podcast on Apple device management, identity and industry news.
+  keywords: [jamf pro, platform sso, jnuc, libsyn, episodes]
+  works_with: [jamf]
 
 - name: Jigsaw24 - Keep IT Talking
   url: https://podcasts.apple.com/gb/podcast/the-jigsaw24-edtech-podcast/id1687318316
   subcategory: Podcasts
+  description: Jigsaw24's education technology podcast with advice for educators on iPad, coding and robotics, AI and Apple Distinguished Schools.
+  keywords: [jigsaw24, edtech, education, ipad, showbie]
 
 - name: JNUC 2025
   url: https://www.youtube.com/playlist?list=PLlxHm_Px-Ie0DkjJe6xzYhFhwIn2SUhHJ
   subcategory: Video
+  description: Jamf's YouTube playlist of session and keynote recordings from the Denver edition of JNUC, Jamf's user conference.
+  keywords: [jamf nation user conference, jnuc, keynote, jamf pro, sessions]
+  works_with: [jamf]
 
 - name: Keeping IT Talking
   url: https://podcasts.apple.com/gb/podcast/keeping-it-talking/id1843864440
   subcategory: Podcasts
+  description: Jigsaw24 podcast interviewing IT leaders and trainers about their careers, Apple in the enterprise, AI, cloud and security.
+  keywords: [jigsaw24, it careers, leadership, enterprise, uk]
 
 - name: London Apple Admins
   url: https://www.youtube.com/@londonappleadmins
   subcategory: Video
+  description: Recordings of talks from London Apple Admins meetups.
+  keywords: [london, laa, meetup, uk, user group]
 
 - name: Mac Admins Europe
   url: https://www.youtube.com/@MacAdminsEU
   subcategory: Video
+  description: Session recordings from the Mac Admins Europe conference on Apple device management, security, automation and identity.
+  keywords: [macadmins eu, conference, leiden, mdm, automation]
 
 - name: Mac Admins India
   url: https://www.youtube.com/channel/UCCXssSduB96r1OtRB4ipCVg
   subcategory: Video
+  description: Recordings of events and tech sessions from the MacAdmins community in India.
+  keywords: [india, macadmins.in, connect, meetup, conference]
 
 - name: Mac Admins Podcast
   url: https://podcasts.apple.com/nl/podcast/mac-admins-podcast/id1097430326
   subcategory: Podcasts
+  description: Weekly podcast where a rotating panel of Mac admins and guests discuss the news and challenges of managing Apple devices.
+  keywords: [tom bridge, macadmins.org, mdm, ddm, platform sso]
 
 - name: Mac Admins Podcast
   url: https://podcast.macadmins.org/
   subcategory: Podcasts
+  description: Home of the Mac Admins Podcast, a weekly show by Mac admins for Mac admins, with episode pages and summaries.
+  keywords: [macadmins.org, episodes, mdm, ddm, security]
 
 - name: MacAD.UK
   url: https://www.youtube.com/@MacADUK
   subcategory: Video
+  description: YouTube channel of MacAD.UK, the UK technical conference for Apple in enterprise and education.
+  keywords: [macaduk, conference, london, uk, sessions]
 
 - name: MacAdmins Conference
   url: https://www.youtube.com/@MacAdmins
   subcategory: Video
+  description: Session recordings from the MacAdmins Conference on deploying, managing and securing Macs and iOS devices.
+  keywords: [penn state, psu, conference, sessions, mdm]
 
 - name: MacAdmins India Connect 2026
   url: https://www.youtube.com/watch?v=2JFU6l_Hvh4&list=PLelcCocSewHs
   subcategory: Video
+  description: Opening session of Mac Admins India Connect, a Bengaluru conference for India's Apple IT community.
+  keywords: [india, bengaluru, conference, keynote]
 
 - name: MacAdmins Podcast
   url: https://podcasts.apple.com/us/podcast/macadmins-podcast/id1238495116
   subcategory: Podcasts
   description: Weekly show on Apple device management from the MacAdmins community.
+  keywords: [mdm, macadmins.org, news, interviews]
 
 - name: MacDevOpsYVR
   url: https://www.youtube.com/c/MDOYVR
   subcategory: Video
+  description: YouTube channel of MacDevOpsYVR, the yearly conference for Mac admins bringing DevOps practices into their IT work.
+  keywords: [devops, gitops, vancouver, conference, infosec]
 
 - name: Microsoft Intune
   url: https://www.youtube.com/@intuneforeducationcustomer4969
   subcategory: Video
+  description: YouTube channel of Microsoft's Intune for Education Customer Acceleration Team.
+  keywords: [intune for education, schools, endpoint manager, microsoft, education]
+  works_with: [intune]
 
 - name: Mr. Macintosh
   url: https://www.youtube.com/channel/UC7FRPWLwRlhORhFHHywfqAg
   subcategory: Video
+  description: Mac and macOS how-to videos on installers, recovery, DFU restores, Apple silicon and running macOS on older Macs.
+  keywords: [dfu, opencore legacy patcher, apple configurator, ipsw, recovery]
+  platforms: [macOS]
 
 - name: Rocketman Tech
   url: https://www.youtube.com/@RocketmanTech
   subcategory: Video
+  description: YouTube channel of Rocketman Tech, a Jamf consultancy, with content on Jamf Pro, scripting, enrollment and security.
+  keywords: [jamf pro, jamf connect, jamf protect, scripting, consulting]
+  works_with: [jamf]
 
 - name: Romina Gafur
   url: https://www.youtube.com/@romina
   subcategory: Video
+  description: Tech creator channel with gadget unboxings, tech hacks and productivity tips.
+  keywords: [unboxing, productivity, gadgets, tech hacks, consumer tech]
 
 - name: Toronto MacAdmins
   url: https://www.youtube.com/@TorontoMacadmins
   subcategory: Video
+  description: YouTube channel of Toronto Mac Admins, a Mac admin user group in Toronto.
+  keywords: [toronto, canada, user group, meetup, mdm]
 
 - name: Twin Cities Mac Admins
   url: https://www.youtube.com/@twincitiesmacadmins5763
   subcategory: Video
+  description: YouTube channel of Twin Cities Mac Admins, a Mac admin user group in Minneapolis-St. Paul.
+  keywords: [minneapolis, st paul, minnesota, user group, meetup]
 
 - name: University of Utah MacAdmins
   url: https://stream.lib.utah.edu/index.php?c=browse&m=results&q=%22mac+manager%22&cat=&sort=newest
   subcategory: Video
+  description: University of Utah video archive search listing recordings of its Mac Managers meetings for campus and regional Mac admins.
+  keywords: [university of utah, mac managers, meeting recordings, higher education, salt lake city]

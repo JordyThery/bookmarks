@@ -1,152 +1,271 @@
 - name: Anthony Darlow - Cant Script
   url: https://cantscript.com/
+  description: 'Anthony Darlow''s blog on Apple and Jamf admin with an education focus: Jamf School, its API, Setup Manager and Jamf Connect.'
+  keywords: [jamf school, education, app settings, ddm, setup manager, api]
 
 - name: AppleShare IT
   url: https://appleshare.it/
+  description: 'Mischa van der Bent''s blog on Apple IT: Apple Business Manager API, Jamf Pro package deployment and macOS virtualization.'
+  keywords: [abm, abm api, jamf pro, packages, virtualization, benelux]
 
 - name: Big Mac Admin
   url: https://bigmacadmin.wordpress.com
+  description: Trevor Sysock's blog on Mac onboarding, Installomator and swiftDialog scripting, the Baseline tool and UTM test VMs.
+  keywords: [installomator, swiftdialog, baseline, zero-touch, utm, second son consulting]
 
 - name: Bob Gendler
   url: https://boberito.medium.com/
+  description: Bob Gendler's Medium posts on macOS security, unified logging, compliance, configuration profiles and Apple Intelligence controls.
+  keywords: [mscp, compliance, unified logging, auditd, configuration profiles, jamf]
 
 - name: BOFA Browser Overview
   url: https://bofa.cocolabs.dev
+  description: Feed of current Chrome, Firefox, Edge and Safari versions for Mac admins tracking browser patching.
+  keywords: [browser versions, patching, chrome, edge, firefox, sofa]
+  platforms: [macOS]
+  cost: open-source
 
 - name: Cannonball - Tom Bridge
   url: https://tombridge.com/
+  description: Tom Bridge's personal blog mixing IT deployment strategy and Mac admin topics with civic writing and personal essays.
+  keywords: [tom bridge, macadmins podcast, deployment, os updates, essays]
 
 - name: Community Resources List (Jamf)
   url: https://community.jamf.com/tech-thoughts-180/community-is-valuable-a-list-of-my-favorite-community-resources-53430
   subcategory: Aggregators
+  description: 'Jamf Nation post listing starter resources for Mac admins: blogs, open-source tools, conferences, podcasts and Slack.'
+  keywords: [jamf nation, getting started, mac admins slack, conferences, podcasts, newcomers]
 
 - name: Dan K. Snelson (GitHub)
   url: https://github.com/dan-snelson
+  description: Dan K. Snelson's GitHub with Setup Your Mac, Mac Health Check, DDM OS Reminder and Jamf Pro and swiftDialog scripts.
+  keywords: [snelson.us, swiftdialog, jamf pro, ddm, self service, scripts]
 
 - name: Daz Wallace
   url: https://dazwallace.wordpress.com
+  description: London Apple admin's blog on Jamf Pro app deployment, moving devices between MDM services in ABM/ASM and macOS update testing.
+  keywords: [jamf pro, abm, asm, mdm migration, london apple admins, macad.uk]
 
 - name: Der Flounder
   url: https://derflounder.wordpress.com/
   description: Rich Trouton’s long-running blog on Mac administration.
+  keywords: [rich trouton, scripting, jamf pro, mdm, configuration profiles, troubleshooting]
 
 - name: The Eclectic Light Company
   url: https://eclecticlight.co/
   description: Howard Oakley’s deep dives into how macOS really works.
+  keywords: [xprotect, silentknight, unified log, apfs, troubleshooting, freeware]
 
 - name: Feedly Top Mac Admin Blogs
   url: https://feedly.com/i/top/mac-admin-blogs
   subcategory: Aggregators
+  description: Feedly's curated list of popular Mac admin blogs to follow by RSS in the Feedly reader.
+  keywords: [rss, feed reader, blog list, news]
 
 - name: Fraserhess
   url: https://macadmin.fraserhess.com/
+  description: Fraser Hess's notes from administering Macs, covering macOS, Jamf Pro, Dialpad and Cisco Secure Client.
+  keywords: [jamf pro, cisco secure client, dialpad, deployment, troubleshooting]
 
 - name: Graham Gilbert
   url: https://grahamgilbert.com/
+  description: Graham Gilbert's blog on infrastructure design, Terraform, AI in engineering and the path to staff engineer.
+  keywords: [terraform, infrastructure as code, sal, crypt, staff engineer]
 
 - name: HCS Technology Group White Papers
   url: https://hcsonline.com/support/resources/white-papers
+  description: HCS Technology Group's library of how-to articles on Jamf Pro, macOS, Apple devices, Microsoft 365, Entra ID, Addigy and Wi-Fi.
+  keywords: [jamf pro, entra id, addigy, how-to, apple consultant]
 
 - name: Intune - In Real Life
   url: https://www.intuneirl.com/
+  description: Somesh Pathak's blog on Microsoft Intune endpoint management, with deep dives on macOS, iOS, compliance, security and automation.
+  keywords: [microsoft intune, endpoint management, compliance, abm, somesh pathak]
+  works_with: [intune]
 
 - name: intunemacadmins
   url: https://www.intunemacadmins.com
+  description: 'Community playbook for managing Macs with Microsoft Intune: guides on ADE, Platform SSO, FileVault and DDM, plus a baseline and scripts.'
+  keywords: [microsoft intune, psso, filevault, ddm, baseline, ade]
+  platforms: [macOS]
+  works_with: [intune]
 
 - name: John Mahlman
   url: https://yearofthegeek.net
+  description: John Mahlman's blog "Year of The Geek", with posts on Jamf Pro administration, DEPNotify, MySQL setup and personal topics.
+  keywords: [jamf pro, depnotify, mysql, year of the geek]
 
 - name: Kevin M. Cox
   url: https://www.kevinmcox.com
+  description: 'Kevin M. Cox''s blog on Mac management: MDM migrations, Munki, Microsoft AutoUpdate, Fleet and Apple content caching.'
+  keywords: [munki, mdm migration, microsoft autoupdate, content caching, fleet]
 
 - name: Kitzy
   url: https://kitzy.com/
+  description: Kitzy's blog on endpoint management, Mac administration, GitOps, AutoPkg and Fleet, plus essays on tech careers and community.
+  keywords: [gitops, autopkg, fleet, endpoint management, devops]
 
 - name: Krypted
   url: https://krypted.com/
+  description: Long-running blog with how-tos on macOS, macOS Server, Jamf Pro, package signing, scripting and Apple command-line tools.
+  keywords: [charles edge, jamf pro, macos server, command line, package signing]
 
 - name: Laughter-as-a-Service
   url: https://snelson.us/
+  description: Dan K. Snelson's blog documenting his open-source macOS admin scripts such as Mac Health Check and DDM OS Reminder.
+  keywords: [dan snelson, mac health check, ddm os reminder, jamf pro, scripts]
+  platforms: [macOS]
 
 - name: Mac Connection Standards
   url: https://macattorney.com/MacConnectionStandards.pdf
+  description: PDF document titled Mac Connection Standards, hosted on macattorney.com.
+  keywords: [connection standards, pdf, macattorney]
 
 - name: MacAdmin Blogs via Feedspot
   url: https://bloggers.feedspot.com/mac_blogs/
   subcategory: Aggregators
+  description: FeedSpot's ranked list of Mac blogs such as MacRumors, 9to5Mac and MacStories, with follower counts and links to follow each one.
+  keywords: [feedspot, blog list, rss, mac news]
 
 - name: MacAdmin Musings - Scott Blake
   url: https://macadminmusings.com/
+  description: Scott Blake's blog on AutoPkg automation, Terraform, identity and running local LLMs on Apple silicon.
+  keywords: [autopkg, terraform, identity, llm, scott blake]
 
 - name: MacLabs
   url: https://maclabs.jazzace.ca/
+  description: Anthony Reimer's blog on running university arts Mac labs, AutoPkg and Jamf Pro packaging, and home of his Mac obsolescence chart.
+  keywords: [autopkg, jamf pro, computer labs, obsolescence chart, higher education]
 
 - name: Macmule
   url: https://macmule.com/
+  description: Blog on macOS management with Jamf, AutoPkg, PPPC and Full Disk Access, plus the author's tools such as Notifier and Jamf Auto Update.
+  keywords: [ben toms, jamf pro, autopkg, pppc, notifier]
 
 - name: Macnotes
   url: https://macnotes.wordpress.com/
+  description: 'Notebook-style blog on scripting the Jamf Pro and Jamf Platform APIs: bearer tokens, API roles and clients, pagination and proxies.'
+  keywords: [jamf pro api, bearer token, api roles, jamf platform api]
+  works_with: [jamf]
 
 - name: MacOS Adventures
   url: https://www.macosadventures.com/
+  description: Blog on macOS administration scripting, Activation Lock and update history, and home of the ScreenNudge and UnActivation Lock tools.
+  keywords: [activation lock, screennudge, scripting, rapid security response, system settings]
 
 - name: Managing OS X
   url: https://managingosx.wordpress.com/
+  description: Greg Neagle's blog on managing macOS fleets, centred on Munki releases, compatibility notes and conference talks.
+  keywords: [munki, greg neagle, software deployment, psu macadmins]
 
 - name: Microsoft Tools
   url: https://appledevicepolicy.tools/microsoft-apps
+  description: Tracks the current versions of macOS apps used in Intune fleets, such as Defender, Company Portal, Edge, Teams, Office, Chrome and Zoom.
+  keywords: [microsoft intune, version tracking, defender, company portal, patching]
+  platforms: [macOS]
+  works_with: [intune]
 
 - name: The Mitten Mac
   url: https://themittenmac.com/blog/
+  description: Notes on macOS incident response, threat hunting and reverse engineering, including the XNU kernel and Endpoint Security.
+  keywords: [incident response, threat hunting, endpoint security, xnu, jaron bradley]
+  platforms: [macOS]
 
 - name: MOD TITAN
   url: https://www.modtitan.com/
+  description: Dr. K's blog on Apple IT and Jamf Pro, covering software update blueprints, Self Service+ and setup screens, plus craft and hobby posts.
+  keywords:
+  - jamf pro
+  - blueprints
+  - self service+
+  - software updates
+  - emily kausalik
 
 - name: MOFA Microsoft Overview Feed
   url: https://mofa.cocolabs.dev
+  description: Lists current versions and release dates of Microsoft apps for Apple devices, standalone and App Store, including Office and Teams.
+  keywords: [microsoft office, teams, outlook, version tracking, patching]
+  platforms: [macOS, iOS]
+  cost: open-source
 
 - name: Mr. Macintosh
   url: https://mrmacintosh.com/
+  description: Tracks every macOS release, beta and security update, with installer and IPSW download lists and DFU restore guides.
+  keywords: [ipsw, dfu, macos installer, boardid, rsr, beta]
+  platforms: [macOS]
 
 - name: Neil Martin | Sound Mac Guy
   url: https://soundmacguy.org.uk
+  description: Neil Martin's blog on managing Apple devices, covering Jamf infrastructure as code, Terraform and the Apple School and Business Manager API.
+  keywords: [terraform, abm api, asm, jamf pro, infrastructure as code]
 
 - name: Objective-See
   url: https://objective-see.org/
+  description: Non-profit that makes free open-source macOS security tools, runs the OBTS conference and publishes The Art of Mac Malware.
+  keywords: [patrick wardle, malware, lulu, obts, endpoint security]
+  platforms: [macOS]
 
 - name: Objective-See Blog
   url: https://objective-see.com/blog.html
+  description: Objective-See's blog of macOS malware analysis, vulnerability research and write-ups on its security tools.
+  keywords: [patrick wardle, malware analysis, vulnerability research, security]
+  platforms: [macOS]
 
 - name: Open Source Malware
   url: https://opensourcemalware.com
+  description: Community threat-intelligence database of human-verified supply chain threats in open source package ecosystems such as npm.
+  keywords: [supply chain, npm, malicious packages, threat intelligence]
 
 - name: OSX Daily
   url: https://osxdaily.com
+  description: News, tips and how-to tutorials for Mac, iPhone and iPad users, covering macOS, iOS and iPadOS features and troubleshooting.
+  keywords: [tips, tutorials, troubleshooting, macos news]
 
 - name: Pat's Blog - Patrick Phang
   url: https://www.patrickphang.nl/
+  description: Patrick Phang's personal blog on EVs, aquariums and home automation, with some work posts such as a Jamf Security Cloud SIEM guide.
+  keywords: [jamf security cloud, siem, home automation, patrick phang]
 
 - name: Patch Notes & Progress - Tony Young
   url: https://tonyyo11.github.io/
+  description: 'Tony Young''s blog on macOS management and security compliance: mSCP baselines, Platform SSO, Jamf Pro and jamf-cli tooling.'
+  keywords: [mscp, compliance, psso, jamf pro, jamf-cli]
+  platforms: [macOS]
 
 - name: Remember the Human
   url: https://talkingmoose.net/
+  description: William Smith's (talkingmoose) blog on people and technology, including Jamf conference session notes and consulting advice.
+  keywords: [talkingmoose, william smith, jamf, jnuc, consulting]
 
 - name: Rich Trouton - GitHub
   url: https://github.com/rtrouton
+  description: Rich Trouton's GitHub repos of macOS admin scripts, configuration profiles and tools for building macOS VM installers and Recovery.
+  keywords: [der flounder, rtrouton_scripts, configuration profiles, shell scripts, vm]
+  platforms: [macOS]
 
 - name: Richard Purves
   url: https://richard-purves.com/
+  description: Richard Purves' blog, mostly on Jamf Pro and Apple device management, with posts on film, travel and gaming.
+  keywords: [jamf pro, richard purves, scripting, os x]
 
 - name: Scripting OS X
   url: https://scriptingosx.com/
   description: Armin Briegel’s blog on shell scripting and macOS management.
+  keywords: [armin briegel, macadmins.news, packaging]
 
 - name: Sound Mac Guy - Neil Martin
   url: https://soundmacguy.wordpress.com/
+  description: Neil Martin's old WordPress.com blog on managing Apple devices; it now points to soundmacguy.org.uk.
+  keywords: [terraform, abm api, jamf pro, sofa]
 
 - name: Travelling Tech Guy
   url: https://travellingtechguy.blog/
+  description: Blog of macOS and iOS workflows with Jamf Pro and Jamf Connect, covering FileVault, Secure Tokens, certificates and Azure AD.
+  keywords: [jamf connect, jamf pro, filevault, secure token, azure ad]
+  platforms: [macOS, iOS]
+  works_with: [jamf]
 
 - name: What The Mac?!
   url: https://grahamrpugh.com/
+  description: 'Graham Pugh''s blog on Mac admin topics: AutoPkg, JamfUploader, Jamf tooling, PLIST and YAML conversion, and macOS update behaviour.'
+  keywords: [autopkg, jamfuploader, jamf pro, graham pugh]
