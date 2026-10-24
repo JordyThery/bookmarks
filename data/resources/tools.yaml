@@ -48,7 +48,7 @@
   cost: free
 
 - name: App-Auto-Patch
-  url: https://github.com/App-Auto-Patch/App-Auto-Patch
+  url: https://www.appautopatch.app/
   subcategory: App management
   description: Finds installed apps and updates them via Installomator, with swiftDialog prompts, deferrals and silent background patching.
   keywords: [installomator, swiftdialog, patching, patch management, aap]
