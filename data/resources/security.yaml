@@ -1,0 +1,47 @@
+- name: Apple Allowed Autofill Domains
+  url: https://github.com/b0o/apple-autofill-domains
+
+- name: Apple CVE
+  url: https://apple-cve.com
+
+- name: Apple Platform Certifications - Apple Support
+  url: https://support.apple.com/guide/certifications/welcome/web
+
+- name: Apple Platform Security - Apple Support
+  url: https://support.apple.com/guide/security/welcome/web
+  description: Apple’s official reference on hardware and software security.
+
+- name: Blog - Apple Security Research
+  url: https://security.apple.com/blog/
+
+- name: Bounty - Apple Security Research
+  url: https://security.apple.com/bounty/
+
+- name: CISA Known Exploited Vulnerabilities
+  url: https://www.cisa.gov/known-exploited-vulnerabilities-catalog
+
+- name: M.A.C.E. macOS Advanced Compliance Editor
+  url: https://github.com/mace-app/mace
+
+- name: macOS Security Compliance Project - Apple Support
+  url: https://support.apple.com/guide/certifications/macos-security-compliance-project-apc322685bb2/web
+
+- name: mSCP
+  url: https://pages.nist.gov/macos_security/
+
+- name: NIST macOS Security Compliance Project
+  url: https://csrc.nist.gov/publications/detail/sp/800-219/final
+
+- name: NIST Vulnerability Data Feeds (RSS)
+  url: https://nvd.nist.gov/vuln/data-feeds#RSS
+  tags: [rss]
+
+- name: Private Cloud Compute Security Guide | Documentation
+  url: https://security.apple.com/documentation/private-cloud-compute
+
+- name: Security-announce Info Page
+  url: https://lists.apple.com/mailman3/lists/security-announce.lists.apple.com/
+
+- name: SOFA (Security RSS)
+  url: https://sofa.macadmins.io/v1/rss_feed.xml
+  tags: [rss]

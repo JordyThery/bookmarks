@@ -1,0 +1,649 @@
+- name: ABM Warranty information query
+  url: https://apps.apple.com/be/app/abm-warranty/id6755319278
+  subcategory: Inspection
+
+- name: Add2ABM
+  url: https://github.com/Inetum-Poland/add2abm
+  subcategory: Utilities
+
+- name: ADEPT
+  url: https://git.tramscloud.co.uk/projects/XCOD/repos/adept/browse
+  subcategory: Utilities
+
+- name: Adobe Overview Feed for Apple
+  url: https://github.com/cocopuff2u/AOFA
+  subcategory: Utilities
+
+- name: Aftermath
+  url: https://github.com/jamf/aftermath
+  subcategory: Jamf
+
+- name: AirDrop Assistant
+  url: https://github.com/boberito/AirDropAssistant
+  subcategory: User environment
+
+- name: Amphetamine
+  url: https://itunes.apple.com/app/amphetamine/id937984704?mt=12
+  subcategory: Productivity
+
+- name: App-Auto-Patch
+  url: https://github.com/App-Auto-Patch/App-Auto-Patch
+  subcategory: App management
+
+- name: AppCleaner
+  url: https://freemacsoft.net/appcleaner/
+  subcategory: Utilities
+
+- name: Apperancy
+  url: https://www.mothersruin.com/software/Apparency/
+  subcategory: Inspection
+
+- name: Aurora Screen Shot
+  url: https://leo2008k.github.io/AuroraScreenShot
+  subcategory: Utilities
+
+- name: AutoPKG
+  url: https://github.com/autopkg/autopkg
+  subcategory: App management
+  description: Automates downloading and packaging app updates using community recipes.
+
+- name: AutoPkgr
+  url: https://github.com/lindegroup/autopkgr
+  subcategory: Packaging
+
+- name: Awesome MacAdmin Tools
+  url: https://github.com/smashism/awesome-macadmin-tools
+  subcategory: Scripts & references
+
+- name: AwesomeIntune - Intune Tools & PowerShell Scripts
+  url: https://github.com/ugurkocde/awesomeintune
+  subcategory: Intune
+
+- name: Baseline
+  url: https://github.com/secondsonconsulting/baseline
+  subcategory: Onboarding
+
+- name: Bash OneLiner
+  url: https://github.com/onceupon/Bash-Oneliner
+  subcategory: Scripts & references
+
+- name: BBEdit
+  url: https://www.barebones.com/products/bbedit/
+  subcategory: Editors
+
+- name: Bezel
+  url: https://nonstrict.eu/bezel/
+  subcategory: Productivity
+
+- name: Bezel
+  url: https://getbezel.app
+  subcategory: Productivity
+
+- name: Blueprint Managed Preferences Editor
+  url: https://github.com/JordyThery/Blueprint-Managed-Preferences-Editor
+  subcategory: Utilities
+
+- name: Bootstrap Buddy
+  url: https://github.com/Inetum-Poland/bootstrap-buddy
+  subcategory: Onboarding
+
+- name: Box of Apples
+  url: https://boa.decompiler.dev/
+  subcategory: Utilities
+
+- name: Browser Overview Feed for Apple
+  url: https://github.com/cocopuff2u/bofa
+  subcategory: Utilities
+
+- name: Checkpoint
+  url: https://github.com/JordyThery/Checkpoint
+  subcategory: Utilities
+
+- name: CoCoLabs by Cody Keats
+  url: https://cocolabs.dev/
+  subcategory: Utilities
+
+- name: CodeLobster
+  url: https://codelobster.com/
+  subcategory: Editors
+
+- name: Coderunner 4
+  url: https://coderunnerapp.com/download
+  subcategory: Editors
+
+- name: Composer
+  url: https://www.jamf.com/products/jamf-composer/
+  subcategory: Jamf
+
+- name: Dan Snelson Dialog scripts
+  url: https://github.com/dan-snelson/dialog-scripts
+  subcategory: User environment
+
+- name: Desktoppr
+  url: https://github.com/scriptingosx/desktoppr
+  subcategory: User environment
+  description: Sets the desktop picture from the command line.
+
+- name: Dockutil
+  url: https://github.com/kcrawford/dockutil/
+  subcategory: User environment
+  description: Command-line tool to add, remove and reorder Dock items.
+
+- name: The Eclectic Light Company - Freeware Menu
+  url: https://eclecticlightdotcom.files.wordpress.com/2021/06/appselectionchart0621.pdf
+  subcategory: Utilities
+
+- name: ELEVATE24
+  url: https://www.jigsaw24.com/solutions/automation-and-tooling/elevate24
+  subcategory: User environment
+
+- name: Erase Install
+  url: https://github.com/grahampugh/erase-install
+  subcategory: Software updates
+
+- name: Escrow Buddy
+  url: https://github.com/macadmins/escrow-buddy
+  subcategory: Security & identity
+  description: Generates a new FileVault recovery key so your MDM can escrow it.
+
+- name: Escrow Buddy Enhanced
+  url: https://github.com/MacJediWizard/escrow-buddy-enhanced
+  subcategory: Security & identity
+
+- name: getmacosipsws.py
+  url: https://github.com/munki/macadmin-scripts
+  subcategory: Packaging
+
+- name: Giphy Capture
+  url: https://itunes.apple.com/us/app/giphy-capture-the-gif-maker/id668208984?mt=12
+  subcategory: Productivity
+
+- name: Google Keep
+  url: https://www.google.com/keep/
+  subcategory: Productivity
+
+- name: Graham Pugh multitenant Jamf Pro tools
+  url: https://github.com/grahampugh/multitenant-jamf-tools
+  subcategory: Jamf
+
+- name: Hazmat
+  url: https://github.com/dredozubov/hazmat
+  subcategory: Security & identity
+
+- name: Hello-IT
+  url: https://github.com/ygini/Hello-IT
+  subcategory: Utilities
+  description: Customizable menu bar item for user self-service and status.
+
+- name: IBM Migration Tool
+  url: https://github.com/IBM/mac-ibm-migration-tool
+  subcategory: Jamf
+
+- name: iMazing Profile Editor
+  url: https://imazing.com/profile-editor
+  subcategory: Profiles & compliance
+  description: Create and edit configuration profiles with a full GUI.
+
+- name: Installomator
+  url: https://github.com/Installomator/Installomator
+  subcategory: App management
+
+- name: Intune Onboard
+  url: https://github.com/JordyThery/IntuneOnboard
+  subcategory: Intune
+
+- name: Iru / Kandji support repository
+  url: https://github.com/kandji-inc/support
+  subcategory: Iru / Kandji
+
+- name: Jamf Automation & Webhook Assistant (JAWA)
+  url: https://github.com/jamf/JAWA
+  subcategory: Jamf
+
+- name: Jamf Compliance Editor
+  url: https://trusted.jamf.com/docs/en/establishing-compliance-baselines?highlight=undefined
+  subcategory: Jamf
+
+- name: Jamf Compliance Editor
+  url: https://trusted.jamf.com/docs/establishing-compliance-baselines
+  subcategory: Jamf
+
+- name: Jamf Concepts
+  url: https://concepts.jamf.com/
+  subcategory: Jamf
+
+- name: Jamf Connect Monitor
+  url: https://github.com/MacJediWizard/Jamf-Connect-Monitor
+  subcategory: Jamf
+
+- name: Jamf Connect repository
+  url: https://github.com/jamf/jamfconnect
+  subcategory: Jamf
+
+- name: Jamf Custom Profile Schemas
+  url: https://github.com/Jamf-Custom-Profile-Schemas/
+  subcategory: Jamf
+
+- name: Jamf Extender
+  url: https://github.com/Jamf-Concepts/Jamf-Extender
+  subcategory: Jamf
+
+- name: Jamf Framework Redeploy
+  url: https://github.com/red5coder/Jamf-Framework-Redeploy
+  subcategory: Jamf
+
+- name: Jamf Mapper
+  url: https://github.com/ebiinsights/Jamf-Mapper
+  subcategory: Jamf
+
+- name: Jamf Migrator
+  url: https://github.com/jamf/JamfMigrator
+  subcategory: Jamf
+
+- name: Jamf Open Source
+  url: https://github.com/jamf
+  subcategory: Jamf
+
+- name: Jamf Platform Terraform Provider
+  url: https://github.com/Jamf-Concepts/terraform-jamf-platform
+  subcategory: Jamf
+
+- name: Jamf PPPC Utility
+  url: https://github.com/jamf/PPPC-Utility
+  subcategory: Jamf
+  description: Builds Privacy Preferences Policy Control (TCC) profiles.
+
+- name: Jamf Pro Policy Cheat Sheet
+  url: https://oit.ncsu.edu/help-support/apple/jamf-pro/jamf-pro-policy-cheat-sheet/#time
+  subcategory: Jamf
+
+- name: Jamf Protect repository
+  url: https://github.com/jamf/jamfprotect
+  subcategory: Jamf
+
+- name: Jamf Recipe Maker
+  url: https://grahamrpugh.com/2022/05/03/jamf-recipe-maker.html
+  subcategory: Jamf
+
+- name: Jamf Replicator
+  url: https://github.com/jamf/Replicator
+  subcategory: Jamf
+
+- name: Jamf Setup Checklist
+  url: https://github.com/Jamf-Concepts/setup-checklist
+  subcategory: Onboarding
+
+- name: Jamf Setup Manager
+  url: https://github.com/Jamf-Concepts/Setup-Manager
+  subcategory: Onboarding
+  description: Enrollment-time onboarding app for Jamf Pro and Jamf School.
+
+- name: JamfCheck
+  url: https://github.com/txhaflaire/JamfCheck
+  subcategory: Jamf
+
+- name: JamfDash - Michiel Devliegere
+  url: https://github.com/DevliegereM/JamfDash
+  subcategory: Jamf
+
+- name: Just Upgrade and Migrate to Intune
+  url: https://github.com/pathaksomesh06/JUMP-IN
+  subcategory: Intune
+
+- name: Low Profile
+  url: https://github.com/ninxsoft/LowProfile
+  subcategory: Inspection
+
+- name: MacAdmins Open Source (macadmins.io)
+  url: https://github.com/macadmins/macadmins.io
+  subcategory: Utilities
+
+- name: MacAdmins Tools
+  url: https://github.com/macadmins
+  subcategory: Utilities
+
+- name: MacDNA
+  url: https://github.com/jhbush/Arek/tree/master/Development/MacDNA%20Menulet
+  subcategory: Utilities
+
+- name: MacDown
+  url: https://macdown.uranusjr.com/
+  subcategory: Productivity
+
+- name: macOS Icons
+  url: https://macosicons.com
+  subcategory: Utilities
+
+- name: macOS Intune Support Assistant
+  url: https://github.com/pathaksomesh06/MISA
+  subcategory: Intune
+
+- name: macOS Security Compliance Project
+  url: https://github.com/usnistgov/macos_security
+  subcategory: Security & identity
+  description: NIST-led security baselines, scripts and profiles for macOS.
+
+- name: MacSaver Builder
+  url: https://github.com/GetInfo-ACN/MacSaverBuilder
+  subcategory: User environment
+
+- name: MDM Migrator
+  url: https://github.com/pathaksomesh06/MDM-Migrator
+  subcategory: Intune
+
+- name: Michael Epping presentations
+  url: https://github.com/mepples21/presentations
+  subcategory: Intune
+
+- name: Microsoft Intune Shell script examples
+  url: https://github.com/microsoft/shell-intune-samples
+  subcategory: Intune
+
+- name: Microsoft Office Feed for Apple
+  url: https://github.com/cocopuff2u/MOFA
+  subcategory: Utilities
+
+- name: MIST
+  url: https://github.com/ninxsoft/Mist
+  subcategory: Software updates
+  description: Downloads macOS installers and firmware for any version.
+
+- name: moss
+  url: https://github.com/WardsParadox/moss
+  subcategory: Utilities
+
+- name: Munki
+  url: https://github.com/munki/munki
+  subcategory: App management
+  description: Open-source software deployment and self-service catalog for macOS.
+
+- name: munkipkg
+  url: https://github.com/munki/munki-pkg
+  subcategory: Packaging
+
+- name: MUT
+  url: https://apps.apple.com/us/app/the-mut/id1133234759
+  subcategory: Jamf
+
+- name: Neil Martin Terraform Starter
+  url: https://github.com/neilmartin83/terraform-jamfpro-starter
+  subcategory: Jamf
+
+- name: Nexus Shell
+  url: https://nexusshell.app/
+  subcategory: Scripts & references
+
+- name: NoMAD
+  url: https://nomad.menu/products/#nomad
+  subcategory: Security & identity
+
+- name: Nova
+  url: https://nova.app/
+  subcategory: Editors
+
+- name: Nudge
+  url: https://github.com/macadmins/nudge
+  subcategory: Software updates
+  description: Prompts users to install macOS updates before a deadline you set.
+
+- name: Object Info
+  url: https://github.com/BIG-RAT/Object-Info
+  subcategory: Jamf
+
+- name: Octory
+  url: https://octory.io/
+  subcategory: Onboarding
+
+- name: Outset - Login/boot script framework
+  url: https://github.com/macadmins/outset
+  subcategory: Automation
+  description: Runs scripts and packages at boot and at login.
+
+- name: Packages - WhiteBox
+  url: http://s.sudre.free.fr/Software/Packages/about.html
+  subcategory: Packaging
+  tags: [http-only]
+
+- name: Pareto Security
+  url: https://paretosecurity.app/
+  subcategory: Security & identity
+
+- name: Particulars
+  url: https://particulars.app
+  subcategory: Inspection
+
+- name: Patchomator
+  url: https://github.com/Mac-Nerd/patchomator
+  subcategory: App management
+
+- name: Payload Free Package Creator
+  url: https://github.com/rtrouton/Payload-Free-Package-Creator
+  subcategory: Packaging
+
+- name: Payload Free Printer Package Creator
+  url: https://github.com/rtrouton/payload-free_package_printer_generator
+  subcategory: User environment
+
+- name: Pique - Quick Look extension
+  url: https://github.com/macadmins/pique
+  subcategory: Inspection
+
+- name: Plist Buddy Finder
+  url: https://github.com/8ta4/plist
+  subcategory: Inspection
+
+- name: Postman
+  url: https://www.postman.com/downloads/
+  subcategory: Productivity
+
+- name: PrefWatch
+  url: https://github.com/Gill0o/PrefWatch
+  subcategory: Utilities
+
+- name: PrinterSetup
+  url: https://github.com/mikaellofgren/PrinterSetup
+  subcategory: Onboarding
+
+- name: Profile2Blueprint
+  url: https://github.com/JordyThery/Profile2Blueprint
+  subcategory: Profiles & compliance
+
+- name: ProfileCreator
+  url: https://github.com/ProfileCreator/ProfileCreator
+  subcategory: Profiles & compliance
+
+- name: Prune
+  url: https://github.com/BIG-RAT/Prune
+  subcategory: Jamf
+
+- name: PSEUDO - Optimize PSSO registration
+  url: https://github.com/Macjutsu/pseudo
+  subcategory: Onboarding
+
+- name: Pure Bash Bible
+  url: https://github.com/dylanaraps/pure-bash-bible
+  subcategory: Scripts & references
+
+- name: Push Diagnostics
+  url: https://twocanoes.com/products/mac/push-diagnostics/
+  subcategory: Inspection
+
+- name: Recategorizer
+  url: https://github.com/sheagcraig/Recategorizer
+  subcategory: Utilities
+
+- name: Rectangle
+  url: https://rectangleapp.com/
+  subcategory: Productivity
+
+- name: Robbert Schroeder Jamf Pro Extention Attributes
+  url: https://github.com/robjschroeder/Jamf-Extension-Attributes
+  subcategory: Jamf
+
+- name: Root3 Support App
+  url: https://github.com/root3nl/SupportApp
+  subcategory: User environment
+
+- name: S.U.P.E.R.M.A.N.
+  url: https://github.com/Macjutsu/super
+  subcategory: Software updates
+  description: Script that manages and enforces macOS updates and upgrades.
+
+- name: SAP Icons
+  url: https://github.com/SAP/macOS-icon-generator
+  subcategory: Utilities
+
+- name: SAP Privileges
+  url: https://github.com/SAP/macOS-enterprise-privileges
+  subcategory: User environment
+  description: Lets standard users request temporary admin rights.
+
+- name: Save up to 25% PKG File Size
+  url: https://scriptingosx.com/2021/10/save-up-to-25-pkg-file-size-with-this-weird-monterey-trick/
+  subcategory: Packaging
+
+- name: School Assembly - Jamf School Mac onboarding
+  url: https://github.com/cantscript/SchoolAssembly
+  subcategory: Jamf
+
+- name: Scott Kendall Jamf Pro scripts
+  url: https://github.com/ScottEKendall/JAMF-Pro-Scripts
+  subcategory: Jamf
+
+- name: Script2Pkg
+  url: https://github.com/SAP/script-to-package-tool-for-macos
+  subcategory: Packaging
+
+- name: scriptorium
+  url: https://github.com/Honestpuck/scriptorium
+  subcategory: Scripts & references
+
+- name: Serial Number Reader
+  url: https://github.com/JordyThery/Serial-Number-Reader
+  subcategory: Utilities
+
+- name: Setup Your Mac
+  url: https://github.com/setup-your-mac/Setup-Your-Mac
+  subcategory: Onboarding
+  description: swiftDialog-based onboarding experience for Jamf Pro enrollments.
+
+- name: SF Icons
+  url: https://github.com/aanklewicz/SFIcons
+  subcategory: Utilities
+
+- name: Slack
+  url: https://slack.com/downloads/osx
+  subcategory: Productivity
+
+- name: SOFA
+  url: https://sofa.macadmins.io/
+  subcategory: Utilities
+  description: Machine-readable feed of Apple OS releases, CVEs and supported devices.
+
+- name: SOFA - Simple Organized Feed for Apple Software Updates
+  url: https://macadmins.github.io/sofa/
+  subcategory: Software updates
+
+- name: Stronghold
+  url: https://github.com/alichtman/stronghold
+  subcategory: Security & identity
+
+- name: Sublime Text
+  url: https://www.sublimetext.com/
+  subcategory: Editors
+
+- name: Support Companion
+  url: https://github.com/macadmins/supportcompanion
+  subcategory: Intune
+
+- name: SupportDiffs
+  url: https://mastodon.online/@SupportDiffs
+  subcategory: Utilities
+
+- name: sus-inspector
+  url: https://github.com/hjuutilainen/sus-inspector
+  subcategory: Software updates
+
+- name: Suspicious Package
+  url: https://www.mothersruin.com/software/SuspiciousPackage/
+  subcategory: Inspection
+  description: Inspect an installer package’s files and scripts before you install it.
+
+- name: swiftDialog
+  url: https://github.com/swiftDialog/swiftDialog
+  subcategory: User environment
+  description: Builds native macOS dialogs and progress windows from shell scripts.
+
+- name: Tart - macOS and Linux VMs on Apple Silicon
+  url: https://tart.run/
+  subcategory: Virtualization
+  description: Virtualization toolset for macOS and Linux VMs on Apple Silicon.
+
+- name: Taskade
+  url: https://taskade.com/
+  subcategory: Productivity
+
+- name: Telepod, MacOnboardingMate
+  url: https://www.agnosys.com/logiciels/
+  subcategory: Onboarding
+
+- name: Trello
+  url: https://trello.com/
+  subcategory: Productivity
+
+- name: tseec - command-line utility for querying TCC entries
+  url: https://github.com/txhaflaire/tseec
+  subcategory: Inspection
+
+- name: Twocanoes - DFU Blaster
+  url: https://bitbucket.org/twocanoes/dfu-blaster-public/downloads/
+  subcategory: Utilities
+
+- name: Twocanoes Software
+  url: https://twocanoes.com/
+  subcategory: Utilities
+
+- name: umad
+  url: https://github.com/macadmins/umad
+  subcategory: Utilities
+
+- name: Uninstaller
+  url: https://github.com/erikstam/uninstaller
+  subcategory: App management
+
+- name: University of Utah
+  url: https://github.com/univ-of-utah-marriott-library-apple
+  subcategory: Utilities
+
+- name: Update macOS DDM Jamf
+  url: https://github.com/avogel-mac/Update_macOS_DDM
+  subcategory: Software updates
+
+- name: Utiluti - Manage default apps
+  url: https://github.com/scriptingosx/utiluti
+  subcategory: User environment
+
+- name: vfuse
+  url: https://github.com/chilcote/vfuse
+  subcategory: Virtualization
+
+- name: Visual Studio Code
+  url: https://code.visualstudio.com/
+  subcategory: Editors
+
+- name: WiFi Explorer
+  url: https://www.intuitibits.com/products/wifiexplorer/
+  subcategory: Inspection
+
+- name: Xcode
+  url: https://itunes.apple.com/us/app/xcode/id497799835?mt=12
+  subcategory: Editors
+
+- name: XCreds
+  url: https://github.com/twocanoes/xcreds
+  subcategory: Security & identity
+  description: Sign in to the Mac with your cloud identity provider and keep passwords in sync.
+
+- name: Yo
+  url: https://github.com/sheagcraig/yo
+  subcategory: Utilities

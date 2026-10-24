@@ -1,0 +1,136 @@
+- name: Academia Group
+  url: https://www.youtube.com/@AcademiaGroup
+  subcategory: Video
+
+- name: Addigy
+  url: https://www.youtube.com/@addigy
+  subcategory: Video
+
+- name: Apple @ Work
+  url: https://podcasts.apple.com/us/podcast/apple-work/id1500332802
+  subcategory: Podcasts
+
+- name: Apple @ Work on Apple Podcasts
+  url: https://podcasts.apple.com/nl/podcast/apple-work/id1500332802
+  subcategory: Podcasts
+
+- name: The Apple Community Bookmarks
+  url: https://github.com/cbookmarks/bookmarks/tree/main
+  subcategory: Video
+
+- name: Command Control Power
+  url: https://podcasts.apple.com/nl/podcast/command-control-power-apple-tech-support-business-talk/id668387622
+  subcategory: Podcasts
+
+- name: Greater Philadelphia MacAdmins
+  url: https://www.youtube.com/@phillymacadmins
+  subcategory: Video
+
+- name: The History of Computing on Apple Podcasts
+  url: https://podcasts.apple.com/us/podcast/history-of-personal-computing/id1459717802
+  subcategory: Podcasts
+
+- name: iJustine
+  url: https://www.youtube.com/ijustine
+  subcategory: Video
+
+- name: India Apple Admins
+  url: https://www.youtube.com/@indiamacadmins
+  subcategory: Video
+
+- name: Iru
+  url: https://www.youtube.com/@KandjiOfficial
+  subcategory: Video
+
+- name: Jamf
+  url: https://www.youtube.com/@JAMFMedia
+  subcategory: Video
+
+- name: Jamf After Dark
+  url: https://podcasts.apple.com/us/podcast/jamf-after-dark/id1434572611?mt=2
+  subcategory: Podcasts
+
+- name: Jamf After Dark
+  url: https://jamfafterdark.libsyn.com/
+  subcategory: Podcasts
+
+- name: Jigsaw24 - Keep IT Talking
+  url: https://podcasts.apple.com/gb/podcast/the-jigsaw24-edtech-podcast/id1687318316
+  subcategory: Podcasts
+
+- name: JNUC 2025
+  url: https://www.youtube.com/playlist?list=PLlxHm_Px-Ie0DkjJe6xzYhFhwIn2SUhHJ
+  subcategory: Video
+
+- name: Keeping IT Talking
+  url: https://podcasts.apple.com/gb/podcast/keeping-it-talking/id1843864440
+  subcategory: Podcasts
+
+- name: London Apple Admins
+  url: https://www.youtube.com/@londonappleadmins
+  subcategory: Video
+
+- name: Mac Admins Europe
+  url: https://www.youtube.com/@MacAdminsEU
+  subcategory: Video
+
+- name: Mac Admins India
+  url: https://www.youtube.com/channel/UCCXssSduB96r1OtRB4ipCVg
+  subcategory: Video
+
+- name: Mac Admins Podcast
+  url: https://podcasts.apple.com/nl/podcast/mac-admins-podcast/id1097430326
+  subcategory: Podcasts
+
+- name: Mac Admins Podcast
+  url: https://podcast.macadmins.org/
+  subcategory: Podcasts
+
+- name: MacAD.UK
+  url: https://www.youtube.com/@MacADUK
+  subcategory: Video
+
+- name: MacAdmins Conference
+  url: https://www.youtube.com/@MacAdmins
+  subcategory: Video
+
+- name: MacAdmins India Connect 2026
+  url: https://www.youtube.com/watch?v=2JFU6l_Hvh4&list=PLelcCocSewHs
+  subcategory: Video
+
+- name: MacAdmins Podcast
+  url: https://podcasts.apple.com/us/podcast/macadmins-podcast/id1238495116
+  subcategory: Podcasts
+  description: Weekly show on Apple device management from the MacAdmins community.
+
+- name: MacDevOpsYVR
+  url: https://www.youtube.com/c/MDOYVR
+  subcategory: Video
+
+- name: Microsoft Intune
+  url: https://www.youtube.com/@intuneforeducationcustomer4969
+  subcategory: Video
+
+- name: Mr. Macintosh
+  url: https://www.youtube.com/channel/UC7FRPWLwRlhORhFHHywfqAg
+  subcategory: Video
+
+- name: Rocketman Tech
+  url: https://www.youtube.com/@RocketmanTech
+  subcategory: Video
+
+- name: Romina Gafur
+  url: https://www.youtube.com/@romina
+  subcategory: Video
+
+- name: Toronto MacAdmins
+  url: https://www.youtube.com/@TorontoMacadmins
+  subcategory: Video
+
+- name: Twin Cities Mac Admins
+  url: https://www.youtube.com/@twincitiesmacadmins5763
+  subcategory: Video
+
+- name: University of Utah MacAdmins
+  url: https://stream.lib.utah.edu/index.php?c=browse&m=results&q=%22mac+manager%22&cat=&sort=newest
+  subcategory: Video

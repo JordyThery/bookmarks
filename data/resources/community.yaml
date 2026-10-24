@@ -1,0 +1,129 @@
+- name: Atlanta Mac Admins
+  url: https://www.eventbrite.com/o/atlanta-apple-admins-58609161243
+  subcategory: User groups & organisations
+
+- name: Berlin MacAdmins
+  url: https://berlinmacadmins.github.io
+  subcategory: User groups & organisations
+
+- name: East Midlands Apple Admins
+  url: https://community.jamf.com/groups/east-midlands-apple-admins-uk-29
+  subcategory: User groups & organisations
+
+- name: Greater Philadelphia Mac Admins
+  url: https://phillymacadmins.com
+  subcategory: User groups & organisations
+
+- name: Jamf Blog
+  url: https://www.jamf.com/blog/
+  subcategory: User groups & organisations
+
+- name: Jamf Engineering blog
+  url: https://engineering.jamf.com/
+  subcategory: Jamf
+
+- name: Jamf Nation
+  url: https://community.jamf.com/
+  subcategory: Jamf
+
+- name: Jamf Tech Thoughts
+  url: https://community.jamf.com/tech-thoughts-180
+  subcategory: User groups & organisations
+
+- name: Jamf User Groups
+  url: https://community.jamf.com/p/user-groups
+  subcategory: User groups & organisations
+
+- name: London Apple Admins
+  url: https://londonappleadmins.org.uk
+  subcategory: User groups & organisations
+
+- name: Mac Admins
+  url: https://www.macadmins.org/
+  subcategory: User groups & organisations
+
+- name: Mac Admins Community Map
+  url: https://www.google.com/maps/d/u/0/viewer?mid=1Ao_VrRMOPcg-8vVSpPgd-6yRylOUUfk&ll=-3.81666561775622e-14%2C-106.80764550000004&z=2
+  subcategory: User groups & organisations
+
+- name: Mac Admins Foundation
+  url: https://www.macadmins.org/about-the-mac-admins-foundation
+  subcategory: User groups & organisations
+
+- name: Mac Admins India
+  url: https://macadmins.in
+  subcategory: User groups & organisations
+
+- name: Mac Admins Open Source
+  url: https://macadmins.io/
+  subcategory: User groups & organisations
+
+- name: Mac Admins Slack
+  url: https://macadmins.slack.com/
+  subcategory: Slack & social
+
+- name: Mac Admins Slack - Join/Invite
+  url: https://macadmins.org/slack
+  subcategory: Slack & social
+
+- name: MacAdmins Community Calendar
+  url: https://macadmins.org/calendar/
+  subcategory: User groups & organisations
+
+- name: MacAdmins Newsletter
+  url: https://macadmins.news/
+  subcategory: User groups & organisations
+
+- name: MacAdmins Scotland
+  url: https://community.jamf.com/groups/scotland-mac-admins-127
+  subcategory: User groups & organisations
+
+- name: MacAdmins Slack
+  url: https://join.slack.com/t/macadmins/shared_invite/zt-3ok3rukoj-ziZeIXzbqP~_65HM3R53Yw
+  subcategory: Slack & social
+
+- name: Microsoft Mac Admins
+  url: https://www.linkedin.com/groups/13007354/
+  subcategory: Slack & social
+
+- name: Microsoft Mac Admins Community
+  url: https://aka.ms/MacAdmins
+  subcategory: User groups & organisations
+
+- name: Mosyle Blog
+  url: https://business.mosyle.com/blog
+  subcategory: User groups & organisations
+
+- name: Mr. Macintosh on X
+  url: https://x.com/ClassicII_MrMac
+  subcategory: Slack & social
+
+- name: NYC Mac Admins
+  url: https://nycmacadmins.com
+  subcategory: User groups & organisations
+
+- name: r/jamf
+  url: https://www.reddit.com/r/jamf/
+  subcategory: Reddit
+
+- name: r/jamf (RSS)
+  url: https://www.reddit.com/r/jamf/.rss
+  subcategory: Reddit
+  tags: [rss]
+
+- name: r/k12sysadmin
+  url: https://www.reddit.com/r/k12sysadmin/
+  subcategory: Reddit
+
+- name: r/macsysadmin
+  url: https://www.reddit.com/r/macsysadmin/
+  subcategory: Reddit
+
+- name: r/macsysadmin (RSS)
+  url: https://www.reddit.com/r/macsysadmin/.rss
+  subcategory: Reddit
+  tags: [rss]
+
+- name: The Sequence - by Iru
+  url: https://the-sequence.com/
+  subcategory: User groups & organisations

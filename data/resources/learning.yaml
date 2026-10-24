@@ -1,0 +1,33 @@
+- name: Apple Shell Scripting Guide
+  url: https://developer.apple.com/library/archive/documentation/OpenSource/Conceptual/ShellScripting/shell_scripts/shell_scripts.html
+
+- name: Armin Briegel - Books & Resources (Scripting OS X)
+  url: https://scriptingosx.com/books/
+
+- name: Armin Briegel in Apple Books
+  url: https://books.apple.com/nl/author/armin-briegel/id1173930231
+
+- name: The Art of Mac Malware
+  url: https://taomm.org/
+
+- name: 'ComputerWorld: Upskilling for Apple IT Admins'
+  url: https://www.computerworld.com/article/3625379/for-apple-it-admins-the-new-year-means-its-a-good-time-to-upskill.html
+
+- name: Hacking with macOS - learn to make macOS apps with Swift 5.10 using real-world projects
+  url: https://www.hackingwithswift.com/store/hacking-with-macos
+
+- name: HCS Technology Group White Papers
+  url: https://hcsonline.com/support/white-papers
+
+- name: Jamf Training
+  url: https://training.jamf.com/
+  subcategory: Jamf
+
+- name: MacAdmin.info (Start Here)
+  url: https://www.macadmin.info/
+
+- name: MacAdmins Documentation
+  url: https://macadminsdoc.readthedocs.io/en/master/
+
+- name: Scripting JAMF Best Practices
+  url: https://scriptingosx.com/jnuc2020/

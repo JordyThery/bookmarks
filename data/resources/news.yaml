@@ -1,0 +1,43 @@
+- name: 9to5Mac
+  url: https://9to5mac.com/
+
+- name: Apple Community Bookmarks
+  url: https://github.com/cbookmarks/bookmarks/blob/main/Apple_Community_Bookmarks.html
+  subcategory: Feeds
+
+- name: Apple News
+  url: https://developer.apple.com/news/releases/rss/releases.rss
+  subcategory: Feeds
+  tags: [rss]
+
+- name: AWS Health - Service health
+  url: https://health.aws.amazon.com/health/status
+  subcategory: Feeds
+
+- name: General Tech RSS List
+  url: https://lapcatsoftware.com/articles/RSS.html
+  subcategory: Feeds
+  tags: [rss]
+
+- name: HCS White Papers
+  url: https://hcsonline.com/support/resources/white-papers?format=feed&catid=43
+  subcategory: Feeds
+
+- name: Mac RSS Feed Catalogue
+  url: https://www.cyberseo.net/public-rss-feed-catalogue/Mac/
+  subcategory: Feeds
+  tags: [rss]
+
+- name: MacHash
+  url: https://machash.com/
+
+- name: MacRumors
+  url: https://www.macrumors.com/
+
+- name: MacSurfer
+  url: https://www.macsurfer.com/
+
+- name: NHS Digital Cyber Alerts Feed
+  url: https://digital.nhs.uk/feed/cyber-alerts-feed.xml
+  subcategory: Feeds
+  tags: [rss]

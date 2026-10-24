@@ -1,0 +1,101 @@
+# Categories in the order they appear on the site.
+# id must match a file in data/resources/. Colours: graphite, gray, blue, orange, indigo,
+# green, pink, red, purple, yellow, teal. Icons are defined in layouts/_partials/icon.html.
+
+- id: apple
+  name: Apple
+  icon: laptop
+  color: gray
+  description: Official Apple documentation, portals, training and support pages.
+  subcategories:
+  - Beta & Feedback
+  - Deployment
+  - Developer
+  - Device Management
+  - Essentials
+  - Hardware & Support
+  - Networking
+  - RFP & Procurement
+  - Training
+- id: tools
+  name: Tools & Scripts
+  icon: wrench
+  color: blue
+  description: Open-source and commercial utilities for packaging, onboarding, updates and day-to-day admin work.
+  subcategories:
+  - App management
+  - Automation
+  - Editors
+  - Inspection
+  - Intune
+  - Iru / Kandji
+  - Jamf
+  - Onboarding
+  - Packaging
+  - Productivity
+  - Profiles & compliance
+  - Scripts & references
+  - Security & identity
+  - Software updates
+  - User environment
+  - Utilities
+  - Virtualization
+- id: blogs
+  name: Blogs
+  icon: pen
+  color: orange
+  description: Personal and community blogs written by Mac admins.
+  subcategories:
+  - Aggregators
+- id: vendors
+  name: MDM & Vendors
+  icon: layers
+  color: indigo
+  description: Device management vendors, their blogs and resources.
+  subcategories:
+  - Jamf
+  - Microsoft Intune
+- id: community
+  name: Community
+  icon: users
+  color: green
+  description: User groups, Slack, Reddit and other places to meet other admins.
+  subcategories:
+  - Jamf
+  - Reddit
+  - Slack & social
+  - User groups & organisations
+- id: media
+  name: Podcasts & Video
+  icon: mic
+  color: pink
+  description: Podcasts and video channels, including conference recordings.
+  subcategories:
+  - Podcasts
+  - Video
+- id: security
+  name: Security & Compliance
+  icon: shield
+  color: red
+  description: Security research, baselines and compliance frameworks.
+  subcategories: []
+- id: events
+  name: Conferences
+  icon: calendar
+  color: purple
+  description: Conferences for Mac admins. For dates, see the MacAdmins community calendar.
+  subcategories: []
+- id: learning
+  name: Learning
+  icon: cap
+  color: yellow
+  description: Guides, documentation and places to start learning.
+  subcategories:
+  - Jamf
+- id: news
+  name: News & Feeds
+  icon: rss
+  color: teal
+  description: News sites, aggregators and RSS feeds.
+  subcategories:
+  - Feeds

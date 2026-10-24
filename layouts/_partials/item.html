@@ -1,0 +1,25 @@
+{{- /* One resource row. Context: dict "r" (resource) "cat" (category) */ -}}
+{{- $r := .r }}{{ $cat := .cat -}}
+{{- $host := replaceRE `^www\.` "" (urls.Parse $r.url).Host -}}
+{{- $isGitHub := or (eq $host "github.com") (strings.HasSuffix $host ".github.io") -}}
+{{- $isApple := or (eq $host "apple.com") (strings.HasSuffix $host ".apple.com") (eq $host "apple.co") -}}
+{{- $letter := substr (replaceRE `(?i)^the\s+` "" $r.name) 0 1 | upper -}}
+{{- $search := lower (delimit (slice $r.name ($r.description | default "") $host ($r.subcategory | default "") $cat.name (delimit ($r.tags | default slice) " ")) " ") -}}
+<li class="item{{ if $r.archived }} is-archived{{ end }}" data-sub="{{ $r.subcategory }}" data-s="{{ $search }}"{{ if $isGitHub }} data-github{{ end }}{{ if $isApple }} data-apple{{ end }}>
+  <a class="item-link" href="{{ $r.url }}" target="_blank" rel="noopener">
+    <span class="mono c-{{ $cat.color }}" aria-hidden="true">{{ $letter }}</span>
+    <span class="item-body">
+      <span class="item-name">{{ $r.name }}</span>
+      {{- with $r.description }}<span class="item-desc">{{ . }}</span>{{ end }}
+      <span class="item-host">{{ $host }}</span>
+    </span>
+    <span class="item-meta">
+      {{- with $r.subcategory }}<span class="sub">{{ . }}</span>{{ end }}
+      {{- if $isGitHub }}<span class="badge">GitHub</span>{{ end }}
+      {{- if $isApple }}<span class="badge badge-apple">Apple</span>{{ end }}
+      {{- if in ($r.tags | default slice) "rss" }}<span class="badge">RSS</span>{{ end }}
+      {{- if $r.archived }}<span class="badge badge-warn">Archived</span>{{ end }}
+      {{ partial "icon.html" "external" }}
+    </span>
+  </a>
+</li>

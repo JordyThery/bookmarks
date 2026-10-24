@@ -1,0 +1,152 @@
+- name: Anthony Darlow - Cant Script
+  url: https://cantscript.com/
+
+- name: AppleShare IT
+  url: https://appleshare.it/
+
+- name: Big Mac Admin
+  url: https://bigmacadmin.wordpress.com
+
+- name: Bob Gendler
+  url: https://boberito.medium.com/
+
+- name: BOFA Browser Overview
+  url: https://bofa.cocolabs.dev
+
+- name: Cannonball - Tom Bridge
+  url: https://tombridge.com/
+
+- name: Community Resources List (Jamf)
+  url: https://community.jamf.com/tech-thoughts-180/community-is-valuable-a-list-of-my-favorite-community-resources-53430
+  subcategory: Aggregators
+
+- name: Dan K. Snelson (GitHub)
+  url: https://github.com/dan-snelson
+
+- name: Daz Wallace
+  url: https://dazwallace.wordpress.com
+
+- name: Der Flounder
+  url: https://derflounder.wordpress.com/
+  description: Rich Trouton’s long-running blog on Mac administration.
+
+- name: The Eclectic Light Company
+  url: https://eclecticlight.co/
+  description: Howard Oakley’s deep dives into how macOS really works.
+
+- name: Feedly Top Mac Admin Blogs
+  url: https://feedly.com/i/top/mac-admin-blogs
+  subcategory: Aggregators
+
+- name: Fraserhess
+  url: https://macadmin.fraserhess.com/
+
+- name: Graham Gilbert
+  url: https://grahamgilbert.com/
+
+- name: HCS Technology Group White Papers
+  url: https://hcsonline.com/support/resources/white-papers
+
+- name: Intune - In Real Life
+  url: https://www.intuneirl.com/
+
+- name: intunemacadmins
+  url: https://www.intunemacadmins.com
+
+- name: John Mahlman
+  url: https://yearofthegeek.net
+
+- name: Kevin M. Cox
+  url: https://www.kevinmcox.com
+
+- name: Kitzy
+  url: https://kitzy.com/
+
+- name: Krypted
+  url: https://krypted.com/
+
+- name: Laughter-as-a-Service
+  url: https://snelson.us/
+
+- name: Mac Connection Standards
+  url: https://macattorney.com/MacConnectionStandards.pdf
+
+- name: MacAdmin Blogs via Feedspot
+  url: https://bloggers.feedspot.com/mac_blogs/
+  subcategory: Aggregators
+
+- name: MacAdmin Musings - Scott Blake
+  url: https://macadminmusings.com/
+
+- name: MacLabs
+  url: https://maclabs.jazzace.ca/
+
+- name: Macmule
+  url: https://macmule.com/
+
+- name: Macnotes
+  url: https://macnotes.wordpress.com/
+
+- name: MacOS Adventures
+  url: https://www.macosadventures.com/
+
+- name: Managing OS X
+  url: https://managingosx.wordpress.com/
+
+- name: Microsoft Tools
+  url: https://appledevicepolicy.tools/microsoft-apps
+
+- name: The Mitten Mac
+  url: https://themittenmac.com/blog/
+
+- name: MOD TITAN
+  url: https://www.modtitan.com/
+
+- name: MOFA Microsoft Overview Feed
+  url: https://mofa.cocolabs.dev
+
+- name: Mr. Macintosh
+  url: https://mrmacintosh.com/
+
+- name: Neil Martin | Sound Mac Guy
+  url: https://soundmacguy.org.uk
+
+- name: Objective-See
+  url: https://objective-see.org/
+
+- name: Objective-See Blog
+  url: https://objective-see.com/blog.html
+
+- name: Open Source Malware
+  url: https://opensourcemalware.com
+
+- name: OSX Daily
+  url: https://osxdaily.com
+
+- name: Pat's Blog - Patrick Phang
+  url: https://www.patrickphang.nl/
+
+- name: Patch Notes & Progress - Tony Young
+  url: https://tonyyo11.github.io/
+
+- name: Remember the Human
+  url: https://talkingmoose.net/
+
+- name: Rich Trouton - GitHub
+  url: https://github.com/rtrouton
+
+- name: Richard Purves
+  url: https://richard-purves.com/
+
+- name: Scripting OS X
+  url: https://scriptingosx.com/
+  description: Armin Briegel’s blog on shell scripting and macOS management.
+
+- name: Sound Mac Guy - Neil Martin
+  url: https://soundmacguy.wordpress.com/
+
+- name: Travelling Tech Guy
+  url: https://travellingtechguy.blog/
+
+- name: What The Mac?!
+  url: https://grahamrpugh.com/

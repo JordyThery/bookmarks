@@ -1,0 +1,38 @@
+- name: Aces
+  url: https://acesconf.com/
+
+- name: Jamf Nation User Conference
+  url: https://www.jamf.com/events/jamf-nation-user-conference/
+
+- name: JNUC 2025
+  url: https://reg.jnuc.jamf.com/flow/jamf/jnuc2025/home25/page/jnuc2025home
+
+- name: JNUC 2026
+  url: https://www.jamf.com/events/jamf-nation-user-conference/2026/overview
+
+- name: MacAD.UK
+  url: https://macad.uk/
+
+- name: MacAdmins Conference
+  url: https://macadmins.psu.edu/
+
+- name: MacAdmins Europe
+  url: https://macadmins-eu.org
+
+- name: MacAdmins India
+  url: https://conference.macadmins.in
+
+- name: MacDevOpsYVR
+  url: https://mdoyvr.com/
+
+- name: MacSysAdmin Conference
+  url: https://macsysadmin.se/
+
+- name: OBTS
+  url: https://objectivebythesea.org/
+
+- name: PSU MacAdmins Conference – resources
+  url: https://macadmins.psu.edu/conference/resources/
+
+- name: X World
+  url: https://auc.edu.au/xworld/

@@ -1,0 +1,106 @@
+- name: Addigy
+  url: https://addigy.com/
+
+- name: BlackBerry UEM
+  url: https://www.blackberry.com/us/en/support/enterprise-apps/blackberry-uem
+
+- name: Bravas
+  url: https://www.bravas.io/
+
+- name: FileWave
+  url: https://www.filewave.com/
+
+- name: Fleet
+  url: https://fleetdm.com/
+
+- name: Hexnode
+  url: https://www.hexnode.com/
+
+- name: Iru
+  url: https://www.iru.com/
+
+- name: Iru Blog
+  url: https://blog.kandji.io
+
+- name: Jamf
+  url: https://www.jamf.com/
+  subcategory: Jamf
+
+- name: Jamf Account
+  url: https://account.jamf.com/
+  subcategory: Jamf
+
+- name: Jamf Feature Requests
+  url: https://ideas.jamf.com
+  subcategory: Jamf
+
+- name: Jamf GitHub
+  url: https://jamf.github.io
+  subcategory: Jamf
+
+- name: Jamf Harbor
+  url: https://jamf-view.highspot.com/viewer/653923584f6a00c37fcc37ca
+  subcategory: Jamf
+
+- name: Jamf Heroes
+  url: https://community.jamf.com/t5/jamf-heroes-customers/gh-p/JamfHeroesCustomers
+  subcategory: Jamf
+
+- name: Jamf Learning Hub
+  url: https://learn.jamf.com
+  subcategory: Jamf
+
+- name: Jamf Security
+  url: https://security.jamf.com
+  subcategory: Jamf
+
+- name: Jamf Status
+  url: https://status.jamf.com
+  subcategory: Jamf
+
+- name: Jamf Support Portal
+  url: https://support.jamf.com
+  subcategory: Jamf
+
+- name: Jamf Tech Thoughts
+  url: https://community.jamf.com/t5/tech-thoughts/bg-p/TechThoughts
+  subcategory: Jamf
+
+- name: Jamf Training – resources
+  url: https://trainingcatalog.jamf.com
+  subcategory: Jamf
+
+- name: Jamf Trusted Access Solution Center
+  url: https://trust.jamf.com
+  subcategory: Jamf
+
+- name: JumpCloud
+  url: https://jumpcloud.com/
+
+- name: MicroMDM
+  url: https://micromdm.io/
+
+- name: Microsoft Intune
+  url: https://www.microsoft.com/en-GB/security/business/endpoint-management/microsoft-intune
+  subcategory: Microsoft Intune
+
+- name: Miradore
+  url: https://www.miradore.com/
+
+- name: Miradore Blog
+  url: https://www.miradore.com/blog/
+
+- name: Mosyle
+  url: https://mosyle.com/
+
+- name: ninjaOne
+  url: https://www.ninjaone.com/mdm/
+
+- name: SimpleMDM
+  url: https://simplemdm.com/
+
+- name: SimpleMDM Blog
+  url: https://simplemdm.com/blog/popular-open-source-tools-for-mac-admins/
+
+- name: Workspace ONE
+  url: https://www.vmware.com/products/workspace-one/unified-endpoint-management.html

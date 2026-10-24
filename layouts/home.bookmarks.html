@@ -1,0 +1,19 @@
+<!DOCTYPE NETSCAPE-Bookmark-file-1>
+<!-- Generated from {{ site.Params.repo }} on {{ now.Format "2006-01-02" }}. Import this file into your browser's bookmarks. -->
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
+<TITLE>Bookmarks</TITLE>
+<H1>Bookmarks</H1>
+<DL><p>
+    <DT><H3>{{ site.Title | htmlEscape }}</H3>
+    <DL><p>
+{{- range hugo.Data.categories }}
+{{- $items := index hugo.Data.resources .id }}
+        <DT><H3>{{ .name | htmlEscape }}</H3>
+        <DL><p>
+{{- range $items }}{{ if not .archived }}
+            <DT><A HREF="{{ .url | htmlEscape }}">{{ .name | htmlEscape }}</A>
+{{- end }}{{ end }}
+        </DL><p>
+{{- end }}
+    </DL><p>
+</DL><p>
