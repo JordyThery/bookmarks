@@ -216,7 +216,7 @@
 - name: Apple Hearing Protection Data Sheets
   url: https://regulatoryinfo.apple.com/hearingprotection
   subcategory: RFP Materials
-  description: Hearing protection data sheets for AirPods Pro models, with attenuation values per model number.
+  description: Hearing protection data sheets for AirPods Pro models, listed by model number.
   keywords: [airpods pro, hearing protection, attenuation, data sheet]
   tags: [apple]
   added: 2026-10-24
