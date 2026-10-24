@@ -30,6 +30,13 @@
   platforms: [macOS]
   cost: paid
 
+- name: intunemacadmins
+  url: https://www.intunemacadmins.com
+  description: 'Community playbook for managing Macs with Microsoft Intune: guides on ADE, Platform SSO, FileVault and DDM, plus a baseline and scripts.'
+  keywords: [microsoft intune, psso, filevault, ddm, baseline, ade]
+  platforms: [macOS]
+  works_with: [intune]
+
 - name: Jamf Training
   url: https://training.jamf.com/
   subcategory: Jamf

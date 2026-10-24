@@ -49,14 +49,16 @@
   name: Blogs
   icon: pen
   color: orange
-  description: Personal and community blogs written by Mac admins.
+  description: Blogs written by Mac admins and by vendors, plus lists of blogs to follow.
   subcategories:
+  - Personal
+  - Vendors
   - Aggregators
 - id: vendors
   name: MDM & Vendors
   icon: layers
   color: indigo
-  description: Device management vendors, their blogs and resources.
+  description: Device management vendors, their portals and resources.
   subcategories:
   - Jamf
   - Microsoft Intune

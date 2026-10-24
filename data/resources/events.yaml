@@ -49,11 +49,6 @@
   description: Apple security conference organised by the Objective-See Foundation, with talks on macOS and iOS malware, exploits and defence.
   keywords: [obts, objective-see, malware, infosec, patrick wardle]
 
-- name: PSU MacAdmins Conference – Resources
-  url: https://macadmins.psu.edu/conference/resources/
-  description: Slides and YouTube videos from Penn State MacAdmins Conference sessions and workshops, with an archive of earlier years.
-  keywords: [psu, penn state, slides, session videos, presentations]
-
 - name: X World
   url: https://auc.edu.au/xworld/
   description: AUC conference on deploying, managing and supporting Apple devices in education, run alongside /dev/world in Melbourne.

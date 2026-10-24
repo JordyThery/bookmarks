@@ -22,17 +22,11 @@
   description: macOS and iOS admin group for Greater Philadelphia, Delaware and South Jersey, with monthly in-person or Zoom and social meetups.
   keywords: [meetup, user group, philadelphia, pennsylvania, zoom]
 
-- name: Jamf Blog
-  url: https://www.jamf.com/blog/
-  subcategory: User groups & organisations
-  description: Jamf's company blog on Apple device management, security and threat research, identity, onboarding and Jamf Nation events.
-  keywords: [mdm, jamf threat labs, security, jamf pro, education]
-
-- name: Jamf Engineering blog
-  url: https://engineering.jamf.com/
+- name: Jamf Heroes
+  url: https://community.jamf.com/p/jamf-heroes
   subcategory: Jamf
-  description: Jamf's engineering hub, with posts by Jamf engineers on platform, infrastructure and macOS security work and an open-source section.
-  keywords: [engineering, open source, medium, jamf protect, malware]
+  description: Jamf's recognition programme for Jamf Nation members who contribute answers, content and feedback to the community.
+  keywords: [jamf nation, advocacy, community, recognition]
 
 - name: Jamf Nation
   url: https://community.jamf.com/
@@ -90,12 +84,6 @@
   description: Mac Admins Foundation page on how to join the Mac Admins Slack, the community's chat workspace for Apple device admins.
   keywords: [slack, invite, join, community]
 
-- name: MacAdmins Newsletter
-  url: https://macadmins.news/
-  subcategory: User groups & organisations
-  description: Weekly summary of news, blog posts, updates and other links for Apple device management and security professionals.
-  keywords: [newsletter, weekly, armin briegel, scripting os x, news]
-
 - name: MacAdmins Scotland
   url: https://community.jamf.com/groups/scotland-mac-admins-127
   subcategory: User groups & organisations
@@ -104,7 +92,7 @@
 
 - name: Microsoft Mac Admins (LinkedIn)
   url: https://aka.ms/MacAdmins
-  subcategory: User groups & organisations
+  subcategory: Slack & social
   description: Private LinkedIn group where Mac admins and Microsoft's Intune Apple team discuss Intune, Entra ID and Microsoft 365 on Apple devices.
   keywords: [intune, microsoft, linkedin, entra id, ddm]
 
@@ -138,9 +126,3 @@
   subcategory: Reddit
   description: Subreddit for Mac system administrators to ask questions and share fixes for managing macOS and iOS in organisations.
   keywords: [macsysadmin, reddit, mdm, forum, troubleshooting]
-
-- name: The Sequence - by Iru
-  url: https://the-sequence.com/
-  subcategory: User groups & organisations
-  description: Iru's blog archive of articles and videos for IT and security teams, including posts from when the company was Kandji.
-  keywords: [iru, kandji, the sequence, endpoint security, mdm]

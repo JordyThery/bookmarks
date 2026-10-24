@@ -37,6 +37,11 @@
   keywords: [rss, feed directory, news feeds, catalog]
   tags: [rss]
 
+- name: MacAdmins Newsletter
+  url: https://macadmins.news/
+  description: Weekly summary of news, blog posts, updates and other links for Apple device management and security professionals.
+  keywords: [newsletter, weekly, armin briegel, scripting os x, news]
+
 - name: MacHash
   url: https://machash.com/
   description: Real-time aggregator of Apple news and rumour headlines from sites such as MacRumors, 9to5Mac, Macworld and Daring Fireball.
@@ -46,3 +51,14 @@
   url: https://www.macrumors.com/
   description: Apple news and rumours site with forums, a buyer's guide, how-to guides, deals and a podcast.
   keywords: [apple news, rumors, forums, buyers guide]
+
+- name: OSX Daily
+  url: https://osxdaily.com
+  description: News, tips and how-to tutorials for Mac, iPhone and iPad users, covering macOS, iOS and iPadOS features and troubleshooting.
+  keywords: [tips, tutorials, troubleshooting, macos news]
+
+- name: SupportDiffs
+  url: https://mastodon.online/@SupportDiffs
+  subcategory: Feeds
+  description: Mastodon account that tracks and posts changes to Apple support documents; not affiliated with Apple.
+  keywords: [support articles, documentation changes, diffs, mastodon, kb]

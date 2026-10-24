@@ -35,6 +35,12 @@
   keywords: [nvd, cve, rss, vulnerability feed, cvss]
   tags: [rss]
 
+- name: Objective-See
+  url: https://objective-see.org/
+  description: Non-profit that makes free open-source macOS security tools, runs the OBTS conference and publishes The Art of Mac Malware.
+  keywords: [patrick wardle, malware, lulu, obts, endpoint security]
+  platforms: [macOS]
+
 - name: SOFA (Security RSS)
   url: https://sofa.macadmins.io/v1/rss_feed.xml
   description: SOFA's RSS feed of Apple OS, Safari, Xcode and XProtect releases, with counts of fixed and actively exploited vulnerabilities.

@@ -40,11 +40,6 @@
   platforms: [macOS, iOS, iPadOS, tvOS, visionOS]
   cost: paid
 
-- name: Iru Blog
-  url: https://www.iru.com/blog
-  description: Iru's blog (formerly Kandji) with Mac admin guides, product news and threat research on macOS malware.
-  keywords: [kandji, threat research, malware, mdm]
-
 - name: Jamf
   url: https://www.jamf.com/
   subcategory: Jamf
@@ -58,12 +53,6 @@
   subcategory: Jamf
   description: Jamf customer portal for managing licences, product downloads, Jamf ID users and hosted instances.
   keywords: [jamf id, licence, downloads, jamf pro, customer portal]
-
-- name: Jamf Heroes
-  url: https://community.jamf.com/p/jamf-heroes
-  subcategory: Jamf
-  description: Jamf's recognition programme for Jamf Nation members who contribute answers, content and feedback to the community.
-  keywords: [jamf nation, advocacy, community, recognition]
 
 - name: Jamf Learning Hub
   url: https://learn.jamf.com
@@ -95,12 +84,6 @@
   description: Jamf Technical Support knowledge base with searchable articles for Jamf Pro, Jamf School, Jamf Now, Connect and Protect.
   keywords: [knowledge base, support, troubleshooting, jamf pro, jamf school]
 
-- name: Jamf Tech Thoughts
-  url: https://community.jamf.com/tech-thoughts-180
-  subcategory: Jamf
-  description: Community blog on Jamf Nation where Apple admins and Jamf staff share hands-on experience with Jamf and macOS management.
-  keywords: [jamf nation, blog, jamf pro, community posts]
-
 - name: Jamf Training – resources
   url: https://trainingcatalog.jamf.com
   subcategory: Jamf
@@ -128,22 +111,12 @@
   platforms: [macOS, iOS]
   cost: freemium
 
-- name: Miradore Blog
-  url: https://www.miradore.com/blog/
-  description: Miradore's blog on mobile device management basics, kiosk mode, patching, multi-tenant MSP setups and buying MDM software.
-  keywords: [mdm, emm, uem, kiosk mode, msp]
-
 - name: Mosyle
   url: https://mosyle.com/
   description: Apple MDM and security platform for businesses, schools and MSPs, with hardening, antivirus, web filtering and patching.
   keywords: [mdm, k-12, education, msp, cis benchmark, patching]
   platforms: [macOS, iOS]
   cost: paid
-
-- name: Mosyle Blog
-  url: https://business.mosyle.com/blog
-  description: Mosyle's blog with articles on managing and securing Apple devices at work, from SSO and app management to BYOD and stolen Macs.
-  keywords: [mosyle business, byod, sso, google workspace, endpoint security]
 
 - name: ninjaOne
   url: https://www.ninjaone.com/mdm/
@@ -164,9 +137,3 @@
   keywords: [mdm, munki, vpp, api, configuration profiles]
   platforms: [macOS, iOS]
   cost: paid
-
-- name: SimpleMDM Blog
-  url: https://simplemdm.com/blog/
-  description: SimpleMDM's blog with product news, security advice and how-to articles on managing Apple devices.
-  keywords: [simplemdm, mdm, how-to, product news]
-  platforms: [macOS]

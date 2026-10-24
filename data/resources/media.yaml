@@ -159,6 +159,12 @@
   keywords: [dfu, opencore legacy patcher, apple configurator, ipsw, recovery]
   platforms: [macOS]
 
+- name: PSU MacAdmins Conference – Resources
+  url: https://macadmins.psu.edu/conference/resources/
+  subcategory: Conference recordings
+  description: Slides and YouTube videos from Penn State MacAdmins Conference sessions and workshops, with an archive of earlier years.
+  keywords: [psu, penn state, slides, session videos, presentations]
+
 - name: Rocketman Tech
   url: https://www.youtube.com/@RocketmanTech
   subcategory: Video
@@ -180,6 +186,6 @@
 
 - name: University of Utah MacAdmins
   url: https://stream.lib.utah.edu/index.php?c=browse&m=results&q=%22mac+manager%22&cat=&sort=newest
-  subcategory: Conference recordings
+  subcategory: Video
   description: University of Utah Marriott Library recordings of its monthly Mac Admins meetings, newest first.
   keywords: [university of utah, mac managers, meeting recordings, higher education, salt lake city]

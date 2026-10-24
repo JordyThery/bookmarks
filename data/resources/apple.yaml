@@ -196,7 +196,7 @@
 
 - name: Apple on GitHub
   url: https://github.com/apple
-  subcategory: Device Management
+  subcategory: Developers
   description: Apple's GitHub organisation with its open-source projects, such as container, FoundationDB, Pkl and Swift server libraries.
   keywords: [open source, container, pkl, foundationdb]
   tags: [apple]
@@ -218,7 +218,7 @@
 
 - name: Apple Platform Deployment
   url: https://support.apple.com/guide/deployment/welcome/web
-  subcategory: IT Training
+  subcategory: Deployment
   description: Apple’s official guide to deploying and managing Apple devices.
   keywords: [mdm, ade, ddm, managed apple account, payloads]
   platforms: [macOS, iOS, iPadOS, tvOS, visionOS, watchOS]
@@ -313,7 +313,7 @@
 
 - name: Apple Support
   url: https://support.apple.com/
-  subcategory: Hardware Support
+  subcategory: Support
   description: Apple's support site with help articles, device sections, repair and AppleCare options, contact routes and Apple Communities.
   keywords: [applecare, repair, help articles, contact apple, warranty]
   tags: [apple]
@@ -516,15 +516,6 @@
   keywords: [swift playgrounds, swiftui, coding, swift student challenge, beginner]
   tags: [apple]
 
-- name: M.A.C.E. macOS Advanced Compliance Editor
-  url: https://github.com/mace-app/mace
-  subcategory: Security
-  description: macOS app that builds mSCP compliance baselines and exports scripts, profiles, DDM declarations and audit files, with MDM upload.
-  keywords: [nist, cis benchmark, disa stig, security baseline, mobileconfig]
-  platforms: [macOS, iOS, iPadOS, visionOS]
-  works_with: [jamf, intune, workspace-one, iru, fleet, addigy]
-  cost: free
-
 - name: Mac Skills Series
   url: https://apple.co/macskills
   subcategory: User Training
@@ -593,7 +584,7 @@
 
 - name: Profiles and Logs (Feedback Assistant)
   url: https://developer.apple.com/bug-reporting/profiles-and-logs/
-  subcategory: Device Management
+  subcategory: Beta & feedback
   description: Apple's library of logging profiles and instructions for capturing sysdiagnose and subsystem logs to attach to Feedback Assistant reports.
   keywords: [mobileconfig, debug logging, bug report, wi-fi logs, bluetooth logs]
   platforms: [iOS, iPadOS, macOS, tvOS, watchOS, visionOS]
@@ -616,7 +607,7 @@
 
 - name: Transfer Apple services (Apple Business)
   url: https://support.apple.com/guide/business/transfer-apple-services-axm6603d9206/web
-  subcategory: Deployment
+  subcategory: Business
   description: Apple Business guide to moving existing accounts and Apple services to Managed Apple Accounts when claiming or federating a domain.
   keywords: [abm, federation, managed apple account, domain conflict, sso, azure ad]
   tags: [apple]
