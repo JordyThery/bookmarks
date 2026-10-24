@@ -8,79 +8,79 @@
 
 - name: Accessibility - Apple
   url: https://www.apple.com/accessibility/
-  subcategory: RFP & Procurement
+  subcategory: RFP Materials
 
 - name: Apple
   url: https://www.apple.com/
-  subcategory: Essentials
+  subcategory: The basics
 
 - name: Apple - Declarations of Conformity
   url: https://www.apple.com/euro/compliance/
-  subcategory: RFP & Procurement
+  subcategory: RFP Materials
 
 - name: Apple - Identify keyboard layout
   url: https://support.apple.com/102743
-  subcategory: Hardware & Support
+  subcategory: Hardware Support
 
 - name: Apple - Manuals, Specs, and Downloads
   url: https://support.apple.com/docs/
-  subcategory: Hardware & Support
+  subcategory: Hardware Support
 
 - name: Apple - MFi Accessories
   url: https://mfi.apple.com/account/accessory-search
-  subcategory: Hardware & Support
+  subcategory: Hardware Support
 
 - name: Apple - Regulation 617/2013
   url: https://www.apple.com/euro/compliance/617_2013/
-  subcategory: RFP & Procurement
+  subcategory: RFP Materials
 
 - name: Apple - Support
   url: https://support.apple.com/
-  subcategory: Hardware & Support
+  subcategory: Hardware Support
 
 - name: Apple - Support - System Status
   url: https://www.apple.com/support/systemstatus/
-  subcategory: Essentials
+  subcategory: The basics
 
 - name: Apple - Supported iPad models with latest iPadOS version
   url: https://support.apple.com/guide/ipad/supported-models-ipad213a25b2/
-  subcategory: Hardware & Support
+  subcategory: Hardware Support
 
 - name: Apple - Supported iPhone models with latest iOS version
   url: https://support.apple.com/guide/iphone/supported-models-iphe3fa5df43/
-  subcategory: Hardware & Support
+  subcategory: Hardware Support
 
 - name: Apple - YouTube
   url: https://www.youtube.com/user/apple
-  subcategory: Essentials
+  subcategory: The basics
 
 - name: Apple - YouTube - Shorts
   url: https://www.youtube.com/@Apple/shorts
-  subcategory: Essentials
+  subcategory: The basics
 
 - name: Apple at Work - Skill series
   url: https://apple.co/macskills
-  subcategory: Training
+  subcategory: User Training
 
 - name: Apple Beta — Providing Feedback
   url: https://beta.apple.com/provide-feedback
-  subcategory: Beta & Feedback
+  subcategory: Beta & feedback
 
 - name: Apple Beta — Resources
   url: https://beta.apple.com/programs/appleseed-for-it/resources
-  subcategory: Beta & Feedback
+  subcategory: Beta & feedback
 
 - name: Apple Business Manager
   url: https://business.apple.com/
-  subcategory: Deployment
+  subcategory: Business
 
 - name: Apple Business Manager - Buying Content
   url: https://support.apple.com/en-gb/guide/apple-business-manager/axme19b23f7f/1/web/1
-  subcategory: Deployment
+  subcategory: Business
 
 - name: Apple Business Manager User Guide - Apple Support
   url: https://support.apple.com/guide/apple-business-manager/welcome/web
-  subcategory: Deployment
+  subcategory: Business
 
 - name: Apple Configurator - Official Apple Support
   url: https://support.apple.com/apple-configurator
@@ -88,24 +88,33 @@
 
 - name: Apple Developer Enterprise Program - Apple Developer
   url: https://developer.apple.com/programs/enterprise/
-  subcategory: Developer
+  subcategory: Developers
 
 - name: Apple Device Support Tutorials | Apple Training
   url: https://it-training.apple.com/tutorials/apt-support
-  subcategory: Training
+  subcategory: IT Training
 
 - name: Apple Events - Apple
   url: https://www.apple.com/apple-events/
-  subcategory: Essentials
+  subcategory: The basics
 
 - name: Apple Legal
   url: https://www.apple.com/legal/
-  subcategory: RFP & Procurement
+  subcategory: RFP Materials
+
+- name: Apple Platform Certifications - Apple Support
+  url: https://support.apple.com/guide/certifications/welcome/web
+  subcategory: Security
 
 - name: Apple Platform Deployment - Apple Support
   url: https://support.apple.com/guide/deployment/welcome/web
-  subcategory: Training
+  subcategory: IT Training
   description: Apple’s official guide to deploying and managing Apple devices.
+
+- name: Apple Platform Security - Apple Support
+  url: https://support.apple.com/guide/security/welcome/web
+  subcategory: Security
+  description: Apple’s official reference on hardware and software security.
 
 - name: Apple Policy Explorer
   url: https://appledevicepolicy.tools/policy-explorer
@@ -117,19 +126,19 @@
 
 - name: Apple School Manager
   url: https://school.apple.com/
-  subcategory: Deployment
+  subcategory: Education
 
 - name: Apple School Manager User Guide - Apple Support
   url: https://support.apple.com/guide/apple-school-manager/welcome/web
-  subcategory: Deployment
+  subcategory: Education
 
 - name: Apple Security Releases
   url: https://support.apple.com/en-us/100100
-  subcategory: Hardware & Support
+  subcategory: Security
 
 - name: Apple Support - YouTube
   url: https://www.youtube.com/applesupport
-  subcategory: Essentials
+  subcategory: The basics
 
 - name: Apple · GitHub
   url: https://github.com/apple
@@ -137,43 +146,51 @@
 
 - name: AppleCare for Enterprise
   url: https://www.apple.com/support/professional/enterprise/
-  subcategory: Hardware & Support
+  subcategory: Support
 
 - name: AppleCare Professional - Help Desk Support - Apple
   url: https://www.apple.com/support/professional/help-desks/
-  subcategory: Hardware & Support
+  subcategory: Support
 
 - name: AppleCare Professional - IT Support - Apple
   url: https://www.apple.com/support/professional/it-departments/
-  subcategory: Hardware & Support
+  subcategory: Support
 
 - name: AppleSeed for IT (Beta, testplans, tools)
   url: https://beta.apple.com/for-it
-  subcategory: Beta & Feedback
+  subcategory: Beta & feedback
+
+- name: Blog - Apple Security Research
+  url: https://security.apple.com/blog/
+  subcategory: Security
+
+- name: Bounty - Apple Security Research
+  url: https://security.apple.com/bounty/
+  subcategory: Security
 
 - name: Business - Apple
   url: https://www.apple.com/business/
-  subcategory: Essentials
+  subcategory: The basics
 
 - name: Business - Enterprise - Apple
   url: https://www.apple.com/business/enterprise/
-  subcategory: Essentials
+  subcategory: The basics
 
 - name: Contact Us - Apple Developer
   url: https://developer.apple.com/contact/#!/topic/select
-  subcategory: Developer
+  subcategory: Developers
 
 - name: Credly Certified Professionals Directory
   url: https://www.credly.com/organizations/apple/directory
-  subcategory: Training
+  subcategory: IT Training
 
 - name: Custom Apps - Apple Developer
   url: https://developer.apple.com/custom-apps/
-  subcategory: Developer
+  subcategory: Developers
 
 - name: Deployment and Management Tutorials | Apple Training
   url: https://it-training.apple.com/tutorials/apt-deployment
-  subcategory: Training
+  subcategory: IT Training
 
 - name: Deployment Programs Support, phonenumbers for Apple Business Manager – Apple Support
   url: https://support.apple.com/118629
@@ -181,19 +198,19 @@
 
 - name: Design - Apple Developer
   url: https://developer.apple.com/design/
-  subcategory: Developer
+  subcategory: Developers
 
 - name: Design Resources - Apple Developer
   url: https://developer.apple.com/design/resources/
-  subcategory: Developer
+  subcategory: Developers
 
 - name: Develop in Swift - Apple Developer Documentation
   url: https://developer.apple.com/tutorials/develop-in-swift/
-  subcategory: Developer
+  subcategory: Developers
 
 - name: Develop in Swift - Apple Education Community
   url: https://education.apple.com/learning-center/T021340A
-  subcategory: Developer
+  subcategory: Developers
 
 - name: Device Management | Apple Developer Documentation
   url: https://developer.apple.com/documentation/devicemanagement?language=objc
@@ -201,23 +218,23 @@
 
 - name: Education - Apple
   url: https://www.apple.com/education/
-  subcategory: Essentials
+  subcategory: The basics
 
 - name: Environment - Answers - Apple
   url: https://www.apple.com/environment/answers/
-  subcategory: RFP & Procurement
+  subcategory: RFP Materials
 
 - name: Environment - Apple
   url: https://www.apple.com/environment/
-  subcategory: RFP & Procurement
+  subcategory: RFP Materials
 
 - name: 'File radars early and often: The importance of feedback | iMore'
   url: https://www.imore.com/radar-or-gtfo
-  subcategory: Beta & Feedback
+  subcategory: Beta & feedback
 
 - name: Get started with your Mac - Apple Support
   url: https://support.apple.com/guide/mac-help/get-started-with-your-mac-mchl3a2c2cb0/mac
-  subcategory: Training
+  subcategory: User Training
 
 - name: 'GitHub - apple/device-management: Device management schema data for MDM.'
   url: https://github.com/apple/device-management
@@ -229,31 +246,39 @@
 
 - name: How to identify the DFU port on Mac
   url: https://support.apple.com/en-gb/120694
-  subcategory: Hardware & Support
+  subcategory: Hardware Support
 
 - name: iPad User Guide - Apple Support
   url: https://support.apple.com/guide/ipad/welcome/ipados
-  subcategory: Training
+  subcategory: User Training
 
 - name: iPhone User Guide - Apple Support
   url: https://support.apple.com/guide/iphone/welcome/ios
-  subcategory: Training
+  subcategory: User Training
 
 - name: IT Training
   url: https://training.apple.com/it
-  subcategory: Training
+  subcategory: IT Training
 
 - name: Learn to code - Apple Developer
   url: https://developer.apple.com/learn/
-  subcategory: Developer
+  subcategory: Developers
+
+- name: M.A.C.E. macOS Advanced Compliance Editor
+  url: https://github.com/mace-app/mace
+  subcategory: Security
 
 - name: Mac technical skill series
   url: https://apple.co/techskills
-  subcategory: Training
+  subcategory: IT Training
+
+- name: macOS Security Compliance Project - Apple Support
+  url: https://support.apple.com/guide/certifications/macos-security-compliance-project-apc322685bb2/web
+  subcategory: Security
 
 - name: Mail - Official Apple Support
   url: https://support.apple.com/mail
-  subcategory: Training
+  subcategory: User Training
 
 - name: MDM Protocol Reference - Implementing Device Management | Apple Developer Documentation
   url: https://developer.apple.com/documentation/devicemanagement/implementing_device_management
@@ -265,23 +290,27 @@
 
 - name: Newsroom - Apple
   url: https://www.apple.com/newsroom/
-  subcategory: Essentials
+  subcategory: The basics
 
 - name: Official Apple Support Community
   url: https://discussions.apple.com/welcome
-  subcategory: Hardware & Support
+  subcategory: Support
 
 - name: Privacy - Apple
   url: https://www.apple.com/privacy/
-  subcategory: RFP & Procurement
+  subcategory: RFP Materials
 
 - name: Privacy - Control - Apple
   url: https://www.apple.com/privacy/control/
-  subcategory: RFP & Procurement
+  subcategory: RFP Materials
 
 - name: Privacy - Labels - Apple
   url: https://www.apple.com/privacy/labels/
-  subcategory: RFP & Procurement
+  subcategory: RFP Materials
+
+- name: Private Cloud Compute Security Guide | Documentation
+  url: https://security.apple.com/documentation/private-cloud-compute
+  subcategory: Security
 
 - name: Profiles and Logs - Bug Reporting - Apple Developer
   url: https://developer.apple.com/bug-reporting/profiles-and-logs/
@@ -289,20 +318,24 @@
 
 - name: Purchase Pearson vouchers
   url: https://applecertstore1.pearsonvue.com/apple-it-exam-voucher-for-exams-9l0-3019-9l0-3021/p/APLVCH-9L0-PUB149
-  subcategory: Training
+  subcategory: IT Training
 
 - name: RSS Information - Apple
   url: https://www.apple.com/rss/
-  subcategory: Essentials
+  subcategory: The basics
   tags: [rss]
 
 - name: Run Linux containers as lightweight vm on Mac - Apple Github
   url: https://github.com/apple/container/
-  subcategory: Developer
+  subcategory: Developers
+
+- name: Security-announce Info Page
+  url: https://lists.apple.com/mailman3/lists/security-announce.lists.apple.com/
+  subcategory: Security
 
 - name: Supplier Responsibility - Apple
   url: https://www.apple.com/supplier-responsibility/
-  subcategory: RFP & Procurement
+  subcategory: RFP Materials
 
 - name: TCP and UDP ports used by Apple software products - Apple Support
   url: https://support.apple.com/HT202944
@@ -318,7 +351,7 @@
 
 - name: UPIK® platform - Dun & Bradstreet
   url: https://www.dnb.com/de-de/upik-en/
-  subcategory: Deployment
+  subcategory: Business
 
 - name: Use Apple products on enterprise networks
   url: https://support.apple.com/en-gb/101555

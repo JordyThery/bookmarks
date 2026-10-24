@@ -22,9 +22,24 @@
 {{- $cat := . }}{{ $items := index hugo.Data.resources .id }}
 <section class="group" data-cat="{{ .id }}" data-name="{{ .name }}" data-desc="{{ .description }}" data-subs="{{ delimit (.subcategories | default slice) "|" }}">
   <h2 class="group-title"><span class="tile tile-sm c-{{ .color }}">{{ partial "icon.html" .icon }}</span>{{ .name }}<span class="count">{{ len $items }}</span></h2>
+  {{- $subs := .subcategories | default slice }}
+  {{- $sorted := 0 }}{{ range $items }}{{ if .subcategory }}{{ $sorted = add $sorted 1 }}{{ end }}{{ end }}
+  {{- if and (ge (len $subs) 2) (eq $sorted (len $items)) }}
+    {{- /* Every resource has a subcategory: show them as folders, in the order of data/categories.yaml */}}
+    {{- range $subs }}{{ $sub := . }}{{ $subItems := where $items "subcategory" $sub }}
+    {{- with $subItems }}
+  <div class="subgroup" data-sub="{{ $sub }}">
+    <h3 class="subgroup-title">{{ $sub }}<span class="subcount">{{ len . }}</span></h3>
+    <ul class="list">
+      {{ range . }}{{ partial "item.html" (dict "r" . "cat" $cat "grouped" true) }}{{ end }}
+    </ul>
+  </div>
+    {{- end }}{{ end }}
+  {{- else }}
   <ul class="list">
     {{ range $items }}{{ partial "item.html" (dict "r" . "cat" $cat) }}{{ end }}
   </ul>
+  {{- end }}
 </section>
 {{ end }}
 

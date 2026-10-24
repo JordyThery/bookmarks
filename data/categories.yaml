@@ -8,15 +8,20 @@
   color: gray
   description: Official Apple documentation, portals, training and support pages.
   subcategories:
-  - Beta & Feedback
+  - The basics
+  - RFP Materials
+  - User Training
+  - IT Training
+  - Hardware Support
   - Deployment
-  - Developer
+  - Business
+  - Education
   - Device Management
-  - Essentials
-  - Hardware & Support
+  - Support
+  - Security
+  - 'Beta & feedback'
   - Networking
-  - RFP & Procurement
-  - Training
+  - Developers
 - id: tools
   name: Tools & Scripts
   icon: wrench

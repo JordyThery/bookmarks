@@ -14,7 +14,7 @@
       <span class="item-host">{{ $host }}</span>
     </span>
     <span class="item-meta">
-      {{- with $r.subcategory }}<span class="sub">{{ . }}</span>{{ end }}
+      {{- if not .grouped }}{{ with $r.subcategory }}<span class="sub">{{ . }}</span>{{ end }}{{ end }}
       {{- if $isGitHub }}<span class="badge">GitHub</span>{{ end }}
       {{- if $isApple }}<span class="badge badge-apple">Apple</span>{{ end }}
       {{- if in ($r.tags | default slice) "rss" }}<span class="badge">RSS</span>{{ end }}

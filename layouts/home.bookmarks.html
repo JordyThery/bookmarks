@@ -10,9 +10,22 @@
 {{- $items := index hugo.Data.resources .id }}
         <DT><H3>{{ .name | htmlEscape }}</H3>
         <DL><p>
+{{- $subs := .subcategories | default slice }}
+{{- $sorted := 0 }}{{ range $items }}{{ if .subcategory }}{{ $sorted = add $sorted 1 }}{{ end }}{{ end }}
+{{- if and (ge (len $subs) 2) (eq $sorted (len $items)) }}
+{{- range $subs }}{{ $subItems := where $items "subcategory" . }}{{ with $subItems }}
+            <DT><H3>{{ index $subItems 0 "subcategory" | htmlEscape }}</H3>
+            <DL><p>
+{{- range . }}{{ if not .archived }}
+                <DT><A HREF="{{ .url | htmlEscape }}">{{ .name | htmlEscape }}</A>
+{{- end }}{{ end }}
+            </DL><p>
+{{- end }}{{ end }}
+{{- else }}
 {{- range $items }}{{ if not .archived }}
             <DT><A HREF="{{ .url | htmlEscape }}">{{ .name | htmlEscape }}</A>
 {{- end }}{{ end }}
+{{- end }}
         </DL><p>
 {{- end }}
     </DL><p>

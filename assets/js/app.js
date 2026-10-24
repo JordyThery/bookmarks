@@ -51,6 +51,12 @@
         li.hidden = !ok;
         if (ok) n++;
       });
+      $$(".subgroup", g).forEach((sg) => {
+        const visible = $$(".item", sg).filter((li) => !li.hidden).length;
+        sg.hidden = visible === 0;
+        const c = $(".subcount", sg);
+        if (c) c.textContent = visible;
+      });
       g.hidden = n === 0;
       const count = $(".count", g);
       if (count) count.textContent = n;
