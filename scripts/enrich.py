@@ -12,7 +12,7 @@ Only empty fields are filled; anything a submitter or maintainer wrote is kept.
     # Fill one entry in a data file (used by .github/workflows/submission.yml)
     python scripts/enrich.py --file data/resources/tools.yaml --url https://github.com/org/tool
 
-    # Try it on some URLs without changing anything (used by enrich-test.yml)
+    # Try it on some URLs without changing anything
     python scripts/enrich.py --dry-run https://example.com https://github.com/org/tool
 
 Environment: GITHUB_TOKEN (optional, raises the GitHub API rate limit).
@@ -33,24 +33,20 @@ from resources_io import dump_resources, load_yaml, normalize_url
 from validate import COSTS, DESCRIPTION_MAX, KEYWORDS_MAX, PLATFORMS, WORKS_WITH
 
 USER_AGENT = "CommunityBookmarks/1.0 (+https://github.com/cbookmarks/bookmarks)"
-TEXT_LIMIT = 6000
 GENERIC = {"mac", "macos", "apple", "macadmin", "macadmins", "mac admin", "mac admins", "tool", "tools",
            "website", "admin", "sysadmin", "it", "osx", "macosx", "swift", "bash", "zsh", "python", "shell"}
 OPEN_LICENCES = {"MIT", "Apache-2.0", "BSD-2-Clause", "BSD-3-Clause", "GPL-2.0", "GPL-3.0", "LGPL-2.1",
                  "LGPL-3.0", "MPL-2.0", "ISC", "Unlicense", "AGPL-3.0", "0BSD", "CC0-1.0", "EPL-2.0"}
 
 
-
 class _Text(HTMLParser):
     def __init__(self):
         super().__init__()
-        self.title, self.meta, self.parts, self._skip, self._in_title = "", {}, [], 0, False
+        self.title, self.meta, self._in_title = "", {}, False
 
     def handle_starttag(self, tag, attrs):
         a = dict(attrs)
-        if tag in ("script", "style", "noscript", "svg", "nav", "footer"):
-            self._skip += 1
-        elif tag == "title":
+        if tag == "title":
             self._in_title = True
         elif tag == "meta":
             key = (a.get("name") or a.get("property") or "").lower()
@@ -58,20 +54,16 @@ class _Text(HTMLParser):
                 self.meta[key] = a["content"].strip()
 
     def handle_endtag(self, tag):
-        if tag in ("script", "style", "noscript", "svg", "nav", "footer") and self._skip:
-            self._skip -= 1
-        elif tag == "title":
+        if tag == "title":
             self._in_title = False
 
     def handle_data(self, data):
         if self._in_title:
             self.title += data
-        elif not self._skip and data.strip():
-            self.parts.append(data.strip())
 
 
-def http(url: str, headers: dict | None = None, data: bytes | None = None, timeout: int = 25) -> tuple[int, bytes]:
-    req = urllib.request.Request(url, data=data, headers={"User-Agent": USER_AGENT, **(headers or {})})
+def http(url: str, headers: dict | None = None, timeout: int = 25) -> tuple[int, bytes]:
+    req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT, **(headers or {})})
     try:
         with urllib.request.urlopen(req, timeout=timeout) as resp:
             return resp.status, resp.read(2_000_000)
@@ -96,14 +88,11 @@ def github_info(url: str, token: str | None) -> dict | None:
     if status != 200:
         return None
     info = json.loads(body)
-    readme_status, readme = http(f"https://api.github.com/repos/{owner}/{repo}/readme",
-                                 {**headers, "Accept": "application/vnd.github.raw+json"})
     return {
         "about": (info.get("description") or "").strip(),
         "topics": info.get("topics") or [],
         "licence": (info.get("license") or {}).get("spdx_id"),
         "archived": bool(info.get("archived")),
-        "text": readme.decode("utf-8", "replace")[:TEXT_LIMIT] if readme_status == 200 else "",
     }
 
 
@@ -120,7 +109,6 @@ def page_info(url: str) -> dict:
         "status": status,
         "title": " ".join(p.title.split()),
         "site_description": p.meta.get("description") or p.meta.get("og:description") or p.meta.get("twitter:description", ""),
-        "text": " ".join(" ".join(p.parts).split())[:TEXT_LIMIT],
     }
 
 
@@ -187,7 +175,7 @@ def main() -> int:
     summary = os.environ.get("GITHUB_STEP_SUMMARY")
 
     if args.dry_run:
-        lines = ["## Enrichment test", ""]
+        lines = ["## Fill-in preview", ""]
         for url in args.dry_run:
             fill, report = enrich({"url": url, "name": ""}, token)
             lines += [f"### {url}", "", "```yaml", dump_resources([{"name": "(name)", "url": url, **fill}]).strip(),

@@ -55,7 +55,6 @@ python3 scripts/validate.py --fix
 | --- | --- | --- |
 | `validate.yml` | Every pull request | Checks the data and that the site builds |
 | `submission.yml` | `approved` label on a submission issue | Adds the resource, fills in missing details from GitHub and opens a pull request |
-| `enrich-test.yml` | Manually | Shows what the automatic fill-in would produce for some URLs, without changing anything |
 | `deploy.yml` | Every push to `main` | Builds the site and publishes it to GitHub Pages |
 | `linkcheck.yml` | Mondays | Opens or updates one issue listing broken links |
 | Dependabot | Monthly | Keeps the GitHub Actions versions current |
