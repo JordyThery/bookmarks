@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
 """Fill in missing details for a resource: description, keywords, platforms, cost.
 
-Sources, in order:
-  1. GitHub API, for github.com repositories: About text, topics, licence, archived.
-  2. The page itself: title, the site's own description, readable text.
-  3. Optionally an AI summary through GitHub Models (needs `models: read` and GITHUB_TOKEN).
+Sources:
+  - GitHub API, for github.com repositories: About text, topics, licence, archived.
+    These are filled in automatically.
+  - Other sites: the site's own description is shown in the report as a suggestion,
+    not filled in, because it is often marketing copy.
 
 Only empty fields are filled; anything a submitter or maintainer wrote is kept.
 
@@ -14,8 +15,7 @@ Only empty fields are filled; anything a submitter or maintainer wrote is kept.
     # Try it on some URLs without changing anything (used by enrich-test.yml)
     python scripts/enrich.py --dry-run https://example.com https://github.com/org/tool
 
-Environment: GITHUB_TOKEN (GitHub API and GitHub Models), MODEL (GitHub Models model id,
-for example openai/gpt-4o; leave empty to skip the AI step).
+Environment: GITHUB_TOKEN (optional, raises the GitHub API rate limit).
 """
 from __future__ import annotations
 
@@ -32,7 +32,6 @@ from pathlib import Path
 from resources_io import dump_resources, load_yaml, normalize_url
 from validate import COSTS, DESCRIPTION_MAX, KEYWORDS_MAX, PLATFORMS, WORKS_WITH
 
-MODELS_URL = "https://models.github.ai/inference/chat/completions"
 USER_AGENT = "CommunityBookmarks/1.0 (+https://github.com/cbookmarks/bookmarks)"
 TEXT_LIMIT = 6000
 GENERIC = {"mac", "macos", "apple", "macadmin", "macadmins", "mac admin", "mac admins", "tool", "tools",
@@ -40,19 +39,6 @@ GENERIC = {"mac", "macos", "apple", "macadmin", "macadmins", "mac admin", "mac a
 OPEN_LICENCES = {"MIT", "Apache-2.0", "BSD-2-Clause", "BSD-3-Clause", "GPL-2.0", "GPL-3.0", "LGPL-2.1",
                  "LGPL-3.0", "MPL-2.0", "ISC", "Unlicense", "AGPL-3.0", "0BSD", "CC0-1.0", "EPL-2.0"}
 
-STYLE = f"""You write entries for Community Bookmarks, a directory for people who manage Apple devices (Mac admins).
-Return only a JSON object with these keys:
-- "description": one sentence, at most {DESCRIPTION_MAX} characters, saying concretely what it is or does.
-  Start with a verb or noun phrase, never "This site". No marketing words (best, powerful, seamless), no dates,
-  version numbers, "latest" or "next event". Only claims supported by the material given.
-- "keywords": 3 to 6 lowercase search terms an admin would type, especially ones not in the name:
-  acronyms (abm, ade, ddm, apns, mdm), related products (installomator, jamf pro), the problem it solves.
-  No generic words like mac, apple, tool, website, admin.
-- "platforms": subset of {sorted(PLATFORMS)}, only if clear; otherwise [].
-- "works_with": subset of {sorted(WORKS_WITH)}, only if the material says it's built for that tool; otherwise [].
-- "cost": one of {sorted(COSTS)} only if clear for software; otherwise "". Empty for docs, blogs, podcasts, communities.
-Example: {{"description": "Scans a Mac for installed apps, matches them to Installomator labels and updates the outdated ones.",
-"keywords": ["installomator", "patching", "app updates", "swiftdialog"], "platforms": ["macOS"], "works_with": [], "cost": "open-source"}}"""
 
 
 class _Text(HTMLParser):
@@ -138,28 +124,6 @@ def page_info(url: str) -> dict:
     }
 
 
-def ai_summary(entry: dict, material: dict, token: str, model: str) -> dict | None:
-    body = json.dumps({
-        "model": model,
-        "temperature": 0.2,
-        "messages": [
-            {"role": "system", "content": STYLE},
-            {"role": "user", "content": json.dumps({"name": entry.get("name"), "url": entry["url"],
-                                                    "category": entry.get("category"), **material})},
-        ],
-    }).encode()
-    status, resp = http(MODELS_URL, {"Authorization": f"Bearer {token}", "Content-Type": "application/json",
-                                     "Accept": "application/json"}, data=body, timeout=60)
-    if status != 200:
-        detail = " ".join(resp.decode("utf-8", "replace").split())[:300] if resp else "no response"
-        return f"GitHub Models answered HTTP {status or 'error'} ({model}): {detail}"
-    try:
-        text = json.loads(resp)["choices"][0]["message"]["content"]
-        return json.loads(re.search(r"\{.*\}", text, re.S).group(0))
-    except Exception as e:
-        return f"could not read the GitHub Models answer: {e}"
-
-
 def clean(result: dict) -> dict:
     """Keep only values that pass the same rules as validate.py."""
     out = {}
@@ -179,15 +143,15 @@ def clean(result: dict) -> dict:
     return out
 
 
-def enrich(entry: dict, token: str | None, model: str | None) -> tuple[dict, list[str]]:
+def enrich(entry: dict, token: str | None) -> tuple[dict, list[str]]:
     """Return (fields to fill, report lines). Never overwrites fields that already have a value."""
     found: dict = {}
     report: list[str] = []
     gh = github_info(entry["url"], token)
     if gh:
         if gh["about"] and len(gh["about"]) <= DESCRIPTION_MAX:
-            found["description"] = gh["about"]
-        topics = [t.replace("-", " ") for t in gh["topics"]][:6]
+            found["description"] = gh["about"].rstrip() if gh["about"].endswith(".") else gh["about"].rstrip() + "."
+        topics = [t.replace("-", " ") for t in gh["topics"]]
         if topics:
             found["keywords"] = topics
         if gh["licence"] in OPEN_LICENCES:
@@ -195,43 +159,21 @@ def enrich(entry: dict, token: str | None, model: str | None) -> tuple[dict, lis
         if gh["archived"]:
             found["archived"] = True
             report.append("the GitHub repository is archived")
-        material = {"github_about": gh["about"], "github_topics": gh["topics"], "readme": gh["text"]}
         source = "GitHub"
     else:
+        source = "the page"
         page = page_info(entry["url"])
         if page["status"] != 200:
-            report.append(f"page could not be read (HTTP {page['status'] or 'error'})")
-            material = {}
-        else:
-            material = {k: page[k] for k in ("title", "site_description", "text")}
-        source = "the page"
-
-    if model and token and material:
-        ai = ai_summary(entry, material, token, model)
-        if isinstance(ai, str):
-            report.append(f"AI summary failed: {ai}")
-            ai = None
-        if ai:
-            ai = clean(ai)
-            # The AI summary wins over GitHub's About text; GitHub topics are kept as keywords when present.
-            if "keywords" in found and "keywords" in ai:
-                ai["keywords"] = list(dict.fromkeys(found["keywords"] + ai["keywords"]))[:6]
-            found.update(ai)
-            source += f" + {model}"
-    if not found.get("description") and material.get("site_description"):
-        desc = " ".join(material["site_description"].split())
-        if len(desc) <= DESCRIPTION_MAX:
-            found["description"] = desc
+            report.append(f"page could not be read (HTTP {page['status'] or 'error'}); check the link")
+        elif page.get("site_description"):
+            report.append(f"the site describes itself as: \"{' '.join(page['site_description'].split())[:300]}\"")
 
     fill = {k: v for k, v in clean(found).items() if not entry.get(k)}
-    if not entry.get("description") and "description" not in fill:
-        report.append("no description could be found or written: add one before merging")
     if found.get("archived") and not entry.get("archived"):
         fill["archived"] = True
-    if fill:
-        report.insert(0, f"filled {', '.join(fill)} from {source}")
-    else:
-        report.insert(0, "nothing to fill")
+    report.insert(0, f"filled {', '.join(fill)} from {source}" if fill else "nothing filled in automatically")
+    if not entry.get("description") and "description" not in fill:
+        report.append("no description yet: add one before merging")
     return fill, report
 
 
@@ -241,13 +183,13 @@ def main() -> int:
     ap.add_argument("--url", help="url of the entry to fill in")
     ap.add_argument("--dry-run", nargs="+", metavar="URL", help="show what would be filled for these URLs")
     args = ap.parse_args()
-    token, model = os.environ.get("GITHUB_TOKEN"), os.environ.get("MODEL") or None
+    token = os.environ.get("GITHUB_TOKEN")
     summary = os.environ.get("GITHUB_STEP_SUMMARY")
 
     if args.dry_run:
-        lines = [f"## Enrichment test ({model or 'no AI'})", ""]
+        lines = ["## Enrichment test", ""]
         for url in args.dry_run:
-            fill, report = enrich({"url": url, "name": ""}, token, model)
+            fill, report = enrich({"url": url, "name": ""}, token)
             lines += [f"### {url}", "", "```yaml", dump_resources([{"name": "(name)", "url": url, **fill}]).strip(),
                       "```", "", *[f"- {r}" for r in report], ""]
         out = "\n".join(lines)
@@ -263,7 +205,7 @@ def main() -> int:
     if not target:
         print(f"No entry with url {args.url} in {args.file}", file=sys.stderr)
         return 1
-    fill, report = enrich(target, token, model)
+    fill, report = enrich(target, token)
     target.update(fill)
     args.file.write_text(dump_resources(entries), encoding="utf-8")
     print("\n".join(f"- {r}" for r in report))

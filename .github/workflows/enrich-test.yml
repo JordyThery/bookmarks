@@ -14,13 +14,9 @@ on:
           https://mrmacintosh.com/
           https://fleetdm.com/
           https://berlinmacadmins.github.io
-      model:
-        description: GitHub Models model id (empty = no AI, only GitHub and page details)
-        default: openai/gpt-4o
 
 permissions:
   contents: read
-  models: read
 
 jobs:
   test:
@@ -37,6 +33,5 @@ jobs:
       - name: Try the URLs
         env:
           GITHUB_TOKEN: ${{ github.token }}
-          MODEL: ${{ inputs.model }}
           URLS: ${{ inputs.urls }}
         run: python scripts/enrich.py --dry-run $URLS

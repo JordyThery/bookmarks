@@ -64,10 +64,10 @@ def main() -> int:
         "added": date.today(),
     }
     if len(entry["description"]) > DESCRIPTION_MAX:
-        # GitHub forms can't limit length. Leave it empty so the fill-in step writes a short one,
-        # and show the original in the pull request for the maintainer.
+        # GitHub forms can't limit length. Leave it out and show the original in the pull request,
+        # so the maintainer can shorten it before merging.
         print(f"Description was {len(entry['description'])} characters, over the {DESCRIPTION_MAX} limit; "
-              f"left for the automatic summary. Original: {entry['description']}")
+              f"shorten it and add it before merging. Original: {entry['description']}")
         entry["description"] = ""
 
     user = os.environ.get("ISSUE_USER")

@@ -10,11 +10,6 @@ permissions:
   contents: write
   pull-requests: write
   issues: write
-  models: read   # lets the built-in token use GitHub Models for the summary step
-
-env:
-  # GitHub Models model used to summarise the page. Leave empty to only use GitHub and page details.
-  MODEL: openai/gpt-4o
 
 jobs:
   create-pr:
@@ -61,7 +56,7 @@ jobs:
           {
             echo "Adds a resource from #${NUMBER}."
             echo
-            grep -h "left for the automatic summary" add.log && echo
+            grep -h "over the 140 limit" add.log && echo
             if [ -s enrich.log ]; then echo "Filled in automatically (check before merging):"; cat enrich.log; echo; fi
             if [ "$RESULT" = "0" ]; then echo "Validation passed."; else echo "**Validation failed.** Fix the entry on this branch before merging:"; fi
             echo
