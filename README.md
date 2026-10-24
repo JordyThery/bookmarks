@@ -52,7 +52,8 @@ python3 scripts/validate.py --fix
 | Workflow | When | What it does |
 | --- | --- | --- |
 | `validate.yml` | Every pull request | Checks the data and that the site builds |
-| `submission.yml` | `approved` label on a submission issue | Adds the resource and opens a pull request |
+| `submission.yml` | `approved` label on a submission issue | Adds the resource, fills in missing details and opens a pull request |
+| `enrich-test.yml` | Manually | Shows what the automatic fill-in would produce for some URLs, without changing anything |
 | `deploy.yml` | Every push to `main` | Builds the site and publishes it to GitHub Pages |
 | `linkcheck.yml` | Mondays | Opens or updates one issue listing broken links |
 | Dependabot | Monthly | Keeps the GitHub Actions versions current |
@@ -64,5 +65,9 @@ python3 scripts/validate.py --fix
 3. Create the labels `resource-submission`, `resource-update`, `approved` and `broken-links` (GitHub skips form labels that don't exist).
 4. If the repository moves, update `params.repo` in `hugo.toml`.
 5. For a custom domain, add it under Settings > Pages and point a CNAME record at `<owner>.github.io`.
+
+### Automatic fill-in
+
+When a submission is approved, `scripts/enrich.py` fills in fields the submitter left empty. GitHub projects get their About text, topics (as keywords), licence and archived status from the GitHub API. Other sites get their title and own description. On top of that, a summary and keywords are written with [GitHub Models](https://github.blog/ai-and-ml/llms/solving-the-inference-problem-for-open-source-ai-projects-with-github-models/), using the repository's built-in token; there is no API key to manage. Set `MODEL` in `submission.yml` to change the model, or leave it empty to skip the AI step. Everything filled in is listed in the pull request so a maintainer can check it.
 
 Pull requests opened by `submission.yml` use the default token, so GitHub doesn't run `validate.yml` on them. The validation result is written into the pull request description instead. To get the normal checks, use a GitHub App token in `submission.yml`.

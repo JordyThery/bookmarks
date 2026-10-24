@@ -56,6 +56,7 @@ def main() -> int:
         "url": get("URL"),
         "subcategory": get("Subcategory"),
         "description": " ".join(get("Description").split()),
+        "keywords": [k.strip().lower() for k in get("Keywords").split(",") if k.strip()][:8],
         "platforms": checked(form.get("Platforms", "")),
         "works_with": [WORKS_WITH[w] for w in checked(form.get("Works with", "")) if w in WORKS_WITH],
         "cost": get("Cost"),
@@ -82,7 +83,7 @@ def main() -> int:
     out = os.environ.get("GITHUB_OUTPUT")
     if out:
         with open(out, "a", encoding="utf-8") as fh:
-            fh.write(f"category={category['id']}\nname={entry['name']}\n")
+            fh.write(f"category={category['id']}\nname={entry['name']}\nurl={entry['url']}\nfile=data/resources/{category['id']}.yaml\n")
     return 0
 
 

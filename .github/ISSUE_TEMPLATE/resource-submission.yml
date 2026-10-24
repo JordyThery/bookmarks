@@ -54,6 +54,11 @@ body:
       placeholder: Installs and updates hundreds of Mac apps straight from the vendor.
     validations:
       required: true
+  - type: input
+    id: keywords
+    attributes:
+      label: Keywords
+      description: Optional. A few words people might search for, separated by commas. For example "filevault, escrow, recovery key".
   - type: checkboxes
     id: platforms
     attributes:

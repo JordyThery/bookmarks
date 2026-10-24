@@ -21,6 +21,7 @@ FIELDS = [
     "url",
     "subcategory",
     "description",
+    "keywords",
     "platforms",
     "works_with",
     "cost",

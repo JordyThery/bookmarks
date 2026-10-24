@@ -10,6 +10,11 @@ permissions:
   contents: write
   pull-requests: write
   issues: write
+  models: read   # lets the built-in token use GitHub Models for the summary step
+
+env:
+  # GitHub Models model used to summarise the page. Leave empty to only use GitHub and page details.
+  MODEL: openai/gpt-4o
 
 jobs:
   create-pr:
@@ -31,6 +36,14 @@ jobs:
           ISSUE_USER: ${{ github.event.issue.user.login }}
         run: python scripts/issue_to_resource.py
 
+      - name: Fill in missing details
+        id: enrich
+        continue-on-error: true   # never block a submission on this step
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          python scripts/enrich.py --file "${{ steps.add.outputs.file }}" --url "${{ steps.add.outputs.url }}" | tee enrich.log
+
       - name: Validate
         id: check
         run: |
@@ -47,6 +60,7 @@ jobs:
           {
             echo "Adds a resource from #${NUMBER}."
             echo
+            if [ -s enrich.log ]; then echo "Filled in automatically (check before merging):"; cat enrich.log; echo; fi
             if [ "$RESULT" = "0" ]; then echo "Validation passed."; else echo "**Validation failed.** Fix the entry on this branch before merging:"; fi
             echo
             echo '```'
@@ -55,7 +69,7 @@ jobs:
             echo
             echo "Closes #${NUMBER}"
           } > pr-body.md
-          rm validate.log
+          rm -f validate.log enrich.log
 
       - uses: peter-evans/create-pull-request@v8
         with:

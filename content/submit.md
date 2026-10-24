@@ -34,6 +34,7 @@ Each category is a YAML file in {{< repo "data/resources" "data/resources/" >}}.
   url: https://github.com/Installomator/Installomator
   subcategory: App management
   description: Installs and updates hundreds of Mac apps straight from the vendor.
+  keywords: [patching, app updates, labels]
   platforms: [macOS]
   works_with: [any-mdm]
   cost: open-source

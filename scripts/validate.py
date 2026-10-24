@@ -19,6 +19,7 @@ TAGS = {"rss", "http-only"}
 URL_RE = re.compile(r"^https?://[^\s/$.?#][^\s]*\.[^\s]+$")
 TRACKING_RE = re.compile(r"[?&](ref|aff|affiliate|utm_[a-z]+)=", re.I)
 DESCRIPTION_MAX = 140
+KEYWORDS_MAX = 8
 
 
 def main() -> int:
@@ -70,6 +71,16 @@ def main() -> int:
             desc = e.get("description")
             if desc and len(desc) > DESCRIPTION_MAX:
                 errors.append(f"{label}: description is {len(desc)} characters, keep it to {DESCRIPTION_MAX}")
+            kws = e.get("keywords")
+            if kws is not None:
+                if not isinstance(kws, list) or not all(isinstance(k, str) for k in kws):
+                    errors.append(f"{label}: keywords must be a list of words, like [filevault, escrow]")
+                else:
+                    if len(kws) > KEYWORDS_MAX:
+                        errors.append(f"{label}: {len(kws)} keywords, keep it to {KEYWORDS_MAX}")
+                    for k in kws:
+                        if k != k.lower() or not k.strip() or len(k) > 40:
+                            errors.append(f"{label}: keyword '{k}' must be lowercase and at most 40 characters")
             for key, allowed in (("platforms", PLATFORMS), ("works_with", WORKS_WITH), ("tags", TAGS)):
                 for v in e.get(key) or []:
                     if v not in allowed:

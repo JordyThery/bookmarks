@@ -24,6 +24,7 @@ Each category is a file in `data/resources/`. Add your entry anywhere in the rig
   url: https://github.com/Installomator/Installomator
   subcategory: App management
   description: Installs and updates hundreds of Mac apps straight from the vendor.
+  keywords: [patching, app updates, labels]
   platforms: [macOS]
   works_with: [any-mdm]
   cost: open-source
@@ -39,6 +40,7 @@ Then run `python3 scripts/validate.py --fix`. It sorts the file, applies the sta
 | `url` | Yes | Full `https://` address, unique across all files |
 | `subcategory` | No | One listed for that category in `data/categories.yaml` |
 | `description` | For new entries | Up to 140 characters |
+| `keywords` | No | Up to 8 lowercase search terms, for example `[filevault, escrow]`. Used by search, not shown |
 | `platforms` | No | `macOS`, `iOS`, `iPadOS`, `tvOS`, `visionOS`, `watchOS` |
 | `works_with` | No | `any-mdm`, `jamf`, `intune`, `iru`, `mosyle`, `addigy`, `filewave`, `workspace-one`, `hexnode`, `simplemdm`, `jumpcloud`, `fleet`, `munki` |
 | `cost` | No | `free`, `open-source`, `freemium`, `paid` |
@@ -56,6 +58,6 @@ Edit `data/categories.yaml`. A new category also needs an empty `data/resources/
 1. New submissions arrive as issues labelled `resource-submission`.
 2. Check them against the points above. If it's not a fit, close the issue with a short note.
 3. If it is, add the `approved` label. A workflow adds the entry and opens a pull request.
-4. Check the validation result in the pull request description, adjust the subcategory if needed, and merge. The site updates a few minutes later.
+4. Check the pull request description: it lists what was filled in automatically and the validation result. Fix anything that's off, adjust the subcategory if needed, and merge. The site updates a few minutes later.
 
 If the workflow can't add the entry (for example, it's already listed), it comments on the issue with the reason.
