@@ -84,6 +84,16 @@
   keywords: [ddm, mdm, payloads, declarative device management, configuration profile]
   platforms: [macOS, iOS, iPadOS, tvOS, visionOS, watchOS]
 
+- name: AppSettings2Blueprint
+  url: https://github.com/JordyThery/AppSettings2Blueprint
+  subcategory: Jamf
+  description: Finds app identifiers, builds App Settings allow and deny rules and deploys them as a Jamf Blueprint.
+  keywords: [app settings, ddm, blueprints, bundle id, team id]
+  platforms: [macOS]
+  works_with: [jamf]
+  cost: open-source
+  added: 2026-10-24
+
 - name: Aurora Screen Shot
   url: https://leo2008k.github.io/AuroraScreenShot
   subcategory: Utilities
@@ -157,9 +167,9 @@
 
 - name: Blueprint Managed Preferences Editor
   url: https://github.com/JordyThery/Blueprint-Managed-Preferences-Editor
-  subcategory: Utilities
-  description: Edits the read-only legacy Managed Preferences in Jamf Pro Blueprints through the Jamf Platform API, with backups before saving.
-  keywords: [blueprints, jamf platform api, custom settings, plist, ddm]
+  subcategory: Jamf
+  description: Edits the read-only Managed Preferences that Jamf Pro creates when classic profiles are converted to Blueprints.
+  keywords: [blueprints, managed preferences, custom settings, plist, jamf platform api]
   platforms: [macOS]
   works_with: [jamf]
   cost: open-source
@@ -198,10 +208,10 @@
 
 - name: Checkpoint
   url: https://github.com/JordyThery/Checkpoint
-  subcategory: Utilities
-  description: Mac app that shows each serial number's status in Apple Business and Jamf Pro side by side and can fix assignments or scope.
-  keywords: [abm, prestage, serial number, device assignment, jamf pro]
-  platforms: [macOS]
+  subcategory: Inspection
+  description: Shows each serial number in Apple Business and Jamf Pro side by side, with actions such as reassigning the MDM server.
+  keywords: [apple business, abm, serial numbers, prestage, reconciliation]
+  platforms: [macOS, iOS, iPadOS]
   works_with: [jamf]
   cost: open-source
 
@@ -367,11 +377,21 @@
   works_with: [jamf, iru, mosyle, addigy, filewave]
   cost: open-source
 
+- name: Intune Deployer
+  url: https://github.com/JordyThery/intune-deployer
+  subcategory: Intune
+  description: Applies macOS settings, profiles, compliance policies and scripts from folders or GitHub to Intune, after a dry-run plan.
+  keywords: [microsoft graph, settings catalog, baseline, entra, mobileconfig]
+  platforms: [macOS]
+  works_with: [intune]
+  cost: open-source
+  added: 2026-10-24
+
 - name: Intune Onboard
   url: https://github.com/JordyThery/IntuneOnboard
   subcategory: Intune
-  description: SwiftUI app, set by one configuration profile, that provisions Intune Macs during Setup Assistant and onboards users at first login.
-  keywords: [ade, setup assistant, enrollment, installomator, dockutil, provisioning]
+  description: 'Mac enrollment experience for Intune: installs apps during Setup Assistant, then sets the Dock, wallpaper and defaults at login.'
+  keywords: [ade, setup assistant, onboarding, provisioning, standard user]
   platforms: [macOS]
   works_with: [intune]
   cost: open-source
@@ -433,6 +453,16 @@
   keywords: [json schema, custom settings, profilecreator, manifests, preferences]
   works_with: [jamf]
 
+- name: Jamf Deployer
+  url: https://github.com/JordyThery/jamf-deployer
+  subcategory: Jamf
+  description: Deploys Jamf tenants to a best-practice baseline with OpenTofu, captures existing setups and checks them for drift.
+  keywords: [opentofu, terraform, msp, baseline, drift, jamf protect]
+  platforms: [macOS]
+  works_with: [jamf]
+  cost: open-source
+  added: 2026-10-24
+
 - name: Jamf Extender
   url: https://github.com/Jamf-Concepts/Jamf-Extender
   subcategory: Jamf
@@ -456,6 +486,16 @@
   keywords: [dependencies, cleanup, audit, smart groups, jamf pro api]
   platforms: [macOS]
   works_with: [jamf]
+
+- name: Jamf Migrator
+  url: https://github.com/JordyThery/JamfMigrator
+  subcategory: Jamf
+  description: Copies whole Jamf tenants or single objects between Jamf Pro servers and files, with a dry-run preview. Based on Jamf Replicator.
+  keywords: [replicator, migration, tenant, jamf platform api, jamf pro api]
+  platforms: [macOS]
+  works_with: [jamf]
+  cost: open-source
+  added: 2026-10-24
 
 - name: Jamf Open Source
   url: https://github.com/jamf
@@ -545,6 +585,13 @@
   platforms: [macOS]
   works_with: [jamf]
   cost: open-source
+
+- name: Jordy Thery's Mac admin apps
+  url: https://jordythery.be/apps.html
+  subcategory: Scripts & references
+  description: Jordy Thery's collection of Mac admin apps for Jamf Pro, Intune and Apple Business, with a page for each app.
+  keywords: [jamf, intune, blueprints, apple business, swift apps]
+  added: 2026-10-24
 
 - name: Just Upgrade and Migrate to Intune
   url: https://github.com/pathaksomesh06/JUMP-IN
@@ -853,9 +900,9 @@
 
 - name: Profile2Blueprint
   url: https://github.com/JordyThery/Profile2Blueprint
-  subcategory: Profiles & compliance
-  description: Mac app that migrates Jamf Pro classic configuration profiles to Jamf Platform Blueprints in staged, verified steps.
-  keywords: [blueprints, ddm, declarative device management, configuration profiles, migration, jamf platform]
+  subcategory: Jamf
+  description: Mac app that migrates Jamf Pro classic configuration profiles to Jamf Blueprints, verifying them before you deploy.
+  keywords: [blueprints, ddm, configuration profiles, migration, jamf platform api]
   platforms: [macOS]
   works_with: [jamf]
   cost: open-source
@@ -983,9 +1030,9 @@
 
 - name: Serial Number Reader
   url: https://github.com/JordyThery/Serial-Number-Reader
-  subcategory: Utilities
-  description: Mac app that reads serial numbers of USB-connected iPhones, iPads and Macs, even in Recovery or DFU, and looks them up in Jamf Pro.
-  keywords: [serial number, usb, dfu, recovery mode, jamf pro, device lookup]
+  subcategory: Jamf
+  description: Reads serial numbers of connected iPhones, iPads and Macs, even ones that won't boot, and looks them up in Jamf Pro.
+  keywords: [serial number, usb, inventory, csv export, jamf pro]
   platforms: [macOS, iOS, iPadOS]
   works_with: [jamf]
   cost: open-source
