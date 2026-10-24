@@ -121,13 +121,13 @@ a:hover { text-decoration: underline; }
 .cat-name { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .subs { display: flex; flex-direction: column; gap: 1px; margin: 1px 0 4px; }
 .subs[hidden] { display: none; }
-.sub {
+.subcat {
   display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: 9px;
   padding: 4px 8px 4px 41px; border-radius: 8px; color: var(--secondary); font-size: 13.5px;
 }
-.sub:hover { background: var(--fill); color: var(--label); text-decoration: none; }
-.sub[aria-current="true"] { background: var(--accent); color: var(--on-accent); }
-.sub[aria-current="true"] .n { color: rgb(255 255 255 / 0.8); }
+.subcat:hover { background: var(--fill); color: var(--label); text-decoration: none; }
+.subcat[aria-current="true"] { background: var(--accent); color: var(--on-accent); }
+.subcat[aria-current="true"] .n { color: rgb(255 255 255 / 0.8); }
 .n { font-size: 12.5px; color: var(--tertiary); font-variant-numeric: tabular-nums; }
 
 .tile {
@@ -210,7 +210,12 @@ a:hover { text-decoration: underline; }
   font: 650 15px var(--font-display);
   background: color-mix(in srgb, var(--c) 15%, transparent);
   color: color-mix(in srgb, var(--c) 72%, var(--label));
+  position: relative; overflow: hidden;
 }
+/* The site's own icon, loaded live; if it's missing the img removes itself and the letter shows */
+.mono:has(img) { background: #fff; color: transparent; box-shadow: inset 0 0 0 0.5px rgb(0 0 0 / 0.12); }
+.mono img { position: absolute; inset: 0; margin: auto; width: 20px; height: 20px; object-fit: contain; }
+.mono img.avatar { width: 100%; height: 100%; object-fit: cover; }
 .item-body { display: flex; flex-direction: column; min-width: 0; }
 .item-name { font-weight: 590; line-height: 1.3; }
 .item-desc { font-size: 13.5px; color: var(--secondary); line-height: 1.4; margin-top: 1px; }
@@ -289,5 +294,5 @@ a:hover { text-decoration: underline; }
   .toolbar-actions { width: 100%; justify-content: space-between; }
 }
 @media (prefers-reduced-motion: no-preference) {
-  .item-link, .cat, .sub, .chip, .segmented button { transition: background-color 0.12s ease, color 0.12s ease; }
+  .item-link, .cat, .subcat, .chip, .segmented button { transition: background-color 0.12s ease, color 0.12s ease; }
 }

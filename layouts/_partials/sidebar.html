@@ -30,7 +30,7 @@
     {{- if ge (len $subs) 2 }}
     <div class="subs" data-for="{{ .id }}" hidden>
       {{- range $subs }}{{ $slug := urlize . | replaceRE "-+" "-" }}
-      <a class="sub" href="{{ $home }}#{{ $cat.id }}/{{ $slug }}" data-cat="{{ $cat.id }}" data-sub="{{ . }}" data-slug="{{ $slug }}"><span class="cat-name">{{ . }}</span><span class="n">{{ len (where $items "subcategory" .) }}</span></a>
+      <a class="subcat" href="{{ $home }}#{{ $cat.id }}/{{ $slug }}" data-cat="{{ $cat.id }}" data-sub="{{ . }}" data-slug="{{ $slug }}"><span class="cat-name">{{ . }}</span><span class="n">{{ len (where $items "subcategory" .) }}</span></a>
       {{- end }}
     </div>
     {{- end }}

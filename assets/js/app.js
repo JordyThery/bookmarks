@@ -7,7 +7,7 @@
 
   const groups = $$(".group");
   const cats = $$(".cat");
-  const subLinks = $$(".sub");
+  const subLinks = $$(".subcat");
   const subsLists = $$(".subs");
   const chips = $("#chips");
   const status = $("#status");
