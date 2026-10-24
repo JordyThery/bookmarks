@@ -36,6 +36,9 @@ jobs:
         uses: actions/configure-pages@v6
 
       - name: Build
+        env:
+          # Links to the submission form and repository always point to the repository the site is built from.
+          HUGO_PARAMS_REPO: ${{ github.server_url }}/${{ github.repository }}
         run: hugo --gc --baseURL "${{ steps.pages.outputs.base_url }}/"
 
       - uses: actions/upload-pages-artifact@v5

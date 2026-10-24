@@ -16,7 +16,7 @@
   description: Apple Developer RSS feed announcing OS, Xcode and App Store Connect releases, betas and release candidates.
   keywords: [rss, betas, release candidate, xcode, software updates]
   platforms: [macOS, iOS, iPadOS, tvOS, visionOS, watchOS]
-  tags: [rss]
+  tags: [apple, rss]
 
 - name: AWS Health - Service health
   url: https://health.aws.amazon.com/health/status

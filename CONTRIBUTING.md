@@ -44,7 +44,7 @@ Then run `python3 scripts/validate.py --fix`. It sorts the file, applies the sta
 | `platforms` | No | `macOS`, `iOS`, `iPadOS`, `tvOS`, `visionOS`, `watchOS` |
 | `works_with` | No | `any-mdm`, `jamf`, `intune`, `iru`, `mosyle`, `addigy`, `filewave`, `workspace-one`, `hexnode`, `simplemdm`, `jumpcloud`, `fleet`, `munki` |
 | `cost` | No | `free`, `open-source`, `freemium`, `paid` |
-| `tags` | No | `rss`, `http-only` (for the rare site without https) |
+| `tags` | No | `apple` (published by Apple itself; shows the Apple badge and the "From Apple" filter), `rss`, `http-only` (for the rare site without https) |
 | `added` | No | Date, set automatically for form submissions |
 | `submitted_by` | No | Set automatically for form submissions |
 | `archived` | No | `true` for projects that are no longer maintained but still worth listing |

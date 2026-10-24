@@ -1226,6 +1226,7 @@
   keywords: [ide, swiftui, developer tools, mac app store]
   platforms: [macOS]
   cost: free
+  tags: [apple]
 
 - name: XCreds
   url: https://github.com/twocanoes/xcreds

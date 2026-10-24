@@ -1,8 +1,11 @@
 {{- /* One resource row. Context: dict "r" (resource) "cat" (category) */ -}}
 {{- $r := .r }}{{ $cat := .cat -}}
 {{- $host := replaceRE `^www\.` "" (urls.Parse $r.url).Host -}}
-{{- $isGitHub := or (eq $host "github.com") (strings.HasSuffix $host ".github.io") -}}
-{{- $isApple := or (eq $host "apple.com") (strings.HasSuffix $host ".apple.com") (eq $host "apple.co") -}}
+{{- /* "On GitHub" means a github.com repository or account, not a site hosted on GitHub Pages. */ -}}
+{{- $isGitHub := eq $host "github.com" -}}
+{{- /* "From Apple" is set in the data with the apple tag, because the address alone can't tell
+       Apple's own pages from App Store or Podcasts listings of third-party apps and shows. */ -}}
+{{- $isApple := in ($r.tags | default slice) "apple" -}}
 {{- $letter := substr (replaceRE `(?i)^the\s+` "" $r.name) 0 1 | upper -}}
 {{- $search := lower (delimit (slice $r.name ($r.description | default "") (delimit ($r.keywords | default slice) " ") $host ($r.subcategory | default "") $cat.name (delimit ($r.tags | default slice) " ")) " ") -}}
 <li class="item{{ if $r.archived }} is-archived{{ end }}" data-sub="{{ $r.subcategory }}" data-s="{{ $search }}"{{ if $isGitHub }} data-github{{ end }}{{ if $isApple }} data-apple{{ end }}>

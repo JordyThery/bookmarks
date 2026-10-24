@@ -61,7 +61,7 @@ python3 scripts/validate.py --fix
 1. Settings > Pages > Source: **GitHub Actions**.
 2. Settings > Actions > General > Workflow permissions: allow GitHub Actions to **create and approve pull requests**.
 3. Create the labels `resource-submission`, `resource-update`, `approved` and `broken-links` (GitHub skips form labels that don't exist).
-4. If the repository moves, update `params.repo` in `hugo.toml`.
+4. Nothing to change when the repository moves: the deploy workflow points the Submit and GitHub links at the repository it builds from.
 5. For a custom domain, add it under Settings > Pages and point a CNAME record at `<owner>.github.io`.
 
 ### Automatic fill-in

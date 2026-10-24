@@ -15,7 +15,7 @@ from resources_io import FIELDS, RESOURCES, dump_resources, load_categories, loa
 PLATFORMS = {"macOS", "iOS", "iPadOS", "tvOS", "visionOS", "watchOS"}
 WORKS_WITH = {"any-mdm", "jamf", "intune", "iru", "mosyle", "addigy", "filewave", "workspace-one", "hexnode", "simplemdm", "jumpcloud", "fleet", "munki"}
 COSTS = {"free", "open-source", "paid", "freemium"}
-TAGS = {"rss", "http-only"}
+TAGS = {"rss", "http-only", "apple"}
 URL_RE = re.compile(r"^https?://[^\s/$.?#][^\s]*\.[^\s]+$")
 TRACKING_RE = re.compile(r"[?&](ref|aff|affiliate|utm_[a-z]+)=", re.I)
 DESCRIPTION_MAX = 140

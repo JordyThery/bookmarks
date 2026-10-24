@@ -4,7 +4,7 @@
   description: YouTube channel of Academia Group, an IT solutions provider for education, charities and business, with Apple and iPad content.
   keywords: [appleeduchat, ipad, education, edtech, academia]
 
-- name: Addigy
+- name: Addigy on YouTube
   url: https://www.youtube.com/@addigy
   subcategory: Video
   description: 'Addigy''s YouTube channel for its cloud Apple device management platform: asset management, monitoring, remediation and deployment.'
@@ -48,17 +48,11 @@
   keywords: [intune for education, schools, endpoint manager, microsoft, education]
   works_with: [intune]
 
-- name: Iru
+- name: Iru on YouTube
   url: https://www.youtube.com/@KandjiOfficial
   subcategory: Video
   description: YouTube channel of Iru, formerly Kandji, the Apple device management and endpoint security platform.
   keywords: [kandji, mdm, endpoint security, webinars, demos]
-
-- name: Jamf
-  url: https://www.youtube.com/@JAMFMedia
-  subcategory: Video
-  description: Jamf's official YouTube channel covering Apple device management, endpoint security, zero trust access and education.
-  keywords: [jamf pro, jamf protect, jamf connect, jnuc, ztna]
 
 - name: Jamf After Dark
   url: https://podcasts.apple.com/us/podcast/jamf-after-dark/id1434572611?mt=2
@@ -66,6 +60,12 @@
   description: Jamf podcast where IT leaders, security pros and Apple experts discuss device management, endpoint security and identity.
   keywords: [jamf pro, jamf threat labs, platform sso, jnuc, security]
   works_with: [jamf]
+
+- name: Jamf on YouTube
+  url: https://www.youtube.com/@JAMFMedia
+  subcategory: Video
+  description: Jamf's official YouTube channel covering Apple device management, endpoint security, zero trust access and education.
+  keywords: [jamf pro, jamf protect, jamf connect, jnuc, ztna]
 
 - name: JNUC 2024
   url: https://www.youtube.com/playlist?list=PLlxHm_Px-Ie1NYs8E3zHEL0ktmM-Mrgzn
@@ -92,7 +92,7 @@
   description: Jigsaw24 podcast interviewing IT leaders and experts about their careers, Apple in the enterprise, AI, cloud and security.
   keywords: [jigsaw24, it careers, leadership, enterprise, uk]
 
-- name: London Apple Admins
+- name: London Apple Admins on YouTube
   url: https://www.youtube.com/@londonappleadmins
   subcategory: Video
   description: Recordings of talks from London Apple Admins meetups.
@@ -103,12 +103,6 @@
   subcategory: Conference recordings
   description: Session recordings from the Mac Admins Europe conference, with a playlist per year.
   keywords: [mac admins europe, sessions, conference talks, europe]
-
-- name: Mac Admins India
-  url: https://www.youtube.com/channel/UCCXssSduB96r1OtRB4ipCVg
-  subcategory: Video
-  description: Recordings of events and tech sessions from the MacAdmins community in India.
-  keywords: [india, macadmins.in, connect, meetup, conference]
 
 - name: Mac Admins India Connect 2025
   url: https://www.youtube.com/playlist?list=PL6wLhKit19O2BIyHNCGPyBUH8xI9UlLID
@@ -122,19 +116,25 @@
   description: Session recordings from Mac Admins India Connect 2026, the second edition of the conference.
   keywords: [india, mac admins india, sessions, conference talks]
 
+- name: Mac Admins India on YouTube
+  url: https://www.youtube.com/channel/UCCXssSduB96r1OtRB4ipCVg
+  subcategory: Video
+  description: Recordings of events and tech sessions from the MacAdmins community in India.
+  keywords: [india, macadmins.in, connect, meetup, conference]
+
 - name: Mac Admins Podcast
   url: https://podcast.macadmins.org/
   subcategory: Podcasts
   description: Home of the Mac Admins Podcast, a weekly show by Mac admins for Mac admins, with episode pages and summaries.
   keywords: [macadmins.org, episodes, mdm, ddm, security]
 
-- name: MacAD.UK
+- name: MacAD.UK on YouTube
   url: https://www.youtube.com/@MacADUK/playlists
   subcategory: Conference recordings
   description: Session recordings from the MacAD.UK conference in London, with a playlist per year.
   keywords: [macad.uk, london, sessions, conference talks]
 
-- name: MacAdmins Conference
+- name: MacAdmins Conference on YouTube
   url: https://www.youtube.com/@MacAdmins/playlists
   subcategory: Conference recordings
   description: Session recordings from the MacAdmins Conference at Penn State, with a playlist per year.
@@ -152,7 +152,7 @@
   description: Session recordings from the MacSysAdmin conference in Sweden, with playlists per year and day.
   keywords: [macsysadmin, sweden, sessions, conference talks]
 
-- name: Mr. Macintosh
+- name: Mr. Macintosh on YouTube
   url: https://www.youtube.com/channel/UC7FRPWLwRlhORhFHHywfqAg
   subcategory: Video
   description: Mac and macOS how-to videos on installers, recovery, DFU restores, Apple silicon and running macOS on older Macs.
