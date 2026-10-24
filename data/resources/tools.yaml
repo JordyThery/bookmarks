@@ -15,12 +15,6 @@
   works_with: [any-mdm]
   cost: open-source
 
-- name: ADEPT
-  url: https://git.tramscloud.co.uk/projects/XCOD/repos/adept/browse
-  subcategory: Utilities
-  description: Mac admin utility hosted on a TRAMS Bitbucket server; its purpose could not be verified.
-  keywords: [trams, bitbucket, ade]
-
 - name: Adobe Overview Feed for Apple
   url: https://github.com/cocopuff2u/AOFA
   subcategory: Utilities

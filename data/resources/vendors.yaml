@@ -107,12 +107,6 @@
   description: Jamf's online training catalogue of paths, modules, workshops and quizzes for Jamf Pro, School, Now, Protect and Connect.
   keywords: [training, courses, certification, jamf 100, jamf pro, e-learning]
 
-- name: Jamf Trusted Access Solution Center
-  url: https://trust.jamf.com
-  subcategory: Jamf
-  description: Jamf resource hub on Trusted Access, Jamf's approach combining device management, identity and endpoint security.
-  keywords: [trusted access, zero trust, jamf connect, jamf protect, identity]
-
 - name: JumpCloud
   url: https://jumpcloud.com/
   description: Cloud directory platform combining identity, SSO, MFA and device management for Windows, Apple, Linux and Android devices.

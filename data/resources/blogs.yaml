@@ -109,11 +109,6 @@
   keywords: [dan snelson, mac health check, ddm os reminder, jamf pro, scripts]
   platforms: [macOS]
 
-- name: Mac Connection Standards
-  url: https://macattorney.com/MacConnectionStandards.pdf
-  description: PDF document titled Mac Connection Standards, hosted on macattorney.com.
-  keywords: [connection standards, pdf, macattorney]
-
 - name: MacAdmin Blogs via Feedspot
   url: https://bloggers.feedspot.com/mac_blogs/
   subcategory: Aggregators

@@ -460,15 +460,15 @@
 - name: Mac Skills Series
   url: https://apple.co/macskills
   subcategory: User Training
-  description: Apple's event series on Mac skills for enterprise, government and education organisations, on Apple's events site.
+  description: Apple's event series teaching end users everyday Mac skills, for enterprise, government and education organisations.
   keywords: [end user training, switching to mac, onboarding, video, adoption]
   platforms: [macOS]
 
-- name: Mac technical skill series
+- name: Mac Technical Skills Series
   url: https://apple.co/techskills
   subcategory: IT Training
-  description: Apple training series on Mac technical skills for IT and support staff, reached through an apple.co short link.
-  keywords: [it training, mac support, troubleshooting, skills]
+  description: Apple's event series on Mac technical skills for IT and helpdesk staff; the technical companion to the Mac Skills Series.
+  keywords: [helpdesk, it support, training, apple at work, events]
 
 - name: macOS Security Compliance Project (Apple Platform Certifications)
   url: https://support.apple.com/guide/certifications/macos-security-compliance-project-apc322685bb2/web
