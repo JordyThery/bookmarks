@@ -31,6 +31,10 @@ Use the [submission form](../../issues/new?template=resource-submission.yml). No
 
 The site is plain [Hugo](https://gohugo.io) with no theme dependency, no Node.js and no build tools beyond the Hugo binary.
 
+### Licence
+
+The resource data (`data/`) is released under [CC0 1.0](LICENSE-DATA): anyone can reuse it without asking. The site code, theme and scripts are under the [MIT licence](LICENSE).
+
 ### Run it locally
 
 ```sh

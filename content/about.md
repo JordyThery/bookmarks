@@ -20,3 +20,5 @@ The site is built with [Hugo](https://gohugo.io) and hosted on GitHub Pages. The
 ## Use the data
 
 {{< data-links >}}
+
+The data is in the public domain under CC0 1.0, so you can reuse it freely.

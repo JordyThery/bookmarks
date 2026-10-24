@@ -34,7 +34,8 @@ jobs:
         env:
           ISSUE_BODY: ${{ github.event.issue.body }}
           ISSUE_USER: ${{ github.event.issue.user.login }}
-        run: python scripts/issue_to_resource.py
+        shell: bash   # runs with pipefail, so a rejected submission still stops the workflow
+        run: python scripts/issue_to_resource.py | tee add.log
 
       - name: Fill in missing details
         id: enrich
@@ -60,6 +61,7 @@ jobs:
           {
             echo "Adds a resource from #${NUMBER}."
             echo
+            grep -h "left for the automatic summary" add.log && echo
             if [ -s enrich.log ]; then echo "Filled in automatically (check before merging):"; cat enrich.log; echo; fi
             if [ "$RESULT" = "0" ]; then echo "Validation passed."; else echo "**Validation failed.** Fix the entry on this branch before merging:"; fi
             echo
@@ -69,7 +71,7 @@ jobs:
             echo
             echo "Closes #${NUMBER}"
           } > pr-body.md
-          rm -f validate.log enrich.log
+          rm -f validate.log enrich.log add.log
 
       - uses: peter-evans/create-pull-request@v8
         with:

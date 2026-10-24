@@ -13,6 +13,7 @@ import sys
 from datetime import date
 
 from resources_io import RESOURCES, dump_resources, load_categories, load_yaml, normalize_url
+from validate import DESCRIPTION_MAX
 
 EMPTY = {"", "_No response_", "None"}
 
@@ -62,6 +63,13 @@ def main() -> int:
         "cost": get("Cost"),
         "added": date.today(),
     }
+    if len(entry["description"]) > DESCRIPTION_MAX:
+        # GitHub forms can't limit length. Leave it empty so the fill-in step writes a short one,
+        # and show the original in the pull request for the maintainer.
+        print(f"Description was {len(entry['description'])} characters, over the {DESCRIPTION_MAX} limit; "
+              f"left for the automatic summary. Original: {entry['description']}")
+        entry["description"] = ""
+
     user = os.environ.get("ISSUE_USER")
     if user:
         entry["submitted_by"] = f"@{user}"
