@@ -67,12 +67,24 @@
   keywords: [jamf pro, jamf threat labs, platform sso, jnuc, security]
   works_with: [jamf]
 
+- name: JNUC 2024
+  url: https://www.youtube.com/playlist?list=PLlxHm_Px-Ie1NYs8E3zHEL0ktmM-Mrgzn
+  subcategory: Conference recordings
+  description: Jamf's playlist of session recordings from the Jamf Nation User Conference 2024 in Nashville.
+  keywords: [jnuc, jamf nation, sessions, nashville]
+
 - name: JNUC 2025
   url: https://www.youtube.com/playlist?list=PLlxHm_Px-Ie0DkjJe6xzYhFhwIn2SUhHJ
-  subcategory: Video
-  description: Jamf's YouTube playlist of session and keynote recordings from the Denver edition of JNUC, Jamf's user conference.
-  keywords: [jamf nation user conference, jnuc, keynote, jamf pro, sessions]
+  subcategory: Conference recordings
+  description: Jamf's playlist of session recordings from the Jamf Nation User Conference 2025.
+  keywords: [jnuc, jamf nation, sessions, jamf pro]
   works_with: [jamf]
+
+- name: JNUC 2026
+  url: https://www.youtube.com/playlist?list=PLlxHm_Px-Ie0Lbh7ruho_kEswwXLBBZh2
+  subcategory: Conference recordings
+  description: Jamf's playlist of videos from the Jamf Nation User Conference 2026 in Kansas City.
+  keywords: [jnuc, jamf nation, sessions, kansas city]
 
 - name: Keeping IT Talking (Jigsaw24)
   url: https://www.jigsaw24.com/keeping-it-talking
@@ -87,16 +99,28 @@
   keywords: [london, laa, meetup, uk, user group]
 
 - name: Mac Admins Europe
-  url: https://www.youtube.com/@MacAdminsEU
-  subcategory: Video
-  description: Session recordings from the Mac Admins Europe conference on Apple device management, security, automation and identity.
-  keywords: [macadmins eu, conference, leiden, mdm, automation]
+  url: https://www.youtube.com/@MacAdminsEU/playlists
+  subcategory: Conference recordings
+  description: Session recordings from the Mac Admins Europe conference, with a playlist per year.
+  keywords: [mac admins europe, sessions, conference talks, europe]
 
 - name: Mac Admins India
   url: https://www.youtube.com/channel/UCCXssSduB96r1OtRB4ipCVg
   subcategory: Video
   description: Recordings of events and tech sessions from the MacAdmins community in India.
   keywords: [india, macadmins.in, connect, meetup, conference]
+
+- name: Mac Admins India Connect 2025
+  url: https://www.youtube.com/playlist?list=PL6wLhKit19O2BIyHNCGPyBUH8xI9UlLID
+  subcategory: Conference recordings
+  description: Session recordings from the first Mac Admins India Connect conference.
+  keywords: [india, mac admins india, sessions, conference talks]
+
+- name: Mac Admins India Connect 2026
+  url: https://www.youtube.com/playlist?list=PLelcCocSewHs
+  subcategory: Conference recordings
+  description: Session recordings from Mac Admins India Connect 2026, the second edition of the conference.
+  keywords: [india, mac admins india, sessions, conference talks]
 
 - name: Mac Admins Podcast
   url: https://podcast.macadmins.org/
@@ -105,28 +129,28 @@
   keywords: [macadmins.org, episodes, mdm, ddm, security]
 
 - name: MacAD.UK
-  url: https://www.youtube.com/@MacADUK
-  subcategory: Video
-  description: YouTube channel of MacAD.UK, the UK technical conference for Apple in enterprise and education.
-  keywords: [macaduk, conference, london, uk, sessions]
+  url: https://www.youtube.com/@MacADUK/playlists
+  subcategory: Conference recordings
+  description: Session recordings from the MacAD.UK conference in London, with a playlist per year.
+  keywords: [macad.uk, london, sessions, conference talks]
 
 - name: MacAdmins Conference
-  url: https://www.youtube.com/@MacAdmins
-  subcategory: Video
-  description: Session recordings from the MacAdmins Conference on deploying, managing and securing Macs and iOS devices.
-  keywords: [penn state, psu, conference, sessions, mdm]
+  url: https://www.youtube.com/@MacAdmins/playlists
+  subcategory: Conference recordings
+  description: Session recordings from the MacAdmins Conference at Penn State, with a playlist per year.
+  keywords: [psu macadmins, penn state, sessions, conference talks]
 
-- name: MacAdmins India Connect 2026 kick-off
-  url: https://www.youtube.com/watch?v=2JFU6l_Hvh4
-  subcategory: Video
-  description: Opening session of Mac Admins India Connect, a Bengaluru conference for India's Apple IT community.
-  keywords: [india, bengaluru, conference, keynote]
+- name: MacDevOps (YVR and YUL)
+  url: https://www.youtube.com/c/MDOYVR/playlists
+  subcategory: Conference recordings
+  description: Session recordings from the MacDevOpsYVR conference and its successor MacDevOpsYUL, with a playlist per year.
+  keywords: [macdevops, mdoyvr, devops, automation, sessions]
 
-- name: MacDevOpsYVR
-  url: https://www.youtube.com/c/MDOYVR
-  subcategory: Video
-  description: YouTube channel of MacDevOpsYVR, the yearly conference for Mac admins bringing DevOps practices into their IT work.
-  keywords: [devops, gitops, vancouver, conference, infosec]
+- name: MacSysAdmin
+  url: https://www.youtube.com/@MacSysAdminConference/playlists
+  subcategory: Conference recordings
+  description: Session recordings from the MacSysAdmin conference in Sweden, with playlists per year and day.
+  keywords: [macsysadmin, sweden, sessions, conference talks]
 
 - name: Mr. Macintosh
   url: https://www.youtube.com/channel/UC7FRPWLwRlhORhFHHywfqAg
@@ -156,6 +180,6 @@
 
 - name: University of Utah MacAdmins
   url: https://stream.lib.utah.edu/index.php?c=browse&m=results&q=%22mac+manager%22&cat=&sort=newest
-  subcategory: Video
+  subcategory: Conference recordings
   description: University of Utah video archive search listing recordings of its Mac Managers meetings for campus and regional Mac admins.
   keywords: [university of utah, mac managers, meeting recordings, higher education, salt lake city]

@@ -74,10 +74,11 @@
   name: Podcasts & Video
   icon: mic
   color: pink
-  description: Podcasts and video channels, including conference recordings.
+  description: Podcasts, video channels and conference session recordings.
   subcategories:
   - Podcasts
   - Video
+  - Conference recordings
 - id: security
   name: Security & Compliance
   icon: shield
