@@ -127,14 +127,6 @@
   keywords: [jamf pro, jamf school, reddit, forum, troubleshooting]
   works_with: [jamf]
 
-- name: r/jamf (RSS)
-  url: https://www.reddit.com/r/jamf/.rss
-  subcategory: Reddit
-  description: RSS feed of new posts in the r/jamf subreddit, for following Jamf questions and discussions in a feed reader.
-  keywords: [rss, feed, jamf pro, reddit, subreddit]
-  works_with: [jamf]
-  tags: [rss]
-
 - name: r/k12sysadmin
   url: https://www.reddit.com/r/k12sysadmin/
   subcategory: Reddit
@@ -146,13 +138,6 @@
   subcategory: Reddit
   description: Subreddit for Mac system administrators to ask questions and share fixes for managing macOS and iOS in organisations.
   keywords: [macsysadmin, reddit, mdm, forum, troubleshooting]
-
-- name: r/macsysadmin (RSS)
-  url: https://www.reddit.com/r/macsysadmin/.rss
-  subcategory: Reddit
-  description: RSS feed of new posts in the r/macsysadmin subreddit, for following Mac admin questions in a feed reader.
-  keywords: [rss, feed, macsysadmin, reddit, subreddit]
-  tags: [rss]
 
 - name: The Sequence - by Iru
   url: https://the-sequence.com/

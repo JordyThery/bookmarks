@@ -225,8 +225,8 @@
 - name: Coderunner 4
   url: https://coderunnerapp.com/download
   subcategory: Editors
-  description: Code editor that runs scripts in many languages, including shell, Python and Swift, with one click and no project setup.
-  keywords: [ide, code editor]
+  description: Code editor, similar to BBEdit, that edits and runs scripts such as Bash, Python and Swift so you see what they do as you write.
+  keywords: [bash, scripting, ide, python, swift, editor]
   platforms: [macOS]
   cost: paid
 
