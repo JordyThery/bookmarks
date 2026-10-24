@@ -90,7 +90,10 @@ def http(url: str, headers: dict | None = None, data: bytes | None = None, timeo
         with urllib.request.urlopen(req, timeout=timeout) as resp:
             return resp.status, resp.read(2_000_000)
     except urllib.error.HTTPError as e:
-        return e.code, b""
+        try:
+            return e.code, e.read(4000)
+        except Exception:
+            return e.code, b""
     except Exception:
         return 0, b""
 
@@ -148,13 +151,13 @@ def ai_summary(entry: dict, material: dict, token: str, model: str) -> dict | No
     status, resp = http(MODELS_URL, {"Authorization": f"Bearer {token}", "Content-Type": "application/json",
                                      "Accept": "application/json"}, data=body, timeout=60)
     if status != 200:
-        print(f"  GitHub Models answered HTTP {status}", file=sys.stderr)
-        return None
+        detail = " ".join(resp.decode("utf-8", "replace").split())[:300] if resp else "no response"
+        return f"GitHub Models answered HTTP {status or 'error'} ({model}): {detail}"
     try:
         text = json.loads(resp)["choices"][0]["message"]["content"]
         return json.loads(re.search(r"\{.*\}", text, re.S).group(0))
-    except Exception:
-        return None
+    except Exception as e:
+        return f"could not read the GitHub Models answer: {e}"
 
 
 def clean(result: dict) -> dict:
@@ -205,6 +208,9 @@ def enrich(entry: dict, token: str | None, model: str | None) -> tuple[dict, lis
 
     if model and token and material:
         ai = ai_summary(entry, material, token, model)
+        if isinstance(ai, str):
+            report.append(f"AI summary failed: {ai}")
+            ai = None
         if ai:
             ai = clean(ai)
             # The AI summary wins over GitHub's About text; GitHub topics are kept as keywords when present.
@@ -212,14 +218,14 @@ def enrich(entry: dict, token: str | None, model: str | None) -> tuple[dict, lis
                 ai["keywords"] = list(dict.fromkeys(found["keywords"] + ai["keywords"]))[:6]
             found.update(ai)
             source += f" + {model}"
-        else:
-            report.append("AI summary failed; used basic details only")
     if not found.get("description") and material.get("site_description"):
         desc = " ".join(material["site_description"].split())
         if len(desc) <= DESCRIPTION_MAX:
             found["description"] = desc
 
     fill = {k: v for k, v in clean(found).items() if not entry.get(k)}
+    if not entry.get("description") and "description" not in fill:
+        report.append("no description could be found or written: add one before merging")
     if found.get("archived") and not entry.get("archived"):
         fill["archived"] = True
     if fill:
