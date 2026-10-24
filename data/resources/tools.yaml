@@ -88,6 +88,16 @@
   cost: open-source
   added: 2026-10-24
 
+- name: AppSettingsUtility
+  url: https://github.com/cantscript/AppSettingsUtility
+  subcategory: Inspection
+  keywords: [appsettings, declaration, identifiers, binary]
+  platforms: [macOS]
+  works_with: [any-mdm]
+  cost: open-source
+  added: 2026-10-24
+  submitted_by: '@JordyThery'
+
 - name: Aurora Screen Shot
   url: https://leo2008k.github.io/AuroraScreenShot
   subcategory: Utilities
