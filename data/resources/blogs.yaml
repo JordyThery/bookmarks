@@ -8,6 +8,12 @@
   description: 'Mischa van der Bent''s blog on Apple IT: Apple Business Manager API, Jamf Pro package deployment and macOS virtualization.'
   keywords: [abm, abm api, jamf pro, packages, virtualization, benelux]
 
+- name: Bart Reardon
+  url: https://bartreardon.github.io/
+  description: Blog by the creator of swiftDialog on Mac administration, with posts and an index of his projects such as Outset and ContainerManager.
+  keywords: [swiftdialog, outset, containermanager, dialog]
+  added: 2026-10-24
+
 - name: Big Mac Admin
   url: https://bigmacadmin.wordpress.com
   description: Trevor Sysock's blog on Mac onboarding, Installomator and swiftDialog scripting, the Baseline tool and UTM test VMs.

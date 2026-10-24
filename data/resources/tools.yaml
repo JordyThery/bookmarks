@@ -467,6 +467,15 @@
   works_with: [jamf, iru, mosyle, addigy, filewave]
   cost: open-source
 
+- name: Installomator Labels
+  url: https://bartreardon.github.io/installomator-web/
+  subcategory: App management
+  description: Searchable directory of every Installomator label, showing what it installs, how it downloads and the label's source.
+  keywords: [installomator, labels, fragments, app catalog, team id]
+  platforms: [macOS]
+  cost: free
+  added: 2026-10-24
+
 - name: Intune Deployer
   url: https://github.com/JordyThery/intune-deployer
   subcategory: Intune
