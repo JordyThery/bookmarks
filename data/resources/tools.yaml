@@ -88,6 +88,17 @@
   cost: open-source
   added: 2026-10-24
 
+- name: AppSettingsUtility
+  url: https://github.com/cantscript/AppSettingsUtility
+  subcategory: Inspection
+  description: Interactive macOS shell script that finds the app and binary identifiers needed for Apple's App Settings declaration.
+  keywords: [app settings, ddm, declaration, bundle id, team id, cdhash]
+  platforms: [macOS]
+  works_with: [any-mdm]
+  cost: open-source
+  added: 2026-10-24
+  submitted_by: '@JordyThery'
+
 - name: Aurora Screen Shot
   url: https://leo2008k.github.io/AuroraScreenShot
   subcategory: Utilities
