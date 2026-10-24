@@ -20,7 +20,3 @@ The site is built with [Hugo](https://gohugo.io) and hosted on GitHub Pages. The
 ## Use the data
 
 {{< data-links >}}
-
-## Related
-
-For conferences and meetups with dates, see the [MacAdmins community calendar](https://macadmins.org/calendar/).

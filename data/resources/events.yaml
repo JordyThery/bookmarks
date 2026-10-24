@@ -14,6 +14,11 @@
   description: UK conference for Mac admins with talks, hands-on sessions, exhibitors and networking, held in Brighton.
   keywords: [macaduk, brighton, uk, sessions, exhibitors]
 
+- name: MacAdmins Community Calendar
+  url: https://macadmins.org/calendar/
+  description: Mac Admins Foundation calendar of conferences, meetups and events, with links to event sites and video archives and an .ics download.
+  keywords: [events, conferences, meetup, ics, calendar]
+
 - name: MacAdmins Conference
   url: https://macadmins.psu.edu/
   description: Annual Penn State conference for people who deploy and manage Apple devices, with sessions, workshops and videos on YouTube.

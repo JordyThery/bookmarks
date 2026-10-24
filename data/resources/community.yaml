@@ -90,12 +90,6 @@
   description: Mac Admins Foundation page on how to join the Mac Admins Slack, the community's chat workspace for Apple device admins.
   keywords: [slack, invite, join, community]
 
-- name: MacAdmins Community Calendar
-  url: https://macadmins.org/calendar/
-  subcategory: User groups & organisations
-  description: Mac Admins Foundation calendar of conferences, meetups and events, with links to event sites and video archives and an .ics download.
-  keywords: [events, conferences, meetup, ics, calendar]
-
 - name: MacAdmins Newsletter
   url: https://macadmins.news/
   subcategory: User groups & organisations
