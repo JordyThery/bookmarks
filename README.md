@@ -2,8 +2,6 @@
 
 A searchable, community-curated directory of tools, Apple documentation, blogs, podcasts, conferences and user groups for people who manage Apple devices.
 
-It is the website version of The Apple Community Bookmarks, now also including [The Definitive MacAdmins resource directory](https://github.com/maccy10/definitivemacadmins), and works the same way as the [MacAdmins community calendar](https://github.com/macadminsdotorg/macadmins-calendar).
-
 The original `Apple_Community_Bookmarks.html` stays in this repository so existing links keep working. The site's `/bookmarks.html` is the up-to-date version, rebuilt on every change.
 
 ## Suggest a resource
