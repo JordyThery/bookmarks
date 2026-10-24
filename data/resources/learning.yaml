@@ -30,11 +30,6 @@
   platforms: [macOS]
   cost: paid
 
-- name: HCS Technology Group White Papers
-  url: https://hcsonline.com/support/white-papers
-  description: HCS Technology Group's technical articles on Apple device management topics such as Platform SSO, Jamf Pro, Jamf Protect and Intune.
-  keywords: [psso, jamf pro, jamf connect, entra id, ddm, white papers]
-
 - name: Jamf Training
   url: https://training.jamf.com/
   subcategory: Jamf

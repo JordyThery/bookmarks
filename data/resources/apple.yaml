@@ -55,13 +55,6 @@
   description: Apple's enterprise page on security, IT management, identity and value of Apple devices, with a form to contact Apple's business team.
   keywords: [enterprise, tco, it management, rfp, identity]
 
-- name: Apple at Work - Skill series
-  url: https://apple.co/macskills
-  subcategory: User Training
-  description: Apple at Work series of short skill videos that teach employees everyday Mac tasks and features.
-  keywords: [end user training, switching to mac, onboarding, video, adoption]
-  platforms: [macOS]
-
 - name: 'Apple Beta Software Program: Providing Feedback'
   url: https://beta.apple.com/provide-feedback
   subcategory: Beta & feedback
@@ -106,10 +99,10 @@
   description: Apple's EU regulatory information site with declarations of conformity and environmental data for its devices.
   keywords: [ce marking, doc, eu compliance, rfp, regulatory]
 
-- name: Apple Deployment and Management Tutorials
-  url: https://it-training.apple.com/tutorials/apt-deployment
+- name: Apple Deployment and Management Course
+  url: https://it-training.apple.com/deployment/tutorials/course/
   subcategory: IT Training
-  description: Apple Professional Training tutorials on deploying and managing Apple devices with Apple Business Manager and MDM.
+  description: Apple Professional Training course of about 17 hours on deploying and managing Apple devices, for the Deployment and Management exam.
   keywords: [abm, mdm, enrollment, acit, it training, ade]
   platforms: [macOS, iOS, iPadOS]
 
@@ -126,10 +119,10 @@
   description: Apple program letting organisations with 100+ employees sign and distribute proprietary in-house apps to their staff.
   keywords: [in-house apps, enterprise distribution, code signing, d-u-n-s, mdm]
 
-- name: Apple Device Support Tutorials
-  url: https://it-training.apple.com/tutorials/apt-support
+- name: Apple Device Support Course
+  url: https://it-training.apple.com/support/tutorials/course/
   subcategory: IT Training
-  description: Apple Professional Training course on supporting Apple devices, preparing for the Apple Certified Support Professional exam.
+  description: Apple Professional Training course of about 9 hours on supporting Apple devices, preparing for the Apple Device Support exam.
   keywords: [acsp, certification, help desk, troubleshooting, apple training]
   platforms: [macOS, iOS, iPadOS]
 
@@ -291,7 +284,7 @@
 - name: Apple System Status
   url: https://www.apple.com/support/systemstatus/
   subcategory: The basics
-  description: Apple's live status board for its online services such as iCloud, the App Store, Apple Account and Apple Business Manager.
+  description: Apple's live status board for its online services such as iCloud, the App Store, Apple Account and Apple Business.
   keywords: [outage, service status, icloud, downtime]
 
 - name: Apple YouTube Shorts
@@ -463,6 +456,13 @@
   platforms: [macOS, iOS, iPadOS, visionOS]
   works_with: [jamf, intune, workspace-one, iru, fleet, addigy]
   cost: free
+
+- name: Mac Skills Series
+  url: https://apple.co/macskills
+  subcategory: User Training
+  description: Apple's event series on Mac skills for enterprise, government and education organisations, on Apple's events site.
+  keywords: [end user training, switching to mac, onboarding, video, adoption]
+  platforms: [macOS]
 
 - name: Mac technical skill series
   url: https://apple.co/techskills

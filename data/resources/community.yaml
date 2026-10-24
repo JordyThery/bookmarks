@@ -102,17 +102,11 @@
   description: Jamf Nation group for Apple admins and techs who gather in Scotland to share knowledge and troubleshoot together.
   keywords: [user group, jamf nation, scotland, uk, meetup]
 
-- name: Microsoft Mac Admins
-  url: https://www.linkedin.com/groups/13007354/
-  subcategory: Slack & social
-  description: LinkedIn group for admins who manage Macs with Microsoft tools such as Intune, Entra ID and Microsoft 365.
-  keywords: [linkedin, intune, entra id, microsoft 365, group]
-
-- name: Microsoft Mac Admins Community
+- name: Microsoft Mac Admins (LinkedIn)
   url: https://aka.ms/MacAdmins
   subcategory: User groups & organisations
-  description: Microsoft Tech Community space where Mac admins discuss deploying and managing Microsoft 365 apps, Defender and Intune on macOS.
-  keywords: [intune, microsoft 365, defender, tech community, office]
+  description: Private LinkedIn group where Mac admins and Microsoft's Intune Apple team discuss Intune, Entra ID and Microsoft 365 on Apple devices.
+  keywords: [intune, microsoft, linkedin, entra id, ddm]
 
 - name: Mr. Macintosh on X
   url: https://x.com/ClassicII_MrMac

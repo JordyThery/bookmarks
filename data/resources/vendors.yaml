@@ -59,12 +59,6 @@
   description: Jamf customer portal for managing licences, product downloads, Jamf ID users and hosted instances.
   keywords: [jamf id, licence, downloads, jamf pro, customer portal]
 
-- name: Jamf Feature Requests
-  url: https://ideas.jamf.com
-  subcategory: Jamf
-  description: Jamf's feature request portal where customers submit and vote on product ideas for Jamf Pro, Jamf School and other products.
-  keywords: [feature request, ideas, roadmap, jamf pro, voting]
-
 - name: Jamf Heroes
   url: https://community.jamf.com/p/jamf-heroes
   subcategory: Jamf
@@ -76,6 +70,12 @@
   subcategory: Jamf
   description: Jamf's documentation portal for Jamf Pro, School, Protect, Connect and other products, with videos and training links.
   keywords: [documentation, docs, jamf pro, jamf school, jamf protect, admin guide]
+
+- name: Jamf Nation Ideas
+  url: https://ideas.jamf.com
+  subcategory: Jamf
+  description: Jamf Nation portal to submit and vote on feature ideas for Jamf Pro, Jamf School, Jamf Connect, Jamf Protect and other products.
+  keywords: [feature request, ideas, roadmap, jamf pro, voting]
 
 - name: Jamf Security
   url: https://security.jamf.com

@@ -44,7 +44,7 @@
   description: Apple admin conference from Gothenburg, Sweden, on device management and security, with session videos in a free online archive.
   keywords: [macsysadmin, sweden, gothenburg, session videos, security]
 
-- name: OBTS
+- name: Objective by the Sea (OBTS)
   url: https://objectivebythesea.org/
   description: Apple security conference organised by the Objective-See Foundation, with talks on macOS and iOS malware, exploits and defence.
   keywords: [obts, objective-see, malware, infosec, patrick wardle]

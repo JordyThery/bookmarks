@@ -52,7 +52,7 @@
 - name: Feedly Top Mac Admin Blogs
   url: https://feedly.com/i/top/mac-admin-blogs
   subcategory: Aggregators
-  description: Feedly's curated list of popular Mac admin blogs to follow by RSS in the Feedly reader.
+  description: Feedly's ranking of popular Mac admin blogs, with follower counts and recent posts, to follow by RSS.
   keywords: [rss, feed reader, blog list, news]
 
 - name: Fraserhess

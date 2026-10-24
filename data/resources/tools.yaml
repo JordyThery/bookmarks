@@ -579,7 +579,7 @@
 - name: MacDNA
   url: https://github.com/jhbush/Arek/tree/master/Development/MacDNA%20Menulet
   subcategory: Utilities
-  description: MacDNA Menulet, a menu bar utility kept in a folder of Joseph Bush's Arek repository on GitHub.
+  description: 'Older menu bar app showing Mac health: disk and battery status, CrashPlan backups, Jamf (Casper) check-ins, updates and AD binding.'
   keywords: [menu bar, menulet, system info, arek]
 
 - name: macOS Icons
@@ -1108,10 +1108,10 @@
   platforms: [macOS]
   cost: open-source
 
-- name: Twocanoes - DFU Blaster
+- name: Twocanoes DFU Blaster Pro (downloads)
   url: https://bitbucket.org/twocanoes/dfu-blaster-public/downloads/
   subcategory: Utilities
-  description: Twocanoes app that puts a USB-C connected Apple silicon Mac into DFU mode for a revive or restore, without key combos.
+  description: Download page for Twocanoes DFU Blaster Pro builds, which put an Apple silicon Mac into DFU mode for a revive or restore.
   keywords: [dfu, restore, revive, apple configurator, ipsw]
   platforms: [macOS]
   cost: free

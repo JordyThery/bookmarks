@@ -29,9 +29,9 @@
   keywords: [sp 800-219, mscp, nist, hardening, baseline]
   platforms: [macOS]
 
-- name: NIST Vulnerability Data Feeds (RSS)
-  url: https://nvd.nist.gov/vuln/data-feeds#RSS
-  description: NIST National Vulnerability Database page listing its downloadable CVE data feeds and RSS feeds of newly published vulnerabilities.
+- name: NVD Data Feeds and APIs
+  url: https://nvd.nist.gov/vuln/data-feeds
+  description: NIST National Vulnerability Database page on its CVE and CPE APIs and JSON data feeds, for keeping vulnerability data in sync.
   keywords: [nvd, cve, rss, vulnerability feed, cvss]
   tags: [rss]
 
