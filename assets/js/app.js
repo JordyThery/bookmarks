@@ -7,6 +7,8 @@
 
   const groups = $$(".group");
   const cats = $$(".cat");
+  const subLinks = $$(".sub");
+  const subsLists = $$(".subs");
   const chips = $("#chips");
   const status = $("#status");
   const empty = $("#empty");
@@ -15,25 +17,28 @@
   const total = $$(".item").length;
   const state = { cat: "all", sub: "", q: "", filter: "all" };
 
+  // The address is #category or #category/subcategory, so every view can be linked to.
   const readHash = () => {
-    const id = decodeURIComponent(location.hash.slice(1));
-    return groups.some((g) => g.dataset.cat === id) ? id : "all";
+    const [id, slug] = decodeURIComponent(location.hash.slice(1)).split("/");
+    if (!groups.some((g) => g.dataset.cat === id)) return { cat: "all", sub: "" };
+    const link = subLinks.find((a) => a.dataset.cat === id && a.dataset.slug === slug);
+    return { cat: id, sub: link ? link.dataset.sub : "" };
   };
 
-  function renderChips(group) {
-    const subs = group ? group.dataset.subs.split("|").filter(Boolean) : [];
-    if (subs.length < 2) { chips.hidden = true; chips.innerHTML = ""; return; }
-    const counts = {};
-    $$(".item", group).forEach((li) => { counts[li.dataset.sub] = (counts[li.dataset.sub] || 0) + 1; });
-    const button = (value, label, n) => {
+  // Narrow screens show the subcategories as a row of chips; wide screens in the sidebar.
+  function renderChips() {
+    const links = subLinks.filter((a) => a.dataset.cat === state.cat);
+    if (!links.length) { chips.hidden = true; chips.replaceChildren(); return; }
+    const button = (slug, label, n, pressed) => {
       const b = document.createElement("button");
-      b.type = "button"; b.className = "chip"; b.dataset.sub = value;
-      b.setAttribute("aria-pressed", String(state.sub === value));
+      b.type = "button"; b.className = "chip"; b.dataset.slug = slug;
+      b.setAttribute("aria-pressed", String(pressed));
       b.textContent = label;
       if (n) { const s = document.createElement("span"); s.className = "n"; s.textContent = n; b.append(s); }
       return b;
     };
-    chips.replaceChildren(button("", "All"), ...subs.filter((s) => counts[s]).map((s) => button(s, s, counts[s])));
+    chips.replaceChildren(button("", "All", "", !state.sub),
+      ...links.map((a) => button(a.dataset.slug, a.dataset.sub, $(".n", a).textContent, a.dataset.sub === state.sub)));
     chips.hidden = false;
   }
 
@@ -69,27 +74,28 @@
     const narrowed = state.q || state.sub || state.filter !== "all" || state.cat !== "all";
     status.textContent = narrowed && shown ? `Showing ${shown} of ${total}` : "";
     empty.hidden = shown > 0;
-    cats.forEach((a) => a.setAttribute("aria-current", String(a.dataset.cat === state.cat)));
+    cats.forEach((a) => {
+      a.setAttribute("aria-current", String(a.dataset.cat === state.cat && !state.sub));
+      a.classList.toggle("open", a.dataset.cat === state.cat);
+    });
+    subsLists.forEach((l) => { l.hidden = l.dataset.for !== state.cat; });
+    subLinks.forEach((a) => a.setAttribute("aria-current", String(a.dataset.cat === state.cat && a.dataset.sub === state.sub)));
   }
 
-  function setCategory(cat) {
-    state.cat = cat;
-    state.sub = "";
-    renderChips(groups.find((g) => g.dataset.cat === cat));
+  function route() {
+    Object.assign(state, readHash());
+    renderChips();
     apply();
   }
 
-  window.addEventListener("hashchange", () => { setCategory(readHash()); window.scrollTo({ top: 0 }); });
+  window.addEventListener("hashchange", () => { route(); window.scrollTo({ top: 0 }); });
 
   search.addEventListener("input", () => { state.q = search.value.trim(); apply(); });
   search.addEventListener("keydown", (e) => { if (e.key === "Escape") { search.value = ""; state.q = ""; apply(); search.blur(); } });
 
   chips.addEventListener("click", (e) => {
     const b = e.target.closest(".chip");
-    if (!b) return;
-    state.sub = b.dataset.sub;
-    $$(".chip", chips).forEach((c) => c.setAttribute("aria-pressed", String(c === b)));
-    apply();
+    if (b) location.hash = b.dataset.slug ? `${state.cat}/${b.dataset.slug}` : state.cat;
   });
 
   $$(".segmented button").forEach((b) => b.addEventListener("click", () => {
@@ -107,5 +113,5 @@
     }
   });
 
-  setCategory(readHash());
+  route();
 })();

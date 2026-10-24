@@ -21,9 +21,19 @@
       <span class="tile c-graphite">{{ partial "icon.html" "grid" }}</span><span class="cat-name">All resources</span><span class="n">{{ $total }}</span>
     </a>
     {{ range hugo.Data.categories }}
+    {{- $cat := . }}{{ $items := index hugo.Data.resources .id }}
     <a class="cat" href="{{ $home }}#{{ .id }}" data-cat="{{ .id }}">
-      <span class="tile c-{{ .color }}">{{ partial "icon.html" .icon }}</span><span class="cat-name">{{ .name }}</span><span class="n">{{ len (index hugo.Data.resources .id) }}</span>
+      <span class="tile c-{{ .color }}">{{ partial "icon.html" .icon }}</span><span class="cat-name">{{ .name }}</span><span class="n">{{ len $items }}</span>
     </a>
+    {{- /* Subcategories that have resources, shown under the category while it's selected */}}
+    {{- $subs := slice }}{{ range .subcategories | default slice }}{{ if where $items "subcategory" . }}{{ $subs = $subs | append . }}{{ end }}{{ end }}
+    {{- if ge (len $subs) 2 }}
+    <div class="subs" data-for="{{ .id }}" hidden>
+      {{- range $subs }}{{ $slug := urlize . | replaceRE "-+" "-" }}
+      <a class="sub" href="{{ $home }}#{{ $cat.id }}/{{ $slug }}" data-cat="{{ $cat.id }}" data-sub="{{ . }}" data-slug="{{ $slug }}"><span class="cat-name">{{ . }}</span><span class="n">{{ len (where $items "subcategory" .) }}</span></a>
+      {{- end }}
+    </div>
+    {{- end }}
     {{ end }}
   </nav>
 

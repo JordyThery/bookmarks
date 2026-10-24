@@ -20,7 +20,7 @@
 
 {{ range hugo.Data.categories }}
 {{- $cat := . }}{{ $items := index hugo.Data.resources .id }}
-<section class="group" data-cat="{{ .id }}" data-name="{{ .name }}" data-desc="{{ .description }}" data-subs="{{ delimit (.subcategories | default slice) "|" }}">
+<section class="group" data-cat="{{ .id }}" data-name="{{ .name }}" data-desc="{{ .description }}">
   <h2 class="group-title"><span class="tile tile-sm c-{{ .color }}">{{ partial "icon.html" .icon }}</span>{{ .name }}<span class="count">{{ len $items }}</span></h2>
   {{- $subs := .subcategories | default slice }}
   {{- $sorted := 0 }}{{ range $items }}{{ if .subcategory }}{{ $sorted = add $sorted 1 }}{{ end }}{{ end }}
